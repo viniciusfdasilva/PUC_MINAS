@@ -1,0 +1,83 @@
+PUC-Minas - ICEI - Ciência da Computação
+Arquitetura de Computadores I - Aula 10
+
+
+Geração e controle da marcação de tempo
+ 
+1. Clock = gerador de sequências de alternâncias periódicas  
+      __          __
+   __|  |   ou   |  |__     = 1 pulso  
+   tm+ts =  T   = tm+ts     = 1 período (T) [s]
+                              tm = tempo de marcação    (1)
+                              ts = tempo de espaçamento (0)   
+
+   frequência = 1 / T [Hz]   (inverso do período)
+
+      __    __    __ 
+   __|  |__|  |__|  |__ ... = clock (sequência de pulsos)
+
+     ^  ^
+     |  |
+     |  borda de descida 
+     borda de subida
+
+
+2. Modelo para um gerador de pulsos (Verilog)
+
+      __    __    __ 
+   __|  |__|  |__|  |__ ... = clock (sequência de pulsos)
+   12+12              =  T  = 24    (período)
+ 
+// -------------------------- 
+// -- clock generator (1) --- 
+// -------------------------- 
+ 
+module clock ( output clk ); 
+reg      clk; 
+ 
+ initial 
+  begin 
+   clk = 1'b0; 
+  end 
+ 
+ always 
+  begin 
+   #12 clk = ~clk; 
+  end 
+
+endmodule // clock ( )
+
+
+Sugestão: Para maior conveniência na geração 
+          de múltiplos e submúltiplos
+          de certa frequência de "clock",  
+          recomenda-se escolher valores
+          que possuam vários divisores, 
+          a fim de facilitar cálculos.
+
+      ___     ___     ___ 
+   __|   |___|   |___|   |__ ... = clock 1 (sequência de pulsos)
+      12 + 12                 T1 = 24  
+      _   _   _   _   _   _
+   __| |_| |_| |_| |_| |_| | ... = clock 2 (sequência de pulsos)
+      6+6+6+6                 T2 = 12      (mais curtos = mais rápido)
+      _______         ______ 
+   __|       |_______|       ... = clock 3 (sequência de pulsos)
+        24   +  24            T3 = 48      (mais longos = mais lento )
+
+
+3. Sincronização de sinais
+
+      ___     ___     ___ 
+   __|   |___|   |___|   |__ ... = clock   (sequência de pulsos)
+      _______               
+   __|       |______________ ... = pulso sincronizado com a borda de subida
+                                   em Verilog: @ (posedge clock)
+          _______           
+   ______|       |__________ ... = pulso sincronizado com a borda de descida
+                                   em Verilog: @ (negedge clock)
+        _______           
+   ____|       |____________ ... = pulso sincronizado com período de marcação
+                                   em Verilog: @ (clock)
+
+   

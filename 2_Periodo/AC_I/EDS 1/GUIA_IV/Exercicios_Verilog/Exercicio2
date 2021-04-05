@@ -1,0 +1,26 @@
+// Nome: Vinicius Francisco da Silva Matrícula: 576920 //
+module fxyzA(output s1,output s2, input x,y,z);
+    assign s1 = (x&x(~x&y));
+    assign s2 = 0;
+endmodule // fxyzA
+
+module fxyzB(output s1,output s2, input x,y,z);
+    assign s1 = (x|y) | (y&~x);
+    assign s2 = y;
+endmodule // fxyzB
+
+module fxyzC(output s1,output s2, input x,y,z);
+    assign s1 = (~x|~y) & (~y|y);
+    assign s2 = ~y;
+endmodule // fxyzC
+
+module fxyzD(output s1,output s2, input x,y,z);
+    assign s1 = (x|y) | (~x|~y);
+    assign s2 = 1;
+endmodule // fxyzD
+
+module fxyzE(output s1,output s2, input x,y,z);
+    assign s1 = (x|y) & (~x|~y);
+    assign s2 = 1;
+endmodule // fxyzD
+

@@ -1,0 +1,25 @@
+// Nome: Vinicius Francisco da Silva Matrícula: 576920 //
+module PosA(output s,input x,y,z)
+    // 1 2 4 7
+    assign s = (x|y|~z) & (x|~y|z) & (~x|y|z) & (~x|~y|~z);
+endmodule // PosA
+
+module PosB(output s,input x,y,z)
+    // 0 1 2 4 5
+    assign s = (x|y|z) & (x|y|~z) & (~x|y|z) & (~x|y|~z);
+endmodule // PosB
+
+module PosC(output s,input x,y,w,z)
+    // 0 1 2 5 9 10 11
+    assign s = (x|y|w|z) & (x|y|w|~z) & (x|y|~w|z) & (x|~y|w|~z) & (x|~y|~w|~z) & (~x|y|w|~z) & (~x|y|~w|z) & (~x|y|~w|~z); 
+endmodule // PosC
+
+module PosD(output s,input x,y,w,z)
+    // 0 2 4 6 7 9 13
+    assign s = (x|y|w|z) & (x|y|~w|z) & (x|~y|w|z) & (x|~y|~w|z) & (x|~y|~w|~z) & (~x|y|w|~z) & (~x|~y|w|z) 
+endmodule // PosD
+
+module PosE(output s,input x,y,w,z)
+    // 0 1 2 3 7 14 15 
+    assign s = (x|y|w|z) & (x|y|w|~z) & (x|y|~w|z) & (x|y|~w|~z) & (x|~y|~w|~z) & (~x|~y|~w|z) 
+endmodule // PosE

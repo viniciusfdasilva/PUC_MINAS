@@ -1,0 +1,118 @@
+// Nome: Vinicius Francisco da Silva Matrícula: 576920 //
+module fxyzA(output saida,input x,y,z);
+    assign saida = x & (y | ~z);
+endmodule // fxyzA
+
+module fxyzB(output saida,input x,y,z);
+    assign saida = (x | ~y) & ~z;
+endmodule //fxyzB
+
+module fxyzC(output saida,input x,y,z);
+    assign saida = (~x | y) & z;
+endmodule //fxyzC
+
+module fxyzD(output saida,input x,y,z);
+    assign saida = (x & y) | ~z; 	
+endmodule //fxyzD
+
+module fxyzE(output saida,input x,y,z);
+    assign saida = (~x | ~z) & (y | z);
+endmodule //fxyzE
+
+module test;
+    reg a;
+    output saida;
+    initial begin: main	    	
+	a = fxyzA(saida,0,0,0);
+   	$display(a);
+   	a = fxyzA(saida,0,0,1);
+   	$display(a);
+   	a = fxyzA(saida,0,1,0);
+    	$display(a);
+   	a = fxyzA(saida,0,1,1);
+ 	$display(a);
+ 	a = fxyzA(saida,1,0,0);
+ 	$display(a);
+ 	a = fxyzA(saida,1,0,1);
+ 	$display(a);
+ 	a = fxyzA(saida,1,1,0);
+ 	$display(a);
+ 	a = fxyzA(saida,1,1,1);
+    
+	a = fxyzB(saida,0,0,0);
+        $display(a);
+        a = fxyzB(saida,0,0,1);
+        $display(a);
+        a = fxyzB(saida,0,1,0);
+        $display(a);
+        a = fxyzB(saida,0,1,1);
+        $display(a);
+        a = fxyzB(saida,1,0,0);
+        $display(a);
+        a = fxyzB(saida,1,0,1);
+        $display(a);
+        a = fxyzB(saida,1,1,0);
+        $display(a);
+        a = fxyzB(saida,1,1,1);
+    
+        a = fxyzC(saida,0,0,0);
+        $display(a);
+        a = fxyzC(saida,0,0,1);
+        $display(a);
+        a = fxyzC(saida,0,1,0);
+        $display(a);
+        a = fxyzC(saida,0,1,1);
+        $display(a);
+        a = fxyzC(saida,1,0,0);
+        $display(a);
+        a = fxyzC(saida,1,0,1);
+        $display(a);
+        a = fxyzC(saida,1,1,0);
+        $display(a);
+        a = fxyzC(saida,1,1,1);
+    
+        a = fxyzD(saida,0,0,0);
+        $display(a);
+        a = fxyzD(saida,0,0,1);
+        $display(a);
+        a = fxyzD(saida,0,1,0);
+        $display(a);
+        a = fxyzD(saida,0,1,1);
+        $display(a);
+        a = fxyzD(saida,1,0,0);
+        $display(a);
+        a = fxyzD(saida,1,0,1);
+        $display(a);
+        a = fxyzD(saida,1,1,0);
+        $display(a);
+        a = fxyzD(saida,1,1,1);
+    
+        a = fxyzE(saida,0,0,0);
+        $display(a);
+        a = fxyzE(saida,0,0,1);
+        $display(a);
+        a = fxyzE(saida,0,1,0);
+        $display(a);
+        a = fxyzE(saida,0,1,1);
+        $display(a);
+        a = fxyzE(saida,1,0,0);
+        $display(a);
+        a = fxyzE(saida,1,0,1);
+        $display(a);
+        a = fxyzE(saida,1,1,0);
+        $display(a);
+        a = fxyzE(saida,1,1,1);
+    end
+endmodule //test
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

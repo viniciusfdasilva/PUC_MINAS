@@ -1,0 +1,302 @@
+PUC-Minas - ICEI - Ciência da Computação
+Arquitetura de Computadores I - Aula 06
+
+
+Subtração de 2 bits ("meia-diferença")
+
+
+n mintermos MAXTERMOS  A B  S1 S0
+0  a'.b'      A +B     0 0   0  0 ( 0)
+1  a'.b       A +B'    0 1   1  1 (-1)
+2  a .b'      A'+B     1 0   0  1 (+1)
+3  a .b       A'+B'    1 1   0  0 ( 0)
+
+Por mintermos:
+   s1 = m(1)   = SoP(1)   = a'.b
+
+   s0 = m(1,2) = SoP(1,2) = a'.b + a.b' = a^b
+
+Por MAXTERMOS
+                                 (0)    (2)    (3) 
+   S1 = M(0,2,3) = PoS(0,2,3) = (A+B).(A'+B).(A'+B')
+
+                                 (0)    (3)
+   S0 = M(0,3)   = PoS(0,3)   = (A+B).(A'.B')
+
+
+Ao desenvolver as expressões 
+
+Por MAXTERMOS
+
+   S1 = (A+B).(A'+B).(A'+B')
+
+      = (A.A'+A.B+B.A'+B.B).(A'+B')
+
+      = ( 0  +A.B+A'.B+1.B).(A'+B')
+
+      = (    (A  +A'  +1)B).(A'.B')
+
+      =                   B.(A'+B')
+
+      = B.A' + B.B'   =   B.A' + 0
+      
+      = A'B
+
+   
+   S0 = (A+B).(A'+B')
+
+      = (A.A'+A.B'+B.A'+B.B')
+
+      = ( 0  +A.B'+A'.B+ 0  )
+
+      =  A.B' + A'.B
+
+      =  A ^ B
+
+
+Subtrator de 3 bits
+
+n mintermos MAXTERMOS  A B C  S1 S0
+0 a'.b'.c'   A +B +C   0 0 0   0  0 ( 0)
+1 a'.b'.c    A +B +C'  0 0 1   1  1 (-1)
+2 a'.b .c'   A +B'+C   0 1 0   1  1 (-1)
+3 a'.b .c    A +B'+C'  0 1 1   1  0 (-2)
+4 a .b'.c'   A'+B +C   1 0 0   0  1 (+1)
+5 a .b'.c    A'+B +C'  1 0 1   0  0 ( 0)
+6 a .b .c'   A'+B'+C   1 1 0   0  0 ( 0)
+7 a .b .c    A'+B'+C'  1 1 1   1  1 (-1)
+
+Por mintermos:
+                                       (1)      (2)      (3)      (7)
+   s1 = m(1,2,3,7) = SoP(1,2,3,7) = a'.b'.c + a'.b.c' + a'.b.c + a.b.c
+
+                                       (1)      (2)      (4)      (7)
+   s0 = m(1,2,4,7) = SoP(1,2,4,7) = a'.b'.c + a'.b.c' + a.b'.c'+ a.b.c
+
+Por MAXTERMOS
+                                       (0)      (4)      (5)      (6)
+   S1 = M(0,4,5,6) = PoS(0,4,5,6) = (A+B+C).(A'+B+C ).(A'+B+C').(A'+B'+C)
+
+                                       (0)      (3)      (5)      (6)
+   S0 = M(0,3,5,6) = PoS(0,3,5,6) = (A+B+C).(A+B'+C').(A'+B+C').(A'+B'+C)
+
+
+Ao desenvolver as expressões 
+
+Por mintermos:
+
+   s1 = a'.b'.c + a'.b.c' + a'.b.c + a.b.c
+
+      = (b'+b).a'.c + (c'+c).a'.b + (a'+a).bc
+
+      = (  1 ).a'.c + (  1 ).a'.b + (  1 ).bc
+
+      = a'.c + a'.b + bc
+
+
+   s0 = a'.b'.c + a'.b.c' + a.b'.c'+ a.b.c
+
+      = a'.(b'.c + b.c' ) + a.(b'.c'+ b.c)
+
+      = a'.(    b^c     ) + a.(    b^c   )'
+
+      = a ^(    b^c     ) 
+
+
+Por MAXTERMOS
+
+Produto dos termos para S1
+
+              (A +B+C)  <- M(0)
+              (A'+B+C). <- M(4)
+_______________________
+          A.C+B.C+C.C +
+      A.B+B.B+B.C+
+A'.A+A'.B+A'.C
+_______________________
+          A.C+B.C+C.1 +
+      A.B+1.B+B.C+
+ 0  +A'.B+A'.C
+_______________________
+ A'.C+B.C+A.C+B.C+C.1 +
+A.B+1.B+B.C+A'.B
+_______________________
+     (A'+B+A+B+1).C   +
+(A+1+C+A').B
+_______________________
+           B + c
+
+             (A'+B+C')  <- M(5)
+             (A'+B'+C). <- M(6)
+_______________________
+        A'.C+B.C+C'.C +
+   A'.B'+B'.B+B'.C'+
+A'.A'+A'.B+B'.C'
+_______________________
+        A'.C+B.C+  0  +
+   A'.B'+ 0 +B'.C'+
+A'.1+A'.B+B'.C'
+_______________________
+A'.1+A'.B+A'.B'+A'.C  +
+    B'.C'+B'.C'+B. C
+_______________________
+A'.(1+ B+ B'+ C)      +
+    B'.C'+B.C
+_______________________
+A'+ B'.C'+B.C
+
+
+           B + c
+    A'+ B'.C'+B.C
+______________________________
+        B.C + B.C +
+B.B'.C'+B'.C'.C   +
+A'.B+A'.C
+______________________________
+        B.C       +
+  0  +   0        +
+A'.B+A'.C
+______________________________
+A'.B + A'.C + B.C
+
+S1 = (A+B+C).(A'+B+C).(A'+B+C').(A'+B'+C)
+
+   = (B+C).(A'+B).(A'+C)
+
+   =  A'.B + A'.C + B.C
+
+
+Produto dos termos para S0
+
+             (A+B +C )  <- M(0)
+             (A+B'+C'). <- M(3)
+_______________________
+       A.C'+B.C'+C.C' +
+    A.B'+B.B'+B'.C +
+A.A+A.B+A.C
+_______________________
+       A.C'+B.C'+ 0   +
+    A.B'+ 0  +B'.C +
+A.1+A.B+A.C
+_______________________
+       B'.C+B.C'      +
+A.1+A.B+A.C+A.B'+A.C'
+_______________________
+       B'.C+B.C'      +
+A(1+  B+  C+  B'+  C')
+_______________________
+A  +   B'.C+ B.C'
+
+
+            (A'+B +C')  <- M(5)
+            (A'+B'+C ). <- M(6)
+_______________________
+        A'.C+B.C+C'.C +
+  A'.B'+B'.B+B'.C'+
+A'.A'+A'.B+A'.C'
+_______________________
+        A'.C+B.C+  0  +
+  A'.B'+  0 +B'.C'+
+A'.1+A'.B+A'.C'
+_______________________
+        B'.C'+B.C     +
+        A'.B'+A'.C+
+A'.1+A'.B+A'.C'
+_______________________
+        B'.C'+B.C     +
+A'.(1+B+C'+B'+C)
+_______________________
+A'   + B'C'  + B.C
+
+
+A  +   B'.C+ B.C'
+A' +   B'C'+ B.C
+______________________________
+A.B.C+B'.C.B.C+B.C'.B.C      +
+A.B'.C'+B'.C.B'.C'+B'.C'.B.C'+
+A'.A+A'.B'.C+A'.B.C'
+______________________________
+A.B.C+   0    +    0         +
+A.B'.C'+ 0    +    0         +
+  0    +A'.B'.C+A'.B.C'
+______________________________
+A.B.C+A.B'.C'+A'.B.C'+A'.B'.C
+    ^      ^       ^        ^
+    |      |_______|        |
+    |_______________________|
+
+
+(A.B+A'.B').C + (A.B'+A'.B).C'
+
+(A xnor B ).C + (A  xor  B).C'
+
+    P'     .C +      P     .C'
+
+           P xor C
+
+  (A xor B ) xor c
+
+S0 = A xor B xor C = A ^ B ^ C
+
+
+Resumo
+
+  Equações características para mintermos
+
+    Forma completa (ou canônica):
+
+    v = s1 = m(1)   = SoP(1)   = a'.b
+
+    r = s0 = m(1,2) = SoP(1,2) = a'.b + a.b' = a^b
+
+    Forma compacta (soma de produtos):
+    
+    v  = SoP(1,2,3,7) = a'.c + a'.b + bc
+  
+    r  = SoP(1,2,4,7) = a ^ b ^ c
+
+  Equações características para MAXTERMOS
+
+    Forma completa (ou canônica):
+                                           (0)      (4)      (5)      (6)
+    V = S1 = M(0,4,5,6) = PoS(0,4,5,6) = (A+B+C).(A'+B+C ).(A'+B+C').(A'+B'+C)
+
+                                           (0)      (3)      (5)      (6)
+    R = S0 = M(0,3,5,6) = PoS(0,3,5,6) = (A+B+C).(A+B'+C').(A'+B+C').(A'+B'+C)
+ 
+    Forma compacta (produto de somas):
+
+    V  = PoS {0,1,2,4} = A'.B + A'.C + B.C
+
+    R  = PoS {0,3,5,6} = A ^ B ^ C
+
+
+                            Resumo 
+
+                            Adição              Subtração
+                       a+b+v0 = [v1 r]      a-b-v0 = [v1 r]
+     a  b   vai-um   | vai-um   resultado | vem-um   resultado
+           anterior  | próximo            | próximo
+   ------------------|--------------------|-------------------
+0 |  0  0  0         |       0  0  ( 0)   |       0  0  ( 0)
+1 |  0  0  1         |       0  1  ( 1)   |       1  1  (-1)
+2 |  0  1  0         |       0  1  ( 1)   |       1  1  (-1)
+3 |  0  1  1         |       1  0  ( 2)   |       1  0  (-2)
+4 |  1  0  0         |       0  1  ( 1)   |       0  1  (+1)
+5 |  1  0  1         |       1  0  ( 2)   |       0  0  ( 0)
+6 |  1  1  0         |       1  0  ( 2)   |       0  0  ( 0)
+7 |  1  1  1         |       1  1  ( 3)   |       1  1  (-1)
+  |------------------|--------------------|-------------------
+  |------------------|--------------------|-------------------
+  |                  |                    |       
+  |                  | v1 = {3,5,6,7}     | v1 = {1,2,3,7}
+  |     SoP = 1      |                    |
+  |                  | r  = {1,2,4,7}     | r  = {1,2,4,7}
+  |                  |                    |       
+  |------------------|--------------------|-------------------
+  |------------------|--------------------|-------------------
+  |                  |                    |       
+  |                  | V1 = {0,1,2,4}     | V1 = {0,4,5,6}
+  |     PoS = 0      |                    |
+  |                  | R  = {0,3,5,6}     | R  = {0,3,5,6}
+  |                  |                    |       

@@ -1,0 +1,240 @@
+PUC-Minas - ICEI - Ciência da Computação
+Arquitetura de Computadores I - Aula 12
+
+
+
+Máquina de Turing
+
+       _ cabeça de leitura
+      |
+      V
+  ----------------------------------- <- fita
+  >###00011101101100101100##########< <- alfabeto {0,1,#}
+  -----------------------------------
+  ^  andar para     andar para      ^
+  |_ a  direita (R) a esquerda (L) _| // ou parar (S)
+
+  Modelo de regra:
+
+  ( regra, estado atual, próximo estado, entrada, saída, ação )
+  ^
+  |_ (tupla = estrutura de dados descritiva)
+
+  OBS.: O símbolo '#' indica a ausência de outros símbolos.
+
+
+  Exemplo:
+
+  Complemento de 1 - Regras:
+
+  (0, 0,0,0,1,R)
+  (1, 0,0,1,0,R)
+  (2, 0,1,#,#,S)
+
+            V
+  início : #0110# (0, estado = 0, entrada = 0, saída = 1, ação = direita )
+             V
+           #1110# (1, estado = 0, entrada = 1, saida = 0, ação = direita )
+              V
+           #1010# (1, estado = 0, entrada = 1, saida = 0, ação = direita )
+               V
+           #1000# (0, estado = 0, entrada = 0, saida = 1, ação = direita )
+                V
+  fim:     #1001# (2, estado = 0, entrada = #, saida = #, ação = parar   )
+
+
+  Diagrama de estados
+
+  entrada saída
+        0:1
+        ---
+        | |
+        V |    #:#
+       estado  --->  estado
+       inicial       final
+        ^ |
+        | |
+        ---
+        1:0
+
+
+Máquinas de estados finitos ( Finite State Machines - FSM )
+
+
+Mealy (resposta dependente da entrada)
+
+  Exemplo:
+
+  Reconhecedor de sequência (1101):
+
+  Diagrama de estados
+
+  entrada saída
+        0:0                         1:0
+        ---                         ---
+        | |                         | |
+        V |    1:0           1:0    V |    0:0           1:1
+       estado  --->  estado  --->  estado  --->  estado  ---> estado
+       inicial         (1)          (2)           (3)         final
+        ^               |                          |
+        |               |                          |
+        -------- <------------------ <--------------
+        0:0           0:0                        0:0
+
+  entrada: 000111011011001101000
+  saída  : 000000010000000000000
+
+
+  Reconhecedor de sequências múltiplas (1101_1101), sem interseção:
+
+  Diagrama de estados
+
+  entrada saída
+        0:0                         1:0
+        ---                         ---
+        | |                         | |
+        V |    1:0           1:0    V |    0:0           1:1
+       estado  --->  estado  --->  estado  --->  estado  ---
+       inicial         (1)          (2)           (3)      |
+        ^               |                          |       |
+        |               |                          |       |
+        -------- <------------------ <---------------- <----
+        0:0           0:0                        0:0        
+
+  entrada: 000111011011001101000
+  saída  : 000000010000000001000
+
+
+  Reconhecedor de sequências múltiplas (1101101), com interseção:
+
+  Diagrama de estados
+
+
+  entrada saída         ------------ <--------------
+        0:0             |           1:0            | 1:1
+        ---             |           ---            |
+        | |             |           | |            |
+        V |    1:0      V    1:0    V |    0:0     |
+       estado  --->  estado  --->  estado  --->  estado
+       inicial         (1)          (2)           (3)
+        ^               |                          |
+        |               |                          |
+        -------- <------------------ <--------------
+        0:0           0:0                        0:0
+
+  entrada: 000111011011001101000
+  saída  : 000000010010000001000
+
+
+Moore (resposta dependente do estado)
+
+  Exemplo:
+
+  Reconhecedor de sequências múltiplas (1101_1101), sem interseção:
+
+  Diagrama de estados
+
+  entrada
+        0                           1
+       ---                         ---
+       | |                         | |
+       V |     1             1     V |     0             1
+      estado  --->  estado  --->  estado  --->  estado  ---> estado
+   (inicial,0)      (1, 0)        (2, 0)        (3, 0)       (4, 1)
+       ^    saída                   |             |          |    |
+       |                            |             |          |    |
+       ------------------------------ <------------ <--------- <---
+       0                                         0          0     1
+
+  entrada: 000111011011001011000
+  saída  : 000000001000000000100
+                  ^^
+                  ||_ atraso
+
+  OBS.: Notar que a detecção ocorrerá no instante seguinte à entrada,
+        quando tiver sido concluída a transição para o próximo estado.
+
+
+  Reconhecedor de sequências múltiplas (1101101), com interseção:
+
+  Diagrama de estados
+                                                               1
+                      ------------- <---------------------------
+        0             |             1                          |
+       ---            |            ---                         |
+       | |            |            | |                         |
+       V |     1      V      1     V |     0             1     |
+      estado  --->  estado  --->  estado  --->  estado  ---> estado
+   (inicial,0)      (1, 0)        (2, 0)        (3, 0)       (4, 1)
+       ^                            |             |            |
+       |                            |             |            |
+       --------------- <------------- <------------ <-----------
+       0                                         0            0
+
+  entrada: 000111011011001011000
+  saída  : 000000001000100000100
+
+
+Pushdown Automata
+
+  O modelo de pilha irá comparar a entrada com o topo da pilha,
+  dependendo do resultado, guardará a saída no topo da pilha e 
+  proseguirá para o próximo estado, se existir, enquanto houver dados.
+  A pilha poderá ficar vazia ($).
+
+  Exemplo:
+
+  Reconhecedor de sequências múltiplas (1101_1101), sem interseção:
+
+  Diagrama de estados
+
+  (entrada,topo):saída
+      (0,$):$                         (1,0):0                            
+        ---                             ---                              
+        | |                             | |                              
+        V |   (1,$):0        (1,0):0    V | (0,0):0        (1,0):1       
+       estado  ---->  estado  ---->  estado  ---->  estado  ---->  estado
+       inicial <----    (1)            (2)            (3)            (4)  
+        ^     (0,0):$  |   ^                           |              |   
+        |              |   |                           |              |   
+        -------- <---------|-------- <------------------              |   
+        (0,0):$   (0,0):$  |                (0,0):$                   |   
+        ^                  -------------------------------------------|   
+        |                                                  (1,1,0)    |   
+        ---------------------------------------------------------------   
+                                                           (0,1):$       
+
+  entrada:  000111011011001101000
+  saída  : $$$$000010$00000001$$$
+           ^
+           |
+  topo ---- 
+  
+
+  Exemplo:
+
+  Reconhecedor de sequências múltiplas (1101_1101), com interseção:
+
+  Diagrama de estados
+
+  (entrada,topo):saída
+      (0,$):$                         (1,0):0                            
+        ---                             ---                              
+        | |                             | |                              
+        V |   (1,$):0        (1,0):0    V | (0,0):0        (1,0):1       
+       estado  ---->  estado  ---->  estado  ---->  estado  ---->  estado
+       inicial <----    (1)            (2)            (3)            (4)  
+        ^     (0,0):$  |                ^              |              |   
+        |              |                |              |              |   
+        -------- <------------------ <--|---------------              |   
+        (0,0):$   (0,0):$               |   (0,0):$                   |   
+        ^                               ------------------------------|   
+        |                                                  (1,1,0)    |   
+        ---------------------------------------------------------------   
+                                                           (0,1):$       
+
+  entrada:  000111011011001101000
+  saída  : $$$$000010010$$0001$$$
+           ^
+           |
+  topo ---- 

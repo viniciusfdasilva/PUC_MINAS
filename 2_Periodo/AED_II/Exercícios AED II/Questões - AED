@@ -1,0 +1,32 @@
+TadFlexível:
+
+- Supondo o código da Fila dinâmica, Faça com que ela vire uma Fila Circular Dinâmica
+- Faça um método que receba dois ponteiros do tipo Lista, faça um merge entre eles e retorne uma terceira
+- Faça um método que Receba uma Fila e retorne uma Pilha
+- Faça um método que recebe uma Pilha e o remova para que seja uma Fila
+- Faça um método que imprima os valores da Pilha na ordem em que foram inseridos
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+MatrizDinâmica:
+
+- Faça uma função em C que mostre os elementos da Matriz Dinâmica do último elemento que foi inserido até o primeiro
+
+Árvore:
+- Faça a inserção de nomes(String) na árvore de árvore supondo que sua árvore que quarda os caracteres não está criada
+- Suponha uma árvore que tenha como atributo um ponteiro para acessar uma árvore e uma String nome_país. Cada Aresta dessa árvore irá quardar um 
+país cada e um ponteiro para outra árvore. Faça um método que receba uma String com a informação de um estado e faça a procura na árvore e retorne o Estado
+que está procurando.
+- Refaça a questão anterior, mas dessa vez o método de pesquisa ao invés de receber uma String com o nome estádo, ela vai receber
+um ponteiro do tipo Estado.
+Atributos da classe Estado:
+	String nome_estado;
+	int população;
+	String capital;
+	int quantidade_de_municipios
+	int região;
+	String governador;
+	String pais;
+	double área;
+
+
+

@@ -1,0 +1,28 @@
+$date
+	Sun Apr  8 20:56:56 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module Exercicio5 $end
+$var wire 1 ! clk $end
+$scope module CLK1 $end
+$var reg 1 " clk $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0"
+0!
+$end
+#48
+1"
+1!
+#96
+0"
+0!
+#120

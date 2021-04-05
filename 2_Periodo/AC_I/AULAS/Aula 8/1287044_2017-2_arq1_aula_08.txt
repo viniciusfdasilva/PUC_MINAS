@@ -1,0 +1,538 @@
+PUC-Minas - ICEI - Ciência da Computação
+Arquitetura de Computadores I - Aula 08
+
+Simplificação de expressão lógica
+
+Mapa de Veitch-Karnaugh para mintermos
+
+para 2 bits
+
+ a\b   0     1  <- preferência
+    -----------
+  0 | [0]   [1]
+  1 | [2]   [3]
+
+ a\b   0     1  <- preferência
+    -----------
+  0 | a'b'  a'b
+  1 | a b'  a b
+
+resumo
+
+ a\b   0     1
+    -----------
+  0 |  b'    b  -> a'
+  1 |  b'    b  -> a
+
+ a\b   0     1
+    -----------
+  0 |  a'    a'
+  1 |  a     a
+
+       |     |
+       v     v
+
+       b'    b
+
+ a\b   0     1
+    -----------
+  0 |              a'_
+  1 |              a _
+      _b'   _b
+
+para 3 bits
+
+ ab\c  0     1       <- preferência
+    ------------
+ 00 | [0]   [1]
+ 01 | [2]   [3]
+ 11 | [6]   [7]
+ 10 | [4]   [5]
+
+ ab\c   0       1    <- preferência
+    ----------------
+ 00 | a'b'c'  a'b'c
+ 01 | a'b c'  a'b c
+ 11 | a b c'  a b c
+ 10 | a b'c'  a b'c
+
+resumo 
+
+                     |
+        ab\c    0    |    1
+_ b'_    00          |         a'b'_
+------------------------------------    a'_ _
+         01          |         a'b _
+_ b _  -----------------------------------------
+         11          |         a b _
+------------------------------------    a _ _
+_ b'_    10          |         a b'_
+                     |
+              _ _c'  |  _ _c
+
+para 4 bits
+
+ ab\cd     00        01        11        10     <- preferência
+      ----------------------------------------
+ 00   |  [ 0]      [ 1]      [ 3]      [ 2]
+ 01   |  [ 4]      [ 5]      [ 7]      [ 6]
+ 11   |  [12]      [13]      [15]      [14]
+ 10   |  [ 8]      [ 9]      [11]      [10]
+
+ ab\cd     00        01        11        10     <- preferência
+      ----------------------------------------
+ 00   | a'b'c'd'  a'b'c'd   a'b'c d   a'b'c d'
+ 01   | a'b c'd'  a'b c'd   a'b c d   a'b c d'
+ 11   | a b c'd'  a b c'd   a b c d   a b c d'
+ 10   | a b'c'd'  a b'c'd   a b'c d   a b'c d'
+
+resumo
+
+ ab\cd      00         01         11         10
+      -------------------------------------------
+ 00   |                                             a'b'_ _
+ 01   |                                             a'b _ _
+ 11   |                                             a b _ _
+ 10   |                                             a b'_ _
+        _ _ c'd'   _ _ c'd    _ _ c d    _ _ c d'
+
+
+                      _ _ c'_       |       _ _ c _
+                                    |
+         ab\cd     00    |    01    |    11    |     10
+               -------------------------------------------
+           00            |          |          |            a'b'_ _
+a'_ _ _                  |          |          |
+           01            |          |          |            a'b _ _
+---------------------------------------------------------------
+           11            |          |          |            a b _ _
+a _ _ _                  |          |          |
+           10            |          |          |            a b'_ _
+                                    |
+                _ _ c'd'    _ _ c'd |  _ _ c d     _ _ c d'
+
+
+         ab\cd     00    |    01         11    |     10
+               -------------------------------------------
+           00            |                     |            a'b'_ _   _ b'_ _
+        ----------------------------------------------------------------------
+           01            |                     |            a'b _ _
+                         |                     |                      _ b _ _
+           11            |                     |            a b _ _
+        ----------------------------------------------------------------------
+           10            |                     |            a b'_ _   _ b'_ _
+                _ _ c'd' |  _ _ c'd    _ _ c d |   _ _ c d'
+                         |                     |
+                _ _   d' |        _ _ d        |   _ _ _ d'
+
+
+resumo 
+
+                      _ _ c'_       |       _ _ c _
+                                    |
+         ab\cd     00    |    01    |    11    |     10
+               -------------------------------------------
+           00            |          |          |            _ b'_ _
+a'_ _ _   -----------------------------------------------------------
+           01            |          |          |
+----------------------------------------------------------  _ b _ _
+           11            |          |          |
+a _ _ _   -----------------------------------------------------------
+           10            |          |          |            _ b'_ _
+                         |          |          |
+                _ _ _ d' |       _ _ _ d       |   _ _ _ d'
+
+
+Diferença de 3 bits
+
+  a b c  mintermos   v r
+0 0 0 0  (a'.b'.c')  0 0
+1 0 0 1  (a'.b'.c )  1 1 (-1)
+2 0 1 0  (a'.b .c')  1 1 (-1)
+3 0 1 1  (a'.b .c )  1 0 (-2)
+4 1 0 0  (a .b'.c')  0 1 (+1)
+5 1 0 1  (a .b'.c )  0 0
+6 1 1 0  (a .b .c')  0 0
+7 1 1 1  (a .b .c )  1 1 (-1)
+
+  v = 1 -> { 1,2,3,7 }
+  r = 1 -> { 1,2,4,7 }
+
+  Equações características
+
+  Forma completa (ou canônica):
+  v = a'.b'.c + a'.b .c' + a'.b .c  + a .b .c
+  r = a'.b'.c + a'.b .c' + a .b'.c' + a .b .c
+
+  Forma compacta (soma de produtos):
+  v = SoP (1,2,3,7)
+  r = SoP (1,2,4,7)
+
+ na forma de tabela (Mapa de Veitch-Karnaugh)
+
+  v
+ ab\c    0        1    <- preferência
+     -----------------
+ 00  |           [1]
+ 01  |  [2]
+ 11  |  [3]      [7]
+ 10  |
+
+  v
+ ab\c    0        1    <- preferência
+     -----------------
+ 00  |          a'b'c
+ 01  | a'b c'
+ 11  | a b c'   a b c
+ 10  |
+
+  v
+ ab\c    0        1    <- preferência
+     -----------------
+ 00  |            1
+ 01  |   1        1
+ 11  |            1
+ 10  |
+
+na forma resumida
+
+      ab\c    0    |    1
+           -----------------------
+       00          |    1    a'b'c
+----------------------------------    a'_ c
+       01     1    |    1    a'b c
+_ b c  ------------------------------------
+       11          |    1    a b c
+----------------------------------
+       10          |
+            a'b c' |  a'b c
+                   |
+                 a'b _
+
+                                             n
+ Simplificação pelas adjacências (grupos de 2 ):
+
+  com {1,3} : a'b'c  + a'b c = (b'+b).(a'c)  = 1.(a'c)  =  a'c
+               001      011  =  _____. 0 1   = _. 0 1   = _a'c
+
+  com {2,3} : a'b c' + a'b c = (c'+c).(a'b)  = 1.(a'b)  =  a'b
+               010      011  =  _____. 0 1   = _. 0 1   = _a'b
+
+  com {3,7} : a'b c  + a b c = (a'+a).(b c)  = 1.(b c)  =  b c
+               011      111  =  _____. 1 1   = _. 1 1   = _b c
+
+  SoP(3,5,6,7) = a'c + a'b + bc
+
+  OBSERVAÇÕES:
+  1.) O método deverá determinar a menor quantidade de grupos
+      capaz de cobrir a maior quantidade de termos,
+      consideradas associações em linhas e/ou colunas,
+      ou seja, evitadas as redundâncias.
+  2.) A equação simplificada poderá ser simplificada pela álgebra,
+      mas isso não faz parte do método.
+  3.) As extremidades também são adjacentes (00-10 -> dH=1)
+      e devem ser consideradas para simplificação, se possível.
+
+  r
+ ab\c    0       1     <- preferência
+     -----------------
+ 00  |          [1]
+ 01  |  [2]
+ 11  |          [7]
+ 10  |  [4]
+
+  r
+ ab\c    0       1     <- preferência
+     -----------------
+ 00  |          a'b'c
+ 01  | a'b c'
+ 11  |         a b c
+ 10  | a b'c'
+
+  r
+ ab\c    0       1     <- preferência
+     -----------------
+ 00  |           1
+ 01  |   1
+ 11  |           1
+ 10  |   1
+
+  OBSERVAÇÕES:
+  1.) As vizinhanças em diagonais não são contempladas
+      pelo método de Veitch-Karnaugh, mas há simplificações
+      pelo método de Reed-Müller:
+
+      com {1,2} : a'b'c  + a'b c'
+                = a'.(b'c +b c')
+                = a'.(b^c) = a'.( b xor c )
+
+      com {2,7} : a'b c' + a b c
+                = b .(a'c'+a c )
+                = b .(a^c)' = b .(a xnor c )
+
+      com {4,7} : a b'c' + a b c
+                = a .(b'c'+b c )
+                = a .(b^c)' = a .(b xnor c )
+
+      também poderá ser considerada a vizinhança circular,
+      apesar de ser redundante, nesse caso:
+
+      com {1,4} : a'b'c + a b'c'
+                = b'.(a'c+a c')
+                = b'.(a^c)  = b'.(a xor c )
+
+Mapa de Veitch-Karnaugh para MAXTERMOS
+
+para 2 bits
+
+ A\B   0     1      <- preferência
+    ---------------
+ 0  | [0]   [1]
+ 1  | [2]   [3]
+
+ A\B   0     1      <- preferência
+    ---------------
+ 0  | A +B   A +B'
+ 1  | A'+B   A'+B'
+
+resumo
+
+ A\B   0     1
+    ---------------
+  0 |  A     A   -> A
+  1 |  A'    A'  -> A'
+
+ A\B   0     1
+    ---------------
+  0 |  B     B'
+  1 |  B     B'
+     
+       |     |
+       v     v
+
+       B     B'
+
+ A\B   0     1
+    ---------------
+  0 |              A _
+  1 |              A'_
+      _B    _B'
+
+para 3 bits
+
+ AB\C   0     1                <- preferência
+     ------------
+ 00  | [0]   [1]
+ 01  | [2]   [3]
+ 11  | [6]   [7]
+ 10  | [4]   [5]
+
+ AB\C      0           1       <- preferência
+     -------------------------
+ 00  | A + B + C   A + B + C'
+ 01  | A + B'+ C   A + B'+ C'
+ 11  | A'+ B'+ C   A'+ B'+ C'
+ 10  | A'+ B + C   A'+ B + C'
+
+resumo 
+
+                       |
+          AB\C    0    |    1
+              ------------------------------
+_ +B +_    00          |           A +B +_
+--------------------------------------------    A +_ +_
+           01          |           A +B'+_
+_ +B'+_  ----------------------------------------------
+           11          |           A'+B'+_
+--------------------------------------------    A'+_+_
+_ +B +_    10          |           A'+B +_
+                       |
+              _ +_ +C  |  _ +_ +C'
+
+para 4 bits
+
+ AB\CD     00        01        11        10                  <- preferência
+      --------------------------------------------
+ 00   |  [ 0]      [ 1]      [ 3]      [ 2]
+ 01   |  [ 4]      [ 5]      [ 7]      [ 6]
+ 11   |  [12]      [13]      [15]      [14]
+ 10   |  [ 8]      [ 9]      [11]      [10]
+
+ AB\CD      00           01            11            10      <- preferência
+      ------------------------------------------------------
+ 00   | A +B +C +D   A +B +C +D'   A +B +C'+D'   A +B +C'+D
+ 01   | A'+B +C +D   A'+B +C +D'   A'+B +C'+D'   A'+B +C'+D
+ 11   | A'+B'+C +D   A'+B'+C +D'   A'+B'+C'+D'   A'+B'+C'+D
+ 10   | A'+B +C +D   A'+B +C +D'   A'+B +C'+D'   A'+B +C'+D
+
+resumo
+
+ ab\cd      00           01            11            10
+      -------------------------------------------------------
+ 00   |                                                       A +B +_ +_
+ 01   |                                                       A +B'+_ +_
+ 11   |                                                       A'+B'+_ +_
+ 10   |                                                       A'+B +_ +_
+         _ +_+C +D   _ +_ +C +D'    _ +_ +C'+D'    _ +_+C'+D
+
+
+                       _ +_ +C +_        |       _ +_ +C'+_
+                                         |
+           AB\CD     00     |     01     |     11     |      10
+             00             |            |            |             A +B +_ +_
+                --------------------------------------------------
+A +_ +_ +_                  |            |            |
+             01             |            |            |             A +B'+_ +_
+------------------------------------------------------------------
+             11             |            |            |             A'+B'+_ +_
+A'+_ +_ +_                  |            |            |
+             10             |            |            |             A'+B +_ +_
+                                         |
+                 _ +_+C +D  _ + _+C +D'  | _ +_ +C'+D'  _ +_ +C'+D
+
+
+           AB\CD     00     |     01           11     |     10
+                --------------------------------------------------
+             00             |                         |            A +B +_ +_   _ +B +_ +_
+        ----------------------------------------------------------------------
+             01             |                         |            A +B'+_ +_
+                            |                         |                         _ +B'+_ +_
+             11             |                         |            A'+B'+_ +_
+        ----------------------------------------------------------------------
+             10             |                         |            A'+B +_ +_   _ +B +_ +_
+                 _ +_ +C +D |_ + _+C +D' | _ +_ +C'+D'  _ +_ +C'+D
+                            |                         |
+                 _ +_ +_ +D |         _ +_ +_ +D'     | _ +_ +_ +D
+
+
+resumo 
+
+                      _ +_ +C +_      |     _ +_ +C'+_
+                                      |
+           AB\CD     00    |    01    |    11    |     10
+                --------------------------------------------------
+             00            |          |          |            _ +B'+_ +_
+A +_ +_ +_ -----------------------------------------------------------
+             01            |          |          |
+------------------------------------------------------------- _ +B +_ +_
+             11            |          |          |
+A'+_ +_ +_ -----------------------------------------------------------
+             10            |          |          |            _ +B'+_ +_
+                           |          |          |
+                _ +_ +_ +D |     _ +_ +_ +D'     | _ +_ +_ +D
+
+
+Diferença de 3 bits
+
+  A B C MAXTERMOS  V R
+0 0 0 0  A +B +C   0 0
+1 0 0 1  A +B +C'  1 1 (-1)
+2 0 1 0  A +B'+C   1 1 (-1)
+3 0 1 1  A +B'+C'  1 0 (-2)
+4 1 0 0  A'+B +C   0 1 (+1)
+5 1 0 1  A'+B +C'  0 0
+6 1 1 0  A'+B'+C   0 0
+7 1 1 1  A'+B'+C'  1 1 (-1)
+
+  V = 0 -> { 0,4,5,6 }
+  R = 0 -> { 0,3,5,6 }
+
+  Equações características
+
+  Forma completa (ou canônica):
+  V = (A +B +C ).(A'+B +C ).(A'+B +C').(A'+B'+C )
+  R = (A +B +C ).(A +B'+C').(A'+B +C').(A'+B'+C )
+
+  Forma compacta (produto de somas):
+  v = PoS (0,4,5,6)
+  r = PoS (0,3,5,6)
+
+ na forma de tabela (Mapa de Veitch-Karnaugh)
+
+  V
+ AB\C     0        1     <- preferência
+     ------------------
+ 00  |   [0]
+ 01  |
+ 11  |   [6]
+ 10  |   [4]      [5]
+
+  V
+ AB\C     0        1     <- preferência
+     ------------------
+ 00  | A +B +C
+ 01  |
+ 11  | A'+B'+C
+ 10  | A'+B+ C  A'+B +C'
+
+  V
+ AB\C     0        1     <- preferência
+     ------------------
+ 00  |    0        
+ 01  |              
+ 11  |    0         
+ 10  |    0        0
+
+na forma resumida
+
+      AB\C    0    |    1
+          ---------------------------
+       00     0    |          _ +B +C
+-------------------------------------
+       01          |
+      ------------------------------------
+       11     0    |
+----------------------------- A'+_ +C'
+       10     0    |    0
+          A'+B +C  | A'+B +C'
+                   |
+                A'+_ +C
+
+                                             n
+ Simplificação pelas adjacências (grupos de 2 ):
+
+  com {4,5} : (A'+B +C).(A'+B +C') = (C +C').(A'+B ) = 1.(A'+B ) =  A'+B
+                 100       101     =  _____.  1  0   = _. 1  0   =  A'+B +_
+
+  com {4,5} : (A'+B +C).(A'+B'+C ) = (B +B').(A'+C ) = 1.(A'+C ) =  A'+C
+                 100       110     =  _____.  1  0   = _. 1  0   =  A'+_ +C
+
+  com {0,4} : (A +B +C).(A'+B +C ) = (A +A').(B +C ) = 1.(B +C ) =  B +C
+                 000       100     =  _____.  0  0   = _. 0  0   =  _ +B +C
+
+  PoS(0,4,5,6) = (A'B).(A'+C).(B+C)
+
+  OBSERVAÇÕES:
+  1.) O método deverá determinar a menor quantidade de grupos
+      capaz de cobrir a maior quantidade de termos,
+      consideradas associações em linhas e/ou colunas,
+      ou seja, evitadas as redundâncias.
+  2.) A equação simplificada poderá ser simplificada pela álgebra,
+      mas isso não faz parte do método.
+  3.) As extremidades também são adjacentes (000-100 -> dH=1)
+      e devem ser consideradas para simplificação, se possível.
+
+  R
+ AB\C     0        1     <- preferência
+     -------------------
+ 00  |   [0]
+ 01  |            [3]
+ 11  |   [6]
+ 10  |            [5]
+
+  R
+ AB\C     0        1     <- preferência
+     -------------------
+  00 | A +B +C
+  01 |         A +B'+C'
+  11 | A'+B'+C
+  10 |         A'+B +C'
+
+  R
+ AB\C     0        1     <- preferência
+     -------------------
+  00 |    0
+  01 |             0
+  11 |    0
+  10 |             0
+

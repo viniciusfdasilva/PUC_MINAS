@@ -1,0 +1,56 @@
+#! /usr/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x1699b60 .scope module, "Exercicio7" "Exercicio7" 2 30;
+ .timescale 0 0;
+v0x16a7ad0_0 .net "clk", 0 0, v0x16a7a00_0; 1 drivers
+v0x16a7ba0_0 .net "signal", 0 0, v0x16a7870_0; 1 drivers
+S_0x16a7910 .scope module, "CLK1" "clock" 2 33, 2 4, S_0x1699b60;
+ .timescale 0 0;
+v0x16a7a00_0 .var "clk", 0 0;
+S_0x1699c50 .scope module, "PULS1" "pulse" 2 34, 2 16, S_0x1699b60;
+ .timescale 0 0;
+v0x1663690_0 .alias "clock", 0 0, v0x16a7ad0_0;
+v0x16a7870_0 .var "signal", 0 0;
+E_0x1675600 .event negedge, v0x1663690_0;
+    .scope S_0x16a7910;
+T_0 ;
+    %set/v v0x16a7a00_0, 0, 1;
+    %end;
+    .thread T_0;
+    .scope S_0x16a7910;
+T_1 ;
+    %delay 12, 0;
+    %load/v 8, v0x16a7a00_0, 1;
+    %inv 8, 1;
+    %set/v v0x16a7a00_0, 8, 1;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_0x1699c50;
+T_2 ;
+    %wait E_0x1675600;
+    %set/v v0x16a7870_0, 1, 1;
+    %delay 2, 0;
+    %set/v v0x16a7870_0, 0, 1;
+    %delay 2, 0;
+    %set/v v0x16a7870_0, 1, 1;
+    %delay 2, 0;
+    %set/v v0x16a7870_0, 0, 1;
+    %jmp T_2;
+    .thread T_2;
+    .scope S_0x1699b60;
+T_3 ;
+    %vpi_call 2 36 "$dumpfile", "Exercicio_7.vcd";
+    %vpi_call 2 37 "$dumpvars";
+    %delay 120, 0;
+    %vpi_call 2 38 "$finish";
+    %end;
+    .thread T_3;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "Exercicio7.v";

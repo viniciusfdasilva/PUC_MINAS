@@ -1,0 +1,282 @@
+Pontifícia Universidade Católica de Minas Gerais
+Instituto de Ciências Exatas e Informática - ICEI
+Departamento de Ciência da Computação
+Arquitetura de Computadores I - Manhã
+	Nome: Vinicius Francisco da Silva
+	Matrícula: 576920
+
+=======	01.) Determinar os complementos para os valores e as quantidades de bits indicadas: ======================================================
+		DICA: Ajustar primeiro o tamanho, antes de calcular o complemento (C1,n ou C2,n).		
+	
+		a.) C 1,6(1001(2)) = X(2)
+			1001 
+			001001 - Ajustando o tamanho
+			Realizando o complemento de 1 
+			0110(2)
+		
+		b.) C 1,8(1101(2)) = X(2)
+			1101
+			00001101 - Ajustando o tamanho			
+			Realizando o complemento de 1
+			11110010(2)
+			
+		c.) C 2,6(101011(2)) = X(2)
+			101011
+			Realizando o complemento de 2
+			010100
+			+    1
+			-------
+			010101(2)
+
+		d.) C 2,7(11101(2)) = X(2)
+			11101
+			0011101 - Ajustando o tamanho
+			Realizando o complemento de 2
+			1100010
+			+     1
+			-------
+			1100011(2)
+
+		e.) C 2,8 (10001(2)) = X (2)
+			10001
+			00010001 - Ajustando o tamanho
+			Realizando o complemento de 2
+			11101110
+			+      1
+			--------
+			11101111(2)
+		
+
+======= 02.) Determinar os complementos para os valores e as quantidades indicadas: ==============================================================
+		DICA: Para valores em outras bases, converter para binário, primeiro;
+		encontrar a representação em complemento, e retornar à base,
+		caso necessário.
+
+		a.) C 1,6(312(4)) = X(2)
+			312(4))
+			(3*4²) + (1*4¹) + (2*4⁰) = X(10)
+			(48) + (4) + (2) = 54(10) 
+			
+			DIVIDENDO | DIVISOR | QUOCIENTE | MOD
+			   54          2         27        0
+			   27          2         13        1
+			   13          2         6         1
+			   6           2         3         0
+			   3           2         1         1
+                           1           /         /         1
+
+			110110(2)
+			Realizando o complemento de 1
+			001001(2)		 		
+		
+		b.) C 1,8(4D(16)) = X(2)
+			(4*16¹) + (13*16⁰) = X(10)
+			   (64) + (13) = 77(10)
+
+			DIVIDENDO | DIVISOR | QUOCIENTE | MOD
+			    77        2          38       1
+			    38        2          19       0
+			    19        2          9        1
+			    9         2          4        1
+			    4         2          2        0
+			    2         2          1        0
+			    1         /          /        1
+			1001101(2)
+			01001101 - Ajustando o tamanho
+			Realizando o complemento de 1			  							
+			10110010(2)		
+			
+		c.) C 2,6(12(4)) = X(2)
+			(1*4¹) + (2*4⁰) = X(10)
+			   (4) + (2) = 6(10)
+			
+			DIVIDENDO | DIVISOR | QUOCIENTE | MOD
+			    6          2          3        0
+		            3          2          1        1
+			    1          /          /        1
+
+			110(2)
+			000110 - Ajustando o tamanho			
+			Realizando o complemento de 2
+			    1 = Vai um	
+			111001
+			+    1
+			------
+			111010(2)
+		
+		d.) C 2,7(157(8)) = X(2)
+			(1*8²) + (5*8¹) + (7*8⁰) = X(10)
+			 (64)  +  (40)  + (7) = 111(10)
+				
+			DIVIDENDO | DIVISOR | QUOCIENTE | MOD
+		           111	      2           55       1
+			   55         2           27       1
+			   27         2           13       1
+			   13         2           6        1
+			   6          2           3        0
+			   3          2           1        1
+			   1          /           /        1
+
+			1101111(2)
+			Realizando o complemento de 2
+			0010000
+			+     1
+			-------
+			0010001(2)	
+
+		e.) C 2,8(5A(16)) = X(2)
+			(5*16¹) + (10*16⁰) = X(10)
+			(80)	+    (10) = 90(10)		
+		
+			DIVIDENDO | DIVISOR | QUOCIENTE | MOD
+			   90         2           45       0
+			   45         2           22       1
+			   22         2           11       0
+			   11         2           5        1
+			   5          2           2        1
+			   2          2           1        0
+			   1          /           /        1
+
+			1011010(2)
+			01011010 - Ajustando o tamanho			
+			Realizando o complemento de 2	
+		              1 = Vai um		
+			10100101
+			+      1
+			--------
+			10100110(2)
+
+
+=======	03.) Determinar os valores positivos equivalentes aos complementos indicados: ============================================================
+		DICA: Subtrair uma unidade, antes de inverter cada bit.	
+		|1| OU |0| = Bit de sinal	
+	
+		a.) |1| 011 (2) = X (10)
+			|1|011
+			-    1
+		        ------
+			|1|010
+		
+			Invertendo os valores:
+			|0|101(2)
+
+			Convertendo o valor para decimal:
+
+			(1*2²) + (0*2¹) + (1*2⁰) = X(10)		
+			(4)    + (0)    + (1) = 
+
+			5(10)
+
+		b.) |1| 00101 (2) = X (10)
+			|1|00101
+			-      1
+			--------
+			|1|00100
+			
+			Invertendo os valores:
+			|0|11011(2)
+
+			Convertendo o valor para decimal:
+			(1*2⁴) + (1*2³) + (0*2²) + (1*2¹) + (1*2⁰) = X(10)
+			(16)    + (8)    + (0)    + (2)    + (1) = 27(10)
+
+			27(10)
+
+		c.) |1| 1011 (2) = X (2)
+			|1|1011
+			-     1
+			-------
+			|1|1010	
+		
+			Invertendo os valores:
+			|0|0101(2)
+			00101(2)	
+		
+		d.) |1| 011101 (2) = X (2)
+			|1|011101
+			-       1
+			---------
+			|1|011100	
+			
+			Invertendo os valores:
+			|0|100011(2)
+			0100011(2)
+		
+		e.) |1| 0100100(2) = X (16)
+			
+			|1|0100100
+				 1
+			----------
+			|1|100011	  
+
+			Invertendo os valores:
+			|0|011100(2)
+			0011100(2)
+
+=======	04.) Fazer as operações indicadas mediante uso de complemento: ===========================================================================
+		a.) 10111(2) - 1101(2) = X(2)
+				   				
+O último valor i virá 0	------>	10111
+				01101
+				-----
+				01010
+
+				01010(2)		
+
+		b.) 101,1001 (2) - 10,11 (2) = X (2) (OBS.: Alinhar as vírgulas, primeiro, antes de operar)
+			Alinhando as vírgulas acrescentando os bits que não irão alterar o valor para complementar-lo.
+			101,1001(2) - 010,1100(2) = X(2)
+
+		c.) 312(4) - 123(4) = X(4)
+			312(4)
+			(3*4²) + (1*4¹) + (2*4⁰) = X(10)
+			  (48) +    (4)	+ (2) = 54(10)
+			
+			123(4)
+			(1*4²) + (2*4¹) + (3*2⁰) = X(10)
+			  (16) +    (8)	+ (3) = 27(10)
+			54 - 27 = 27(10)
+			
+			DIVIDENDO | DIVISOR | QUOCIENTE | MOD
+			   27          4          6        3
+			   6           4          1        2
+			   1           /          /        1
+
+			123(4)
+						
+		d.) 231(8) - 132(8) = X(8)
+			231(8)			
+			(2*8²) + (3*8¹) + (1*8⁰) = X(10)
+			 (128) +   (24) +    (1) = 153(10)
+
+			132(8)
+			(1*8²) + (3*8¹) + (2*8⁰) = X(10)
+			 (64)  +   (24) + (2) = 90(10)
+			
+			153 - 90 = 63(10)
+
+			DIVIDENDO | DIVISOR | QUOCIENTE | MOD
+			   63         8           7        7
+			   7          /           /        7 
+
+			77(8)
+
+		e.) 4B5 (16) - A3C (16) = X(16)
+			4B5(16)
+			(4*16²) + (11*16¹) + (5*16⁰) = X(10)
+			 (1024) +    (176) + (5) = 1205(10)
+
+
+			A3C(16)
+			(10*16²) + (3*16*¹) + (12*16⁰) = X(10)
+			  (2560) +     (48) + (12) = 2620(10)
+
+			1205 + 2620 = 1415(10)
+
+			DIVIDENDO | DIVISOR | QUOCIENTE | MOD
+		          1415        16         88        7
+			  88          16         5         8
+			  5            /         /         5   
+
+			587(16)
+

@@ -1,0 +1,459 @@
+PUC-Minas - ICEI - Ciência da Computação
+Arquitetura de Computadores I - Aula 07
+
+
+Simplificação de expressão lógica
+
+
+Distância de Hamming (dH)
+
+ {gata, mata, pata, rata }   = {g,m,p,r} + {_ata}
+                        conjunto  das diferenças = 1
+ {gato, mato, pato, rato }   = {g,m,p,r} + {_ato}
+                        conjunto  das diferenças = 1
+
+ {
+  {gata, mata, pata, rata },
+  {gato, mato, pato, rato }
+ }                           = {g,m,p,r} + {_at_} + {a,o}
+                        conjuntos das diferenças = 2
+
+ {0101, 1101} = {0,1}  + {_101}  -> dH (0101, 1101) = 1
+ {0100, 1101} = {0,1}  +
+                {_10_} +
+                {0,1}            -> dH (0100, 1101) = 2
+
+
+Código de Gray (dH=1)
+
+para 1 bit
+ 0
+ 1
+
+para 2 bits
+ 0     0     0 0
+ 1     1     0 1
+      ---   -----   <- espelho
+       1     1 1
+       0     1 0
+
+ na forma de tabela  (Mapa de Veitch-Karnaugh)
+
+ a\b   0     1   <- preferência (de a para b)
+    -----------
+  0 | [0]   [1]               (linha -> coluna)
+  1 | [2]   [3]
+
+ a\b   0     1   <- preferência (a -> b)
+    -----------
+  0 | a'b'  a'b
+  1 | a b'  a b
+
+ A\B   0     1   <- alternativa (de a para b)
+    ------------
+  0 | A +B A +B'              (linha -> coluna)
+  1 | A'+B A'+B'
+
+ b\a   0     1   <- alternativa (transposta)
+    -----------
+  0 | [0]   [2]
+  1 | [1]   [3]
+
+ b\a   0     1   <- alternativa (de a para b)
+    ------------
+  0 | a'b'  a b'              (coluna -> linha)
+  1 | a'b   a b
+
+ B\A   0     1   <- alternativa (de a para b)
+    ------------
+  0 | A +B  A'+B              (coluna -> linha)
+  1 | A +B' A'+B'
+
+para 3 bits
+ 0     0     0 0      00      0 00
+ 1     1     0 1      01      0 01
+      ---   -----    ----     ----
+       1     1 1      11      0 11
+       0     1 0      10      0 10
+                    ------   ------  <- espelho
+                      10      1 10
+                      11      1 11
+                     ----     ----
+                      01      1 01
+                      00      1 00
+
+ na forma de tabela (Mapa de Veitch-Karnaugh)
+
+ ab\c   0     1          <- preferência (de ab para c)
+     ------------
+  00 | [0]   [1]
+  01 | [2]   [3]
+  11 | [6]   [7]
+  10 | [4]   [5]
+
+ ab\c    0       1       <- preferência (ab -> c)
+     ----------------
+  00 | a'b'c'  a'b'c
+  01 | a'b c'  a'b c
+  11 | a b c'  a b c
+  10 | a b'c'  a b'c
+
+ AB\C    0         1     <- preferência (ab -> c)
+     --------------------
+  00 | A +B +C  A +B +C'
+  01 | A +B'+C  A +B'+C'
+  11 | A'+B'+C  A'+B'+C'
+  10 | A'+B +C  A'+B +C'
+
+ a\bc   00      01      11      10     <- alternativa
+     -------------------------------
+  0  | [ 0]    [ 1]    [ 3]    [ 2]
+  1  | [ 4]    [ 5]    [ 7]    [ 6]
+
+ a\bc    00      01      11      10    <- alternativa
+     ---------------------------------
+  0  | a'b'c'  a'b'c   a'b c   a'b c'
+  1  | a b'c'  a b'c   a b c   a b c'
+
+ A\BC    00      01      11      10    <- alternativa
+     ----------------------------------
+  0  | A +B+C A +B+C' A +B'+C' A +B'+C
+  1  | A'+B+C A'+B+C' A'+B'+C' A'+B'+C
+
+para 4 bits
+ 0     0     0 0      00      0 00       000       0 000
+ 1     1     0 1      01      0 01       001       0 001
+      ---   -----    ----     ----      -----      -----
+       1     1 1      11      0 11       011       0 011
+       0     1 0      10      0 10       010       0 010
+                    ------   ------    -------    -------
+                      10      1 10       110       0 110
+                      11      1 11       111       0 111
+                     ----     ----      -----      -----
+                      01      1 01       101       0 101
+                      00      1 00       100       0 100
+                                       -------   ---------  <- espelho
+                                         100       1 100
+                                         101       1 101
+                                        -----      -----
+                                         111       1 111
+                                         110       1 110
+                                       ------     -------
+                                         010       1 010
+                                         011       1 011
+                                        -----      -----
+                                         001       1 001
+                                         000       1 000
+
+ na forma de tabela (Mapa de Veitch-Karnaugh)
+
+ ab\cd    00        01        11        10     <- preferência
+      --------------------------------------
+ 00   |  [ 0]      [ 1]      [ 3]      [ 2]
+ 01   |  [ 4]      [ 5]      [ 7]      [ 6]
+ 11   |  [12]      [13]      [15]      [14]
+ 10   |  [ 8]      [ 9]      [11]      [10]
+
+ ab\cd    00        01        11        10     <- preferência
+      -----------------------------------------
+ 00   | a'b'c'd'  a'b'c'd   a'b'c d   a'b'c d'
+ 01   | a'b c'd'  a'b c'd   a'b c d   a'b c d'
+ 11   | a b c'd'  a b c'd   a b c d   a b c d'
+ 10   | a b'c'd'  a b'c'd   a b'c d   a b'c d'
+
+ cd\ab    00        01        11        10     <- alternativa
+      -----------------------------------------
+ 00   |  [ 0]      [ 4]      [12]      [ 8]
+ 01   |  [ 1]      [ 5]      [13]      [ 9]
+ 11   |  [ 3]      [ 7]      [15]      [11]
+ 10   |  [ 2]      [ 6]      [11]      [10]
+
+ cd\ab    00        01        11        10     <- alternativa
+      -----------------------------------------
+ 00   | a'b'c'd'  a'b c'd'  a b c'd'  a b'c'd'
+ 01   | a'b'c'd   a'b c'd   a b c'd   a b'c'd
+ 11   | a'b'c d   a'b c d   a b c d   a b'c d
+ 10   | a'b'c d'  a'b c d'  a b c d'  a b'c d'
+
+
+Exemplo de simplificação por tabela
+
+Soma de 3 bits
+
+  a b c  mintermos   v r
+0 0 0 0  (a'.b'.c')  0 0
+1 0 0 1  (a'.b'.c )  0 1
+2 0 1 0  (a'.b .c')  0 1
+3 0 1 1  (a'.b .c )  1 0
+4 1 0 0  (a .b'.c')  0 1
+5 1 0 1  (a .b'.c )  1 0
+6 1 1 0  (a .b .c')  1 0
+7 1 1 1  (a .b .c )  1 1
+
+  v = 1 -> { 3,5,6,7 }
+  r = 1 -> { 1,2,4,7 }
+
+  Equações características
+
+  Forma completa (ou canônica):
+  v = a'.b .c + a .b'.c  + a.b .c' + a .b .c
+  r = a'.b'.c + a'.b .c' + a.b'.c' + a .b .c
+
+  Forma compacta (soma de produtos):
+  v = SoP (3,5,6,7)
+  r = SoP (1,2,4,7)
+
+ na forma de tabela (Mapa de Veitch-Karnaugh)
+
+  v
+ ab\c     0       1    <- preferência
+      ---------------
+ 00  |
+ 01  |           [3]
+ 11  |   [6]     [7]
+ 10  |           [5]
+
+  v
+ ab\c     0       1    <- preferência
+     ----------------
+ 00  |
+ 01  |         a'b c
+ 11  | a b c'  a b c
+ 10  |         a b'c
+
+  v
+ ab\c    0       1    <- preferência
+     ----------------
+ 00  |
+ 01  |           1
+ 11  |   1       1
+ 10  |           1
+
+                                             n
+ Simplificação pelas adjacências (grupos de 2 ):
+
+  com {3,7} : a'b c  + a b c = (a'+a).(bc)  = 1.(bc)  =  bc
+               011      111  =  _____. 11   = _. 11   = _bc
+
+  com {5,7} : a b' c + a b c = (b'+b).(a.c) = 1.(a.c) =  ac
+               101      111  =  _____. 1_1  = _. 1_1  =  a_c
+
+  com {6,7} : a b c' + a b c = (ab).(c'+c)  = (ab).1  =  ab
+               110      111  =  11 .______  =  11 ._  =  ab_
+
+  SoP(3,5,6,7) = bc + ac + ab
+
+  OBSERVAÇÕES:
+  1.) O método deverá determinar a menor quantidade de grupos
+      capaz de cobrir a maior quantidade de termos,
+      consideradas associações em linhas e/ou colunas,
+      ou seja, evitadas as redundâncias.
+  2.) A equação simplificada poderá ser simplificada pela álgebra,
+      mas isso não faz parte do método.
+  3.) As extremidades também são adjacentes (00-10 -> dH=1)
+      e devem ser consideradas para simplificação, se possível.
+
+  r
+ ab\c    0       1   <- preferência
+     ----------------
+ 00  |          [1]
+ 01  |  [2]
+ 11  |          [7]
+ 10  |  [4]
+
+  r
+ ab\c    0       1   <- preferência
+     ----------------
+ 00  |         a'b'c
+ 01  | a'b c'
+ 11  |         a b c
+ 10  | a b'c'
+
+  r
+ ab\c    0       1   <- preferência
+     ----------------
+ 00  |           1
+ 01  |   1
+ 11  |           1
+ 10  |   1
+
+  OBSERVAÇÕES:
+  1.) As vizinhanças em diagonais não são contempladas
+      pelo método de Veitch-Karnaugh, mas há simplificações
+      pelo método de Reed-Müller:
+
+      com {1,2} : a'b'c  + a'b c'
+                = a'.(b'c +b c')
+                = a'.(b^c)  = a'.( b xor c)
+
+      com {2,7} : a'b c' + a b c
+                = b .(a'c'+a c )
+                = b .(a^c)' = b .(a xnor c)
+
+      com {4,7} : a b'c' + a b c
+                = a .(b'c'+b c )
+                = a .(b^c)' = a .(b xnor c)
+
+      também poderá ser considerada a vizinhança circular,
+      apesar de ser redundante, nesse caso:
+
+      com {1,4} : a'b'c + a b'c'
+                = b'.(a'c+a c')
+                = b'.(a^c)  = b'.(a xor  c)
+
+      Se combinados os grupos {1,2} e {4,7} :
+
+      com {{1,2}, {4,7}} : a'.(b xor c) + a.(b xnor c)
+
+      e fizer k = (b xor c) 
+
+      então   r = a'.k + a.k' = a xor k
+
+      e ao retornar às variáveis originais
+
+      r = a xor (b xor c).
+
+      Pode-se mostrar também que 
+      se combinados os grupos {1,4} e {2,7} :
+
+      com {{1,4}, {2,7}} : b'.(a xor c) + b.(a xnor c)
+
+      e fizer k = (a xor c) 
+
+      então   r = b'.k + b.k' = b xor k
+
+      e ao retornar às variáveis originais
+
+      r = b xor (a xor c).
+
+      Embora as expressões resultantes sejam equivalentes,
+      será preferível aquela que possuir as variáveis em ordem,
+      nesse caso, a primeira delas.
+
+
+Soma de 3 bits
+
+  A B C MAXTERMOS  V R
+0 0 0 0  A +B +C   0 0
+1 0 0 1  A +B +C'  0 1
+2 0 1 0  A +B'+C   0 1
+3 0 1 1  A +B'+C'  1 0
+4 1 0 0  A'+B +C   0 1
+5 1 0 1  A'+B +C'  1 0
+6 1 1 0  A'+B'+C   1 0
+7 1 1 1  A'+B'+C'  1 1
+
+  V = 0 -> { 0,1,2,4 }
+  R = 0 -> { 0,3,5,6 }
+
+  Equações características
+
+  Forma completa (ou canônica):
+  V = (A +B +C ).(A +B +C').(A +B'+C ).(A'+B +C )
+  R = (A +B +C ).(A +B'+C').(A'+B +C').(A'+B'+C )
+
+  Forma compacta (produto de somas):
+  V = PoS (0,1,2,4)
+  R = PoS (0,3,5,6)
+
+ na forma de tabela (Mapa de Veitch-Karnaugh)
+
+  V
+ AB\C     0        1     <- preferência
+     --------------------
+  00 |   [0]      [1]
+  01 |   [2]         
+  11 |               
+  10 |   [4]         
+
+  V
+ AB\C     0        1     <- preferência
+     --------------------
+  00 | A +B +C  A+ B+ C'
+  01 | A +B'+C          
+  11 |  
+  10 | A'+B+ C          
+
+  V
+ AB\C     0        1     <- preferência
+     --------------------
+  00 |    0        0
+  01 |    0         
+  11 |              
+  10 |    0         
+
+                                             n
+ Simplificação pelas adjacências (grupos de 2 ):
+
+  com {0,1} : (A +B +C).(A +B +C') = (C +C').(A +B ) = 1.(A +B ) =  A +B
+                 000       001     =  _____.  0  0   = _. 0  0   =  A +B +_
+
+  com {0,2} : (A +B +C).(A +B'+C ) = (B +B').(A +C ) = 1.(A +C ) =  A'+C
+                 000       010     =  _____.  0  0   = _. 0  0   =  A'+_ +C
+
+  com {0,4} : (A +B +C).(A'+B +C ) = (A +A').(B +C ) = 1.(B +C ) =  B +C
+                 000       100     =  _____.  0  0   = _. 0  0   =  _ +B +C
+
+  PoS(0,1,2,4) = (A+B).(A+C).(B+C)
+
+
+Representação gráfica
+
+      0     1
+      _______     <- segmento com distância de Hamming = 1   
+
+
+      00   01
+      _______
+     |       |
+     |       |    <- quadrado com distância de Hamming = 1
+     |       |
+      _______
+      10   11
+
+
+   000       001
+      _______
+     |\     |\
+     | \ 100| \  101
+     |  \______\ 
+     |__|___|  |  <- cubo     com distância de Hamming = 1 
+   010\ | 011\ |
+       \|     \|
+        |______|
+      110        111
+
+
+   Para v = bc + ac + ab
+
+   000       001
+      _______
+     |\     |\
+     | \ 100| \  101
+     |  \______\ 
+     |__|___#  # 
+   010\ | 011# # 
+       \|     ## 
+        \####### 
+      110        111
+
+   Para r = a xor b xor c
+   a simplificação corresponde às 
+   diagonais das faces do cubo
+   (método de Reed-Müller):
+
+   dianteira ({1,2} = {001,010}) e 
+   traseira  ({4,7} = {100,111})
+
+   000       001
+      ______
+     |    = | 
+     | 100  |    101
+     | = ______  
+     |__|=__|  | 
+   010  |  =   | 
+        |    = | 
+        |______| 
+      110        111
+
+

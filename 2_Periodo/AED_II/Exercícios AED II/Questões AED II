@@ -1,0 +1,8 @@
+1° - Na 2 3 4 insira os numeros 1 á 20 usando fragmentação na ascenção
+2° - Repita o anterior para os numeros de 20 á 1
+3° - repita a primeira com fragmentação na descida
+4° - repita a segunda com fragmentação na descida
+5° - repita a primeira considerando arvores alvinegras
+6° - Repita a segunda considerando arvores alvinegras
+7° - Teste as duas anteriores usando o código de arvores alvinegras	
+8° - Na Alvinegra, implemente o método boolean is4No(No i)

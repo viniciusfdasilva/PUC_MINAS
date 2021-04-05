@@ -1,0 +1,109 @@
+PUC-Minas - ICEI - Ciência da Computação
+Arquitetura de Computadores I - Aula 04
+
+Operações lógicas
+
+                (')  (')    (.)   (+)           complementares
+                (~)  (~)    (&)   (|)   (^)    (~&)  (~|)  (~^)
+
+termo      a b  NOT  NOT    AND    OR   XOR   NAND   NOR   XNOR
+  0        0 0   1    1      0     0     0      1     1     1
+  1        0 1   1    0      0     1     1      1     0     0
+  2        1 0   0    1      0     1     1      1     0     0
+  3        1 1   0    0      1     1     0      0     0     1
+
+                 a'   b'    a.b   a+b   a^b
+
+mintermos (=1)  0,1  0,2     3   1,2,3  1,2   0,1,2   0    0,3 
+MAXTERMOS (=0)  2,3  1,3   0,1,2   0    0,3     3   1,2,3  1,2
+
+OBS.: mintermo -> posição em que a tabela-verdade é igual a 1
+      MAXTERMO -> posição em que a tabela-verdade é igual a 0
+
+
+Operações aritméticas
+
+
+Adição de 2 bits
+
+Considerar
+
+a  = 1 = true
+a' = 0 = false
+
+a and b = a.b
+a or  b = a+b
+
+
+m mintermos a b (a+b) = s1 s0
+0  (a'.b')  0 0   00     0  0
+1  (a'.b )  0 1   01     0  1
+2  (a .b')  1 0   01     0  1
+3  (a .b )  1 1   10     1  0
+
+Forma normal disjuntiva canõnica (cDNF)
+(saídas definidas por mintermos)
+
+s1 = f1 (a, b) = 1 = mintermo  { 3 }   =    a.b
+s0 = f0 (a, b) = 1 = mintermos {1,2}   = a'.b+a.b'
+
+Soma de Produtos ( SoP )
+
+Considerar os termos na tabela com valor igual a 1
+
+s1 = f1 (a, b) = 1 = mintermo  { 3 }   =    a.b
+s0 = f0 (a, b) = 1 = mintermos {1,2}   = a'.b+a.b'
+
+Expressões com as saídas definidas por mintermos:
+
+s1 =    a . b    = a & b = a and b
+s0 = a'.b + a.b' = a ^ b = a xor b (não é canônica!)
+
+Notações semelhantes
+
+s1 = f1 (a, b) = a & b =      a.b      = a and b = and (a, b)
+s0 = f0 (a, b) = a ^ b = (a'.b + a.b') = a xor b = xor (a, b)
+
+
+Equações características
+
+  Forma completa (ou canônica):
+  s1 = v =     a.b     (v -> "vai-um" )
+  s0 = r = a'.b + a.b' (r -> resultado)
+
+  Forma compacta (soma de produtos):
+  s1 = v = SoP (3)
+  s0 = r = SoP (1,2)
+
+
+De outra forma
+
+Considerar:
+
+A  = 0
+A' = 1
+
+A & B = A . B
+A | B = A + B
+
+
+M MAXTERMOS A B  SOMA = S1 S0
+0  (A + B ) 0 0   00     0  0
+1  (A + B') 0 1   01     0  1
+2  (A'+ B ) 1 0   01     0  1
+3  (A'+ B') 1 1   10     1  0
+
+Forma normal conjuntiva canõnica (cCNF)
+(saídas definidas por MAXTERMOS)
+
+S1 = F1 (A, B) = 0 = MAXTERMOS {0,1,2} = (A+B+C).(A +B +C').(A+B'+C)
+S0 = F0 (A, B) = 0 = MAXTERMOS {0 , 3} = (A+B+C).(A'+B'+C')
+
+Produto de Somas ( PoS )
+
+Considerar os termos na tabela com valor igual a 0
+
+S1 = F1 (A, B) = 0 = MAXTERMOS {0,1,2} = (A+B+C).(A +B +C').(A+B'+C)
+S0 = F0 (A, B) = 0 = MAXTERMOS {0 , 3} = (A+B+C).(A'+B'+C')
+
+

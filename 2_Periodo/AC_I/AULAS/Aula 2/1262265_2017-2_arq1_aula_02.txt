@@ -1,0 +1,1022 @@
+PUC-Minas - ICEI - Ciência da Computação
+Arquitetura de Computadores I - Aula 02
+
+Operações aritméticas
+
+Adição decimal
+
+     13,625
+   +  5,75
+   ________
+
+
+     13,62 | 5
+   + 05,75 | 0
+   ___________
+           | 5
+
+     13,6 | 2 | 5
+   + 05,7 | 5 | 0
+   ______________
+          | 7 | 5
+
+     13,|  6  | 2 | 5
+   + 05,|  7  | 5 | 0
+   ___________________
+        | 13  | 7 | 5  <- (13>10)
+
+      1   <- vai-um
+     13,|  6  | 2 | 5
+   + 05,|  7  | 5 | 0
+   ___________________
+        |  3  | 7 | 5  <- (1x10 + 3)
+                           3   <- algarismos da base 10 = { 0,1,2,3,4,5,6,7,8,9 }
+         1   <- vai-um
+     1 | 3,|  6  | 2 | 5
+   + 0 | 5,|  7  | 5 | 0
+   ___________________
+       | 9,|  3  | 7 | 5
+
+         1   <- vai-um
+     1 | 3,|  6  | 2 | 5
+   + 0 | 5,|  7  | 5 | 0
+   ___________________
+     1 | 9,|  3  | 7 | 5
+
+      1   <- vai-um
+     13,625
+   + 05,750
+   ___________________
+     19,375
+
+
+Subtração decimal
+
+    1000
+   -0001
+   _____
+
+
+    100 | 0
+   -000 | 1
+   ________
+        |
+
+        -1       <- pedido de empréstimo
+    10 | 0 | 0
+   -00 | 0 | 1
+   ___________
+           |
+
+       -1  -1
+    1 | 0 | 0 | 0
+   -0 | 0 | 0 | 1
+   ______________
+              |
+
+   -1  -1  -1
+    1 | 0 | 0 | 0
+   -0 | 0 | 0 | 1
+   ______________
+              |
+
+       +10-1  -1
+    0 |  0   | 0 | 0
+   -0 |  0   | 0 | 1
+   _________________
+                 |
+
+              +10-1
+    0 |  9   |  0   | 0
+   -0 |  0   |  0   | 1
+   ____________________
+                    |
+
+                     +10
+    0 |  9   |  9   |  0
+   -0 |  0   |  0   |  1
+   _____________________
+                    |  9
+
+    1000
+   -0001
+   _____
+     999
+
+
+Adição em binário
+
+     1101,101
+   +  101,11
+   __________
+
+        1   <- vai-um
+    01101,101
+   +00101,110
+   __________
+         ,011
+
+    11  1   <- vai-um
+    01101,101
+   +00101,110
+   __________
+    10011,011
+
+
+Subtração em binário
+
+    1000 (8)
+   -0001 (1)
+   _____
+    0111 (7)
+   +0001 (1)
+   _____
+    1000 (8) <- verificação
+
+    1000 (8)
+   -1001 (9)
+   _____
+    ????
+
+ Exemplo:
+
+     1101,101
+   -  101,11
+   __________
+
+    01101,101
+   -00101,110
+   __________
+            1
+
+          -1  +2   <- vem-um
+    01101, 1 | 0 | 1
+   -00101, 1 | 1 | 0
+   _________________
+             |   | 1
+
+          -1  +2   <- vem-um
+    01101, 1 | 0 | 1
+   -00101, 1 | 1 | 0
+   _________________
+             | 1 | 1
+
+                   <- vem-um
+    01101, 0 | 0 | 1
+   -00101, 1 | 1 | 0
+   _________________
+             | 1 | 1
+
+        -1  2       <- vem-um
+    0110 1, 0 | 0 | 1
+   -0010 1, 1 | 1 | 0
+   __________________
+          , 1 | 1 | 1
+
+
+    0110 0, 0 | 0 | 1
+   -0010 1, 1 | 1 | 0
+   __________________
+          , 1 | 1 | 1
+
+
+         -1 +2
+      -1 +2             <- vem-um
+    01 1  0  0, 0 | 0 | 1
+   -00 1  0  1, 1 | 1 | 0
+   ______________________
+              , 1 | 1 | 1
+
+
+    01 0  1  0, 0 | 0 | 1
+   -00 1  0  1, 1 | 1 | 0
+   ______________________
+             1, 1 | 1 | 1
+
+
+    01 0  1  0, 0 | 0 | 1
+   -00 1  0  1, 1 | 1 | 0
+   ______________________
+          1  1, 1 | 1 | 1
+
+     -1 +2                <- vem um
+    0 1  0  1  0, 0 | 0 | 1
+   -0 0  1  0  1, 1 | 1 | 0
+   ________________________
+         1  1  1, 1 | 1 | 1
+
+
+    0 0  0  1  0, 0 | 0 | 1
+   -0 0  1  0  1, 1 | 1 | 0
+   ________________________
+      0  1  1  1, 1 | 1 | 1
+
+
+    01101,101
+   -00101,110
+   __________
+    00111,111
+
+Verificacao
+
+     1111 1
+    00111,111
+   +00101,110
+   __________
+    01101,101
+
+
+Notação posicional para valores com sinal 
+
+   A primeira ideia para modificar a regra de significância (valor)
+   para um número com sinal pode a de acrescentar um indicador de sinal
+   à forma compacta pela notação Epsilon para indicar somas sucessivas
+
+                      s     n           k
+   número       = (-1)  *   E   a * base   
+         (base)            k=-m  k 
+
+   ou o produto de (-1) elevado ao indicador de sinal (s)
+   pelo somatório de certa quantidade expressa por um 
+   algarismo (a, índice k) multiplicada por outra quantidade
+   expressa pelo valor da base do sistema de numeração
+   elevada à uma potência indicada pelo mesmo índice k.
+   O indicador de sinal será, no sistema binário, 
+   um bit adicional, logo
+
+   1 + (n+m+1)  = constante (= quantidade de bits)
+ 
+
+   Exemplos:
+                         1       0
+            13     = 1*10  + 3*10 
+               (10)
+                        3     2      1      0
+            1101   = 1*2 + 1*2  + 0*2  + 1*2
+                (2) 
+
+                         0        1       0
+           +13     = (-1) * ( 1*10  + 3*10  )
+               (10)
+                         0       3     2      1      0
+           01101   = (-1) * ( 1*2 + 1*2  + 0*2  + 1*2  )
+                (2) 
+
+   Entretanto, se empregada para números negativos
+
+                         1        1       0
+           +13     = (-1) * ( 1*10  + 3*10  )
+               (10)
+                         0       3     2      1      0
+           11101   = (-1) * ( 1*2 + 1*2  + 0*2  + 1*2  )
+                (2) 
+
+   e for usada para operar uma soma, por exemplo,
+   o resultado não será o esperado.
+
+        (1)11 1   <- "vai um"
+           01101
+          +11101
+         _______
+           01010  <- ERRO !!! (deveria ser ZERO)
+
+   Portanto, será necessário aperfeiçoar essa ideia.
+   Uma proposta para isso é utilizar a noção de complemento.
+ 
+
+
+Complemento de 12 (horas)
+
+12h     = 0h    <- operação modular (módulo 12)
+
+12h+2h  = 0h+2h = 2h           
+         (positivo = sentido horário)
+
+12h+14h = 0h+(12h+2h) = (0h+2h) = 2h           
+         (positivo = sentido horário, volta completa)
+
+ 2h-3h  = (-1)h = 12h-1h = 11h 
+         (negativo = sentido anti-horário)
+
+12h-3h  = 9h <- complemento de 12 para 3h
+
+ 2h-3h  = 2h+C  (3h) = 2h+9h = 11h  (sentido horário)
+              12
+
+ 2h-5h  = 2h+C  (5h) = 2h+7h = 9h = 12h-3h = 0h-3h = -3h
+              12
+
+
+Complemento de 60 (minutos, segundos)
+
+60m     = 0m    <- operação modular (módulo 60)
+
+60m+2m  = 0m+2m = 2m
+         (positivo = sentido horário)
+
+60m+62m = 0m+(60m+2m) = (0m+2m) = 2m
+         (positivo = sentido horário, volta completa)
+
+60m-61m = 60m-(60m+1m) = 60m-(0m+1m) = 60m-01m =59m
+
+60m- 3m = 60m-3m = 57m
+
+ 2m-3m  = 2m+C  (3m) = 2m+(0m-3m)  = 2m+(60m-3m) = 2m+57m = 59m
+              60
+
+ 2m-5m  = 2m+C  (3m) = 2m+(60m-5m) = 2m+55m = 57m
+              60
+
+
+Diferenças diversas
+
+ 1 1
+ 1:56h
++3:25h
+______
+ 5:21h
+
+ 3:25h
+-1:56h
+______
+ 1:29h
+
+
+  3  :  2 | 5  h
+ -1  :  5 | 6  h
+________________
+               h
+
+      (-1) (+10)
+  3  :  2 |  5 h
+ -1  :  5 |  6 h
+________________
+          |    h
+
+
+ 3   :  2 |  5 h
+-1   :  5 |  6 h
+________________
+          |  9 h
+
+(-1)  (+5 + 10)
+  3  :  2 |  5 h
+ -1  :  5 |  6 h
+________________
+     :  2 |  9 h
+
+
+  3  :  2 |  5 h
+ -1  :  5 |  6 h
+________________
+  1  :  2 |  9 h
+
+
+  1:56h
+- 3:25h
+_______
+- 2:31h
++24:00h
+_______
+ 22:31h   <- (saldo após "empréstimo" )
+-24:00h   <- ("dívida" a ser quitada  )
+
+
+Noções sobre complemento e base de sistema de numeração
+
+Z = X - Y = X + (-Y) = X + Complemento     (Y)
+                                      (base)
+
+Complemento      = Complemento        + 1
+           (base)             (base-1)
+
+
+Complemento de 9 
+(o que falta para completar 9, dígito a dígito)
+
+    1000
+   -0001
+   _____
+    0999
+
+    0001
+   -1000
+   _____
+   -0999
+
+      12
+   -  47
+   _____
+      ??
+
+
+C9(47) = (99-47) = 52 -> (47+52) = 99
+
+      12
+     +52
+    ____
+      64   -> 100-64   = 36-1 = 35 <- valor correto!!!
+
+Obs.: O complemento de 9 é mais facilmente obtido,
+      porque só depende dos algarismos considerados.
+      Entretanto, o resultado da operação precisará
+      ser corrigido, daí a correção em uma unidade 
+      para se obter o valor correto.
+
+
+Complemento de 10
+
+C  (x)  = C (x)  + 1
+ 10        9
+
+
+Exemplo:
+
+C  (47) = C (47) + 1 = (99-47) + 1 = 52 + 1 = 53
+ 10        9
+
+53 <- complemento de (-47) para 2 dígitos
+      (o que falta para completar 100)
+
+      12
+   -  47
+   _____
+      ??
+
+      12
+     +53
+   _____
+      65   -> 100-65     = 35 <- valor correto!!!
+
+
+     012
+   - 047
+   _____
+     ???
+
+     012
+   + 953
+   _____
+     965   -> 1000-965   = 35 <- valor correto!!!
+
+953 <- complemento de (-47) para 3 dígitos
+       (o que falta para completar 1000)
+
+
+Obs.:  O complemento de 10 fornece o resultado correto,
+       mas sua obtenção requer operação extra
+       (adicionar uma unidade)
+
+
+Complemento de 2
+
+Exemplo:
+
+X     =  4 -> X    = 100 
+ (10)          (2)
+
+Considerados os sinais:
+
+X     = +4 -> X    = (0) 100  (convenção 0 = '+') 
+ (10)          (2)
+   
+X     = -4 -> X    = (1) ???  (convenção 0 = '+') 
+ (10)          (2)
+
+Logo
+
+0 = (+4) + (-4) = (0) 100 + (1) ???
+
+ou de outra forma
+
+ (0) 100 +
+ (1) ???  
+__________
+ (0) 000  
+
+Por tentativas, se encontrara'
+
+1        <- "vai-um" (sem acomodar na representação)
+ (0) 100 +
+ (1) 100  
+__________
+ (0) 000  
+
+Portanto,
+
+ (1) 100 será a representação de (-4) na base 2.
+
+Uma generalização precipitada poderia levar à afirmação
+de que bastaria a substituição do sinal 0 para 1.
+Entretanto, experimentando com outros valores
+
+ (+3) = (0) 011
+ (-3) = (1) 101  <- não basta a substituição
+
+ (+4) = (0) 0100
+ (-4) = (1) 1100 <- a quantidade de bits também influencia
+
+Assim, é recomenda-se empregar a ideia do complemento de 2,
+levando em consideração a quantidade de bits:
+
+                                4 bits   
+ (+4) com 4 bits = (0) 100  -> 2      + (-4) = 16 - 4 = 12 = (1) 100
+ 
+                                5 bits   
+ (+4) com 5 bits = (0) 0100 -> 2      + (-4) = 32 - 4 = 28 = (1) 1100
+
+                                4 bits   
+ (+3) com 4 bits = (0) 011  -> 2      + (-3) = 16 - 3 = 13 = (1) 101
+
+
+A conclusão, como se verifica, é que o complemento de 2
+representa de modo mais correto o valor negativo correspondente.
+
+Regra prática para o complemento de 2 ( C2(x) )
+ Trocar todos os 0's <-> 1's, e vice-versa,
+ (complemento de 1 ou C1(x)) e somar mais 1 ao último dígito.
+
+Exemplo
+
+ (+4) = (0) 000 0100
+
+        (1) 111 1011   = C1 ( 0000 0100 )
+ 
+        (1) 111 1011 +
+                   1
+       _______________
+        (1) 111 1100   = C2 ( 0000 0100 ) = (-4) em 8 bits
+
+
+Outro exemplo:
+
+    01101,101
+   -00101,110
+   __________
+
+
+    01101,101
+   +               -00101,110    -> C1( 00101,110 ) = 11010,001
+                                                              1+
+                                                      _________
+                <- C2(X)=C1(X)+1 <- C2( 00101,110 ) = 11010,010
+   __________
+
+
+   (1)1         <- vai-um
+      01101,101
+   +  11010,010
+   ____________
+      00111,111
+
+Obs.:  O último "vai-um" será dispensado,
+       pois não poderá ser representado
+       na mesma quantidade de bits operados.
+
+
+Complemento de 2 para (n) bits
+
+ 4
+2  = 16    = 10000   <- próxima potência de 2
+       (10)       (2)
+
++10    = 0010
+   (2)       (2)
+-11    = ????        <- negativo
+   (2)       (2)
+
+                           empréstimo
+0010   -0011    = (-1)    = (1)0000   -0001    = 1111
+    (2)     (2)       (2)          (2)     (2)       (2)
+
+(1)0000   -0011   = 1101    <- complemento de 2
+       (2)     (2)      (2)
+
+0010   -0011    = 0010   +C   (  0011   ) = 0010   +1101    = 1111
+    (2)     (2)       (2)  2,4       (2)        (2)     (2)       (2)
+
+
+C   (X) = complemento de 2 em relação a (n) bits
+ 2,n
+                                              4 <- n
+C   ( 0011     ) =   1101   => 13 + 3 = 16 = 2
+ 2,4        (2)          (2)
+                                              5 <- n
+C   ( 00011    ) =  11101   => 29 + 3 = 32 = 2
+ 2,5        (2)          (2)
+                                              6 <- n
+C   ( 000011   ) = 111101   => 61 + 3 = 64 = 2
+ 2,6        (2)          (2)
+
+
+
+Representação de valor negativo em binário com (n) bits
+
+  X   = 0001 0110
+                 (2)
+(-X)  = ?
+         (2)
+
+Complemento de 1
+
+     X  = 0001 0110
+                   (2)
+C   (X) = 1110 1001         <- negação (trocar 0<->1)
+ 1,8               (2)
+
+         11111 11
+          0001 0110    (x)
+          1110 1001+ C1(x)+
+         __________  _____
+          1111 1111   (-0)  <- (zero negativo!!!)
+
+          000000000   (+0)  <- (zero positivo!!!)
+
+       Problemas:
+       - duas representações para zero
+       - necessidade de correção dos resultados
+         (mais operações, testes, tempo de processamento)
+
+
+Complemento de 2 com (n) bits
+
+C   (X) = C   (X) + 1
+ 2,n       1,n
+
+Exemplo:
+
+     X  = 0001 0110
+                    (2)
+C   (X) = 1110 1001
+ 1,8                (2)
+          1110 1001
+                  1+
+          _________
+C   (X) = 1110 1010
+ 2,8
+         11111 11
+          0001 0110    (x)
+          1110 1010+ C2(x)+
+         __________  _____
+          0000 0000     0  <- verificação
+
+
+Obs.:  O valor do complemento pode variar
+       de acordo com a quantidade de bits
+       devido à representação ser limitada.
+
+       Exemplos:
+
+       02 bits:
+
+       +
+       00 -> zero
+       01 ->  +1
+
+       10 -> (-2) <- último   negativo
+       11 -> (-1) <- primeiro negativo
+       -
+
+       03 bits:
+
+       +
+       000 -> zero
+       001 ->  +1
+       010 ->  +2
+       011 ->  +3
+
+       100 -> (-4) <- último   negativo
+       101 -> (-3)
+       110 -> (-2)
+       111 -> (-1) <- primeiro negativo
+       -
+
+
+       04 bits:
+
+       +
+       0000 -> zero
+       0001 ->  +1
+       0010 ->  +2
+       0011 ->  +3
+       0100 ->  +4
+       0101 ->  +5
+       0110 ->  +6
+       0111 ->  +7
+
+       1000 -> (-8) <- último   negativo
+       1001 -> (-7)
+       1010 -> (-6)
+       1011 -> (-5)
+       1100 -> (-4)
+       1101 -> (-3)
+       1110 -> (-2)
+       1111 -> (-1) <- primeiro negativo
+       -
+
+       Problema:
+       - tamanho da representação precisa ser fixo
+         para todas as operações
+
+
+Complemento de 8
+
+C  (X) = C  (X) + 1
+ 8        7
+
+Exemplo
+
+      13
+   -  27
+   _____
+      ??
+
+      13
+   +  51  <- C  (27) = C  (27) + 1 = 50 + 1
+   _____      8         7
+      64
+
+Obs: Para verificar o resultado:
+                
+                1      0
+     13    = 1x8  + 3x8  = 11
+       (8)                   (10) 
+                1      0
+     27    = 2x8  + 7x8  = 23 
+       (8)                   (10)
+
+     11 - 23 = (-12)
+
+                1      0
+     64    = 6x8  + 4x8  = 52
+       (8)                   (10)
+
+     Em binário: 
+
+     64    = (1) 10 100    <- negativo   
+       (8)             (2)
+
+     Logo
+                      2 bits
+     64    = 52    - 8      = 52 - 64 = (-12)  
+       (8)     (10)
+
+
+Complemento de 16
+
+C  (X) = C  (X) + 1
+ 16       15
+
+Exemplo
+
+      12
+   -  47
+   _____
+      ??
+
+      0C
+   -  2F
+   _____
+      ??
+
+C  (02F) = D0
+ 15
+
+C  (02F) = D0 + 01 = D1
+ 16
+
+      0C
+   +  D1
+    ____
+      DD -> DD    - 100    = -23
+              (16)     (16)     (16)
+
+                                   1     0
+                           = -(2x16 +3x16 ) = (-35)
+
+Outro exemplo em hexadecimal
+
+      2B
+   -  19
+   _____
+      ??
+
+    1 1
+      2B
+   +  E7  <- C  (19) = C  (19) = E6 + 1
+    ____      16        15
+      12
+
+Obs: Para verificar o resultado:
+                
+                 1          0
+     2B    = 2x16  + (11)x16  = 43
+       (16)                       (10) 
+                 1          0
+     19    = 1x16  +    9x16  = 25
+       (16)                       (10) 
+
+     43 - 25 = 18
+
+                 1          0
+     12    = 1x16  +    2x16  = 18
+       (16)                       (10)
+  
+     Em binário: 
+
+     12    = (0) 001 0010    <- positivo   
+       (16)              (2)
+
+
+
+Multiplicação em binário
+
+     1001
+     0101 *
+    _____
+
+     1001
+    0000-
+   1001--
+ ________
+
+
+     1001
+     0101 *
+    _____
+
+   001001
+   000000
+   100100 +
+ ________
+   101101
+         (2)
+
+
+
+Divisão em binário
+
+  1101     | 101
+           |-----
+  1        | 0
+  11       | 00
+  110      | 001
+ -101      |
+ ____      |
+  001      |
+  0011     | 0010 <- quociente inteiro
+(resto)
+
+
+  1101     | 101
+           |-----
+  1        | 0
+  11       | 00
+  110      | 001
+ -101      |
+ ____      |
+  001      |
+  0011     | 0010,
+  00110    | 0010,1
+ -00101    |
+ ______    |
+  000010   | 0010,10
+  0000100  | 0010,100
+  00001000 | 0010,1001
+ -00000101 |
+ _________ |
+  00000011 | 0010,10011... <- dízima
+
+
+ou de outra forma
+
+       1         
+      ___________
+ 101 | 1101
+     | 101 
+     |
+
+       1         
+      ___________
+ 101 | 1101
+     | 101 
+     |____ 
+     | 001 
+     |
+
+       1         
+      ___________
+ 101 | 1101
+     | 101 
+     |_____ 
+     | 0011
+     | 
+
+       10        
+      ___________
+ 101 | 1101
+     | 101 
+     |_____ 
+     | 0011
+     |  101
+     | 
+
+       10        
+      ___________
+ 101 | 1101
+     | 101 
+     |_____ 
+     | 0011
+     |  101
+     |_____
+     | 
+ 
+       10,1      
+      ___________
+ 101 | 1101
+     | 101 
+     |_____ 
+     | 00110
+     |   101
+     |______
+     | 
+
+       10,1      
+      ___________
+ 101 | 1101
+     | 101 
+     |______ 
+     | 00110
+     |   101
+     |______
+     |     1
+
+       10,100    
+      ___________
+ 101 | 1101
+     | 101 
+     |______ 
+     | 00110
+     |   101
+     |________
+     |     100
+     | 
+
+       10,1001   
+      ___________
+ 101 | 1101
+     | 101 
+     |______ 
+     | 00110
+     |   101
+     |_________
+     |     1000
+     |      101
+     | 
+
+       10,1001   
+      ___________
+ 101 | 1101
+     | 101 
+     |______ 
+     | 00110
+     |   101
+     |_________
+     |     1000
+     |      101
+     |_________
+     |       11
+     | 
+
+       10,10011  
+      ___________
+ 101 | 1101
+     | 101 
+     |______ 
+     | 00110
+     |   101
+     |_________
+     |     1000
+     |      101
+     |__________
+     |       110
+     |       101
+     |
+
+       10,10011... <- dízima  
+      ___________
+ 101 | 1101
+     | 101 
+     |______ 
+     | 00110
+     |   101
+     |_________
+     |     1000
+     |      101
+     |__________
+     |       110
+     |       101
+     |__________
+     |         1
+     |
+

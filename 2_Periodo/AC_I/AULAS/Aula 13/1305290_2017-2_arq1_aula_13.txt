@@ -1,0 +1,348 @@
+PUC-Minas - ICEI - Ciência da Computação
+Arquitetura de Computadores I - Aula 13
+
+
+Latches e flip-flops
+
+
+1.) Circuitos sequenciais
+
+
+    entradas             saídas  
+             ----------          
+    x0 ---> |          | ---> y0 
+    x1 ---> |          | ---> y1 
+    ...     |  função  |     ... 
+    xn ---> |          | ---> yp 
+        --> |          | ---     
+       |    |          |    |    
+       |     ----------     |    
+       |                    |    
+       |    realimentação   |    
+       |     -----------    |    
+   z0  |    |           |   | yq 
+   ...  --- |  memória  |<--  ...
+   zm       |           |     yr 
+             -----------         
+
+
+2.) Latches
+
+
+    OBS.:
+      Dependentes apenas dos sinais das entradas,  
+      "preset", "clear" ou composição das saídas
+
+
+    SR (Set-Reset)
+
+         ------ 
+        | S  Q |
+        |      |
+        | R  Q'|
+         ------ 
+          Pr Cl 
+
+    D    (Data)
+
+         ------ 
+        | D  Q |
+        |      |
+        |    Q'|
+         ------ 
+          Pr Cl 
+
+    T   (Toggle)
+
+         ------ 
+        | T  Q |
+        |      |
+        |    Q'|
+         ------ 
+          Pr Cl 
+
+    JK (Jump-Keep)
+
+         ------ 
+        | J  Q |
+        |      |
+        | K  Q'|
+         ------ 
+          Pr Cl 
+
+
+3.) Flip-flops
+
+    OBS.:
+      Dependentes do "clock" e da construção,
+      as mudanças ocorrem nas transições de bordas
+      (ou de subida ou de descida)
+
+
+
+    SR (Set-Reset)
+                           - Modelo de representação
+           ------ 
+          | S  Q |
+      clk |>     |
+          | R  Q'|
+           ------ 
+            Pr Cl 
+
+                           - Tabela característica
+      S  R  Qt+1           
+
+      0  0  Qt   - "hold"     
+      0  1  0    - "reset"    
+      1  0  1    - "set"      
+      1  1  x    - "undefined"/"unused" (EVITAR !!!)
+
+
+                           - Mapa de Veitch-Karnaugh
+      Qt+1
+      SR \ Qt  0  1
+      00       0  1  
+      01       0  0
+      11       x  x  <- considerando x=1 para simplificar
+      10       1  1
+                             SoP = (1,4,5,6,7)
+                                 = G1(4,5,6,7) + G2(1,5)
+                                 = S           + R'.Qt
+
+      Q    = S + R'.Q     - Equação característica (S.R=0)
+       t+1           t
+
+                          - Diagrama de estados
+            S R           
+            1 0           
+           -----          
+          |     |         
+      --  |     V  --     
+ S R |  \         /  | S R
+ 0 0 |    0     1    | 0 0
+ 0 1 |  /         \  | 1 0   
+      --  ^     |  --     
+          |     |         
+           -----          
+            0 1           
+            S R           
+
+                          - Tabela de transições
+    
+      Q -> Q     S R
+       t    t+1 
+
+      0    0     0 X
+      0    1     1 0
+      1    0     0 1
+      1    1     X 0
+
+
+    D (Data)
+                           - Modelo de representação
+           ------ 
+          | D  Q |
+      clk |>     |
+          |    Q'|
+           ------ 
+            Pr Cl 
+
+                           - Tabela característica
+      D     Qt+1   
+
+      0     0    - "reset"     
+      1     1    - "set"    
+
+                           - Mapa de Veitch-Karnaugh
+      Qt+1
+      D \ Qt  0  1
+      0       0  0
+      1       1  1
+                             SoP (2,3) = D.Qt'+D.Qt 
+                                       = D.(Qt'+Qt) = D.1 = D
+        
+
+      Q    = D             - Equação característica
+       t+1     
+
+                           - Diagrama de estados
+             D
+             1  
+           -----      
+          |     |     
+      --  |     V  -- 
+   D |  \         /  | D
+   0 |    0     1    | 1
+     |  /         \  |
+      --  ^     |  -- 
+          |     |     
+           -----      
+             0
+             D
+
+                           - Tabela de transições
+      Q -> Q     D
+       t    t+1 
+
+      0    0     0
+      0    1     1
+      1    0     0
+      1    1     1
+
+
+    T (Toggle)
+                           - Modelo de representação
+           ------ 
+          | T  Q |
+      clk |>     |
+          |    Q'|
+           ------ 
+            Pr Cl 
+
+                           - Tabela característica
+      T     Qt+1              
+
+      0     Qt   - "hold"     
+      1     Qt'  - "toggle"    
+
+                           - Mapa de Veitch-Karnaugh  
+      Qt+1
+      T  \ Qt  0  1
+      0        0  1  
+      1        1  0
+                             SoP (1,2) = T'.Qt + T.Qt' = T ^ Q 
+
+
+      Q    = T xor Q       - Equação característica
+       t+1          t
+
+                           - Diagrama de estados
+             T
+             1  
+           -----      
+          |     |     
+      --  |     V  -- 
+   T |  \         /  | T
+   0 |    0     1    | 0
+     |  /         \  |
+      --  ^     |  -- 
+          |     |     
+           -----      
+             1
+             T
+
+                           - Tabela de transições
+      Q -> Q     T
+       t    t+1 
+
+      0    0     0
+      0    1     1
+      1    0     1
+      1    1     0
+
+
+    JK (Jump-Keep)
+                           - Modelo de representação
+           ------ 
+          | J  Q |
+      clk |>     |
+          | K  Q'|
+           ------ 
+            Pr Cl 
+
+                           - Tabela característica
+      J  K  Qt+1    
+
+      0  0  Qt   - "hold"     
+      0  1  0    - "reset"    
+      1  0  1    - "set"      
+      1  1  Qt'  - "toggle"
+
+                           - Mapa de Veitch-Karnaugh  
+      Qt+1
+      JK \ Qt  0  1
+      00       0  1
+      01       0  0
+      11       1  0
+      10       1  1
+                             SoP (1,4,5,6) = G1(4,6) + G2(1,5)
+                                           = J.Qt'   + K'.Qt
+ 
+
+      Q    = J.Q' + K'.Q  - Equação característica 
+       t+1      t       t
+
+                          - Diagrama de estados
+            J=1           
+                          
+            J K           
+            1 0           
+            1 1           
+           -----          
+ J=0      |     |      K=0
+      --  |     V  --     
+ J K |  \         /  | J K
+ 0 0 |    0     1    | 0 0
+ 0 1 |  /         \  | 1 0
+      --  ^     |  --     
+          |     |         
+           -----          
+            1 1           
+            0 1           
+            J K           
+                          
+            K=1           
+
+                           - Tabela de transições
+      Q -> Q     J K
+       t    t+1 
+
+      0    0     0 X
+      0    1     1 X
+      1    0     X 1
+      1    1     X 0
+
+
+    Configuração Mestre-Escravo
+
+             Mestre          Escravo
+    entrada                           saída
+             ------           ------
+        --> | J  Q | ------> | J  Q | -->
+    clk --> |>     |      -> |>     | 
+         |  | K  Q'| ----|-> | K  Q'|
+         |   ------      |    ------
+         |    Pr Cl      |     Pr Cl 
+         |               |
+          -----------|>o- 
+
+
+    Tabela de estados                  - Resumo
+
+                 J K      S R      T     D
+                                
+    "hold"       0 0      0 0      0     -
+    "reset"      0 1      0 1      -     0
+    "set"        1 0      1 0      -     1
+    "toggle"     1 1      - -      1     -
+                        (unused)  J=K   K=J'
+
+
+    Tabela de transições               - Resumo
+
+    Q -> Q       J K      S R      T     D
+     t    t+1 
+
+    0    0       0 X      0 X      0     0
+    0    1       1 X      1 0      1     1
+    1    0       X 1      0 1      1     0
+    1    1       X 0      X 0      0     1
+
+
+    Tabela de equações características - Resumo
+
+                 J K      S R      T     D
+
+       Q    = J.Q'+K'.Q   S+R'Q   T^Q    D  
+        t+1      t     t       t     t    
+

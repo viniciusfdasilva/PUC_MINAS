@@ -1,0 +1,737 @@
+PUC-Minas - ICEI - Ciência da Computação
+Arquitetura de Computadores I - Aula 09
+
+Método de Quine-McCluskey
+
+Exemplo 1:
+
+SoP ( 2,4,5,6,8,9,12,14 )
+
+1.  Formar grupos segundo a quantidade de bits iguais a 1:
+
+    bits                 combinado
+    1:
+       a'b'c d' (  2 )   [x]
+       a'b c'd' (  4 )   [x]
+       a b'c'd' (  8 )   [x]
+    2:
+       a'b c'd' (  5 )   [x]
+       a'b c d' (  6 )   [x]
+       a b'c'd  (  9 )   [x]
+       a b c'd' ( 12 )   [x]
+    3:
+       a b c d' ( 14 )   [x]
+
+                      n=1
+2.  Formar grupos de 2
+    combinando termos de grupos vizinhos
+    destacando a diferença
+    e marcando os grupos já combinados [x] acima:
+
+    ( 2, 6): a'_ c d'    [ ]
+    ( 4, 5): a'b c'_     [ ]
+    ( 4, 6): a'b _ d'    [y]
+    ( 4,12): _ b c'd'    [y]
+    ( 8, 9): a b'c'_     [ ]
+    ( 8,12): a _ c'd'    [ ]
+
+    ( 6,14): _ b c d'    [y]
+    (12,14): a b _ d'    [y]
+
+                      n=2
+3.  Formar grupos de 2
+    combinando grupos formatos no passo anterior
+    destacando a diferença
+    e marcando os grupos já combinados [y] acima:
+
+    ( 4,12, 6,14): _ b _ d'  <- descartar
+    ( 4, 6,12,14): _ b _ d'
+
+    OBS.:
+    Poderão ser descartados os grupos semelhantes
+    cujos valores não estiverem em ordem.
+
+                      n=3
+4.  Formar grupos de 2
+    combinando grupos formatos no passo anterior
+    destacando a diferença
+    e marcando os grupos já combinados [z] acima:
+
+    OBS.:
+    Não é possível formar mais grupos.
+
+5.  Dar nomes aos grupos restantes
+    (não combinados em qualquer passo)
+
+    ( 2, 6)      : a'_ c d'     <- G1
+    ( 4, 5)      : a'b c'_      <- G2
+    ( 8, 9)      : a b'c'_      <- G3
+    ( 8,12)      : a _ c'd'     <- G4
+
+    ( 4, 6,12,14): _ b _ d'     <- G5
+
+
+6.  Montar uma tabela de grupos x mintermos
+
+         2  4  5  6  8  9 12 14
+       -------------------------
+    G1 | x        x            
+    G2 |    x  x               
+    G3 |             x  x      
+    G4 |             x     x   
+    G5 |    x     x        x  x
+
+
+7.  Identificar colunas com apenas um termo
+
+         2  4  5  6  8  9 12 14
+       -------------------------
+    G1 | x        x            
+    G2 |    x  x               
+    G3 |             x  x      
+    G4 |             x     x   
+    G5 |    x     x        x  x
+       |------------------------
+   [1] | 1  2  1  2  2  1  2  1 
+
+         ^     ^        ^     ^
+         |     |        |     |
+
+8.  Marcar as linhas com
+    as colunas com apenas um termo
+
+         2  4  5  6  8  9 12 14
+       -------------------------
+ -> G1 | x        x            
+ -> G2 |    x  x               
+ -> G3 |             x  x      
+    G4 |             x     x   
+ -> G5 |    x     x        x  x
+       |------------------------
+   [1] | 1  2  1  2  2  1  2  1 
+
+         ^     ^        ^     ^
+         |     |        |     |
+
+9.  Marcar redundâncias e
+    remarcar as colunas com apenas um termo
+
+         2  4  5  6  8  9 12 14 
+       -------------------------
+ -> G1 | x        x            
+ -> G2 |    x  x               
+ -> G3 |             x  x      
+    G4 |             |     |     <- descartar
+ -> G5 |    x     x        x  x
+       |------------------------
+   [1] | 1  2  1  2  1  1  1  1 
+
+    OBS.:
+    Redundâncias são termos em linhas ainda não marcadas,
+    que estão presentes em linhas com termos essenciais,
+    ou com termos já selecionados.
+
+10. Escolher dentre as linhas restantes
+    as que possuírem maior chance em
+    cobrir os termos restantes
+    gerando maior quantidade de redundâncias
+    até que todos os termos estejam cobertos
+
+         2  4  5  6  8  9 12 14 
+       -------------------------
+ -> G1 | x        x            
+ -> G2 |    x  x               
+ -> G3 |             x  x      
+ -> G5 |    x     x        x  x
+       |------------------------
+   [1] | 1  2  1  2  1  2  1  1  <- verificação
+
+    Todos os termos estão cobertos em
+    pelo menos uma linha.
+
+11. Compor a expressão equivalente
+
+    SoP ( 2,4,5,6,8,9,12,14 )
+    =   G1 + G2 + G3 + G5
+
+
+12. Traduzir os grupos pelos mintermos
+    equivalentes
+
+    G1 = a'_ c d'
+    G2 = a'b c'_
+    G3 = a b'c'_
+    G5 = _ b _ d'
+
+    SoP ( 2,4,5,6,8,9,12,14 )
+    =   G1   +   G2   +   G3   + G5
+    = a'c d' + a'b c' + a b'c' + b d'
+
+    
+13. Verificar a resposta sobre o 
+    mapa de Veitch-Karnaugh equivalente
+    
+    ab\cd  00 01 11 10
+         --------------
+    00   |           1
+    01   |  1  1     1
+    11   |  1        1
+    10   |  1  1      
+
+    ab\cd  00 01 11 10
+         --------------
+    00   |           1 <- a'c d' = G1
+    01   |           1
+    11   |             
+    10   |             
+
+    ab\cd  00 01 11 10
+         --------------
+    00   |              
+    01   |  1  1       <- a'b c' = G2
+    11   |             
+    10   |             
+
+    ab\cd  00 01 11 10
+         --------------
+    00   |                
+    01   |             
+    11   |             
+    10   |  1  1       <- a b'c' = G3
+
+    ab\cd  00 01 11 10
+         --------------
+    00   |
+    01   |  1        1 <- b d'   = G5
+    11   |  1        1 
+    10   |             
+
+    OBS.:
+    A inclusão de qualquer outra linha
+    implicaria na redundância de cobertura
+    e a expressão resultante não seria
+    mais mínima.
+    
+    Tal como no mapa de Veitch-Karnaugh,
+    o objetivo é identificar a menor 
+    quantidade de grupos necessária
+    para se cobrir todos os termos.
+
+
+
+Exemplo 2:
+
+SoP ( 0,1,2,3,4,6,7,9,11,13,15 )
+
+1.  Formar grupos segundo a quantidade de bits iguais a 1:
+
+    bits                 combinado
+    0:
+       a'b'c'd' (  0 )   [x]
+    1:
+       a'b'c'd  (  1 )   [x]
+       a'b'c d' (  2 )   [x]
+       a b'c'd' (  4 )   [x]
+    2:
+       a'b'c d  (  3 )   [x]
+       a'b c d' (  6 )   [x]
+       a b'c'd  (  9 )   [x]
+    3:
+       a'b c d  (  7 )   [x]
+       a b'c d  ( 11 )   [x]
+       a b c'd  ( 13 )   [x]
+    4:
+       a b c d  ( 15 )   [x]
+
+                      n=1
+2.  Formar grupos de 2
+    combinando termos de grupos vizinhos
+    destacando a diferença
+    e marcando os grupos já combinados [x] acima:
+
+    ( 0, 1): a'b'c'_     [y]
+    ( 0, 2): a'b'_ d'    [y]
+    ( 0, 4): _ b'c'd'    [y]
+
+    ( 1, 3): a'b'_ d     [y]
+    ( 1, 9): _ b'c'd     [y]
+    ( 2, 3): a'b'c _     [y]
+    ( 2, 6): a'_ c d'    [y]
+    ( 4, 6): a'b _ d'    [y]
+
+    ( 3, 7): a'_ c d     [y]
+    ( 3,11): _ b'c d     [y]
+    ( 6, 7): a'b c _     [y]
+    ( 9,11): a b'_ d     [y]
+    ( 9,13): a _ c'd     [y]
+
+    ( 7,15): _ b c d     [y]
+    (11,15): a _ c d     [y]
+    (13,15): a b _ d     [y]
+
+                      n=2
+3.  Formar grupos de 2
+    combinando grupos formatos no passo anterior
+    destacando a diferença
+    e marcando os grupos já combinados [y] acima:
+
+    ( 0, 1, 2, 3): a'b'_ _
+    ( 0, 2, 1, 3): a'b'_ _  <- descartar
+
+    ( 0, 2, 4, 6): a'_ _ d'
+    ( 0, 4, 2, 6): a'_ _ d' <- descartar
+
+    ( 2, 3, 6, 7): a'_ c _
+    ( 2, 6, 3, 7): a'_ c _  <- descartar
+
+    ( 1, 3, 9,11): _ b'_ d
+    ( 1, 9, 3,11): _ b'_ d  <- descartar
+
+    ( 3, 7,11,15): _ _ c d
+    ( 3,11, 7,15): _ _ c d  <- descartar
+
+    ( 9,11,13,15): a _ _ d
+    ( 9,13,11,15): a _ _ d  <- descartar
+
+    OBS.:
+    Poderão ser descartados os grupos semelhantes
+    cujos valores não estiverem em ordem.
+
+                      n=3
+4.  Formar grupos de 2
+    combinando grupos formatos no passo anterior
+    destacando a diferença
+    e marcando os grupos já combinados [z] acima:
+
+    ( 0, 1, 2, 3): a'b'_ _
+
+    ( 0, 2, 4, 6): a'_ _ d'
+
+    ( 2, 3, 6, 7): a'_ c _
+
+    ( 1, 3, 9,11): _ b'_ d
+
+    ( 3, 7,11,15): _ _ c d
+
+    ( 9,11,13,15): a _ _ d
+
+    OBS.:
+    Não é possível formar mais grupos.
+
+5.  Dar nomes aos grupos restantes
+    (não combinados em qualquer passo)
+
+    ( 0, 1, 2, 3): a'b'_ _   <- G1
+
+    ( 0, 2, 4, 6): a'_ _ d'  <- G2
+
+    ( 2, 3, 6, 7): a'_ c _   <- G3
+
+    ( 1, 3, 9,11): _ b'_ d   <- G4
+
+    ( 3, 7,11,15): _ _ c d   <- G5
+
+    ( 9,11,13,15): a _ _ d   <- G6
+
+
+6.  Montar uma tabela de grupos x mintermos
+
+         0  1  2  3  4  6  7  9 11 13 15 
+       ----------------------------------
+    G1 | x  x  x  x
+    G2 | x     x     x  x
+    G3 |       x  x     x  x
+    G4 |    x     x           x  x
+    G5 |          x        x     x     x
+    G6 |                      x  x  x  x
+
+
+7.  Identificar colunas com apenas um termo
+
+         0  1  2  3  4  6  7  9 11 13 15 
+       ----------------------------------
+    G1 | x  x  x  x
+    G2 | x     x     x  x
+    G3 |       x  x     x  x
+    G4 |    x     x           x  x
+    G5 |          x        x     x     x
+    G6 |                      x  x  x  x
+       |---------------------------------
+   [1] | 2  2  3  4  1  2  2  2  3  1  2 
+                     ^              ^
+                     |              |
+
+
+8.  Marcar as linhas com
+    as colunas com apenas um termo
+
+         0  1  2  3  4  6  7  9 11 13 15 
+       ----------------------------------
+    G1 | x  x  x  x
+ -> G2 | x     x    [x] x
+    G3 |       x  x     x  x
+    G4 |    x     x           x  x
+    G5 |          x        x     x     x
+ -> G6 |                      x  x [x] x
+       |---------------------------------
+   [1] | 2  2  3  4  1  2  2  2  3  1  2 
+                     ^              ^
+                     |              |
+
+
+9.  Marcar redundâncias e 
+    remarcar as colunas com apenas um termo
+
+         0  1  2  3  4  6  7  9 11 13 15 
+       ----------------------------------
+    G1 | |  x  |  x
+ -> G2 |(x)   (x)   [x](x)
+    G3 |       |  x     |  x
+    G4 |    x     x           |  |
+    G5 |          x        x     |     |
+ -> G6 |                     (x)(x)[x](x)
+       |---------------------------------
+   [1] | 1  2  1  4  1  1  2  1  1  1  1 
+         ^     ^        ^     ^  ^     ^ 
+         |     |        |     |  |     | 
+
+
+10. Escolher dentre as linhas restantes
+    as que possuírem maior chance em
+    cobrir os termos restantes
+    gerando maior quantidade de redundâncias
+    até que todos os termos estejam cobertos
+
+         0  1  2  3  4  6  7  9 11 13 15 
+       ----------------------------------
+ => G1 | | (x) | (x)
+ -> G2 | x     x    [x] x
+    G3 |       |  |     |  x
+(-) G4 |    |     |           |  |        <- descartar
+    G5 |          |        x     |     |
+ -> G6 |                      x  x [x] x
+       |---------------------------------
+   [1] | 1  1  1  1  1  1  2  1  1  1  1 
+            ^     ^                      
+            |     |                      
+
+    OBS.:
+    A escolha da linha G1 implicará
+    no descarte da linha G4.
+
+         0  1  2  3  4  6  7  9 11 13 15 
+       ----------------------------------
+ => G1 | |  x  |  x
+ -> G2 | x     x    [x] x
+ => G3 |       |  |     | (x)
+(-) G4 |    |     |           |  |
+(-) G5 |          |        |     |     |  <- descartar
+ -> G6 |                      x  x [x] x
+       |---------------------------------
+   [1] | 1  1  1  1  1  1  1  1  1  1  1 
+                           ^                     
+                           |                             
+
+    OBS.:
+    A escolha da linha G3 implicará
+    no descarte da linha G5.
+
+    Todos os termos estão cobertos em
+    pelo menos uma linha.
+
+11. Compor a expressão equivalente
+
+    SoP ( 0,1,2,3,4,6,7,9,11,13,15 )
+    =   G1 + G2 + G3 + G6
+
+12. Traduzir os grupos pelos mintermos
+    equivalentes
+
+    G1 = a'b'
+    G2 = a'd'
+    G3 = a'c
+    G6 = a d
+
+    SoP ( 0,1,2,3,4,6,7,9,11,13,15 )
+    = a'b' + a'd' + a'c + a d
+    
+13. Verificar a resposta sobre o 
+    mapa de Veitch-Karnaugh equivalente
+    
+    ab\cd  00 01 11 10
+         --------------
+    00   |  1  1  1  1
+    01   |  1     1  1
+    11   |     1  1   
+    10   |     1  1   
+
+    ab\cd  00 01 11 10
+         --------------
+    00   |  1  1  1  1 <- a'b' = G1
+    01   |
+    11   |
+    10   |
+
+    ab\cd  00 01 11 10
+         --------------
+    00   |  1        1 <- a'd' = G2
+    01   |  1        1
+    11   |
+    10   |
+
+    ab\cd  00 01 11 10
+         --------------
+    00   |        1  1 <- a'c  = G3
+    01   |        1  1
+    11   |
+    10   |
+
+    ab\cd  00 01 11 10
+         --------------
+    00   |
+    01   |
+    11   |     1  1    <- a d  = G6
+    10   |     1  1
+
+    OBS.:
+    A inclusão de qualquer outra linha
+    implicaria na redundância de cobertura
+    e a expressão resultante não seria
+    mais mínima.
+    
+    Tal como no mapa de Veitch-Karnaugh,
+    o objetivo é identificar a menor 
+    quantidade de grupos necessária
+    para se cobrir todos os termos.
+
+14. Se considerados os MAXTERMOS
+
+    SoP ( 0,1,2,3,4,6,7,9,11,13,15 )
+
+    PoS ( 5, 8, 10, 12, 14 )
+
+    Formar grupos segundo a quantidade de bits iguais a 0:
+
+    bits                      combinado
+    4:
+
+    3:
+       (A'+B +C +D ) (  8 )   [x]
+
+    2:
+       (A +B'+C +D') (  5 )   [ ]
+       (A'+B +C'+D ) ( 10 )   [x]
+    1:
+       (A'+B'+C +D ) ( 12 )   [x]
+       (A'+B'+C'+D ) ( 14 )   [x]
+    0:
+
+                      n=1
+15. Formar grupos de 2
+    combinando termos de grupos vizinhos
+    destacando a diferença
+    e marcando os grupos já combinados [x] acima:
+
+    ( 8,10): (A'+B +_ + D )   [y]
+    ( 8,12): (A'+_ +C + D )   [y]
+
+    (10,14): (A'+_ +C'+ D )   [y]
+
+    (12,14): (A'+B'+_ + D )   [y]
+
+                      n=2
+16. Formar grupos de 2
+    combinando grupos formatos no passo anterior
+    destacando a diferença
+    e marcando os grupos já combinados [y] acima:
+
+    ( 8,10,12,14): (A'+_ +_ +D )
+    ( 8,12,10,14): (A'+_ +_ +D ) <- descartar
+
+
+17. Dar nomes aos grupos restantes
+    (não combinados em qualquer passo)
+
+    ( 5):          (A +B'+C +D') <- Ga
+    ( 8,10,12,14): (A'+_ +_ +D ) <- Gb
+
+
+18. Montar uma tabela de grupos x MAXTERMOS
+
+         5  8  10  12  14
+       ------------------
+    Ga | x               
+    Gb |    x   x   x   x
+
+
+19. Identificar colunas com apenas um termo
+
+         5  8  10  12  14  
+       ------------------  
+    Ga | x                 
+    Gb |    x   x   x   x  
+       |------------------ 
+   [1] | 1  1   1   1   1  
+
+         ^  ^   ^   ^   ^  
+         |  |   |   |   |  
+
+
+20. Marcar as linhas com
+    as colunas com apenas um termo
+
+         5  8  10  12  14
+       ------------------
+ -> Ga | x               
+ -> Gb |    x   x   x   x
+       |------------------ 
+   [1] | 1  1   1   1   1  
+
+         ^  ^   ^   ^   ^
+         |  |   |   |   |
+
+
+21. Compor a expressão equivalente
+
+    PoS ( 5, 8, 10, 12, 14 )
+    =   Ga . Gb
+
+
+22. Traduzir os grupos pelos mintermos
+    equivalentes
+
+    Ga = (A +B'+C +D')
+    Gb = (A'+D )
+
+    PoS ( 5, 8, 10, 12, 14 )
+    = (A +B'+C +D').(A'+D )
+
+    
+23. Verificar a resposta sobre o 
+    mapa de Veitch-Karnaugh equivalente
+
+    AB\CD  00 01 11 10 
+         --------------
+    00   |             
+    01   |     0       
+    11   |  0        0 
+    10   |  0        0 
+
+    AB\CD  00 01 11 10
+         -------------- 
+    00   |             
+    01   |     0       <- (A +B'+C +D') = Ga
+    11   |            
+    10   |            
+
+    AB\CD  00 01 11 10
+         -------------- 
+    00   |             
+    01   |             
+    11   |  0        0 <- (A'+      D ) = Gb
+    10   |  0        0
+
+
+Exemplo 3:
+
+SoP ( 0,2,3,5,6,7,10,11,13,15 )
+
+1.  Formar grupos:
+
+                             Grupos de 2            Grupos de 4                
+    bits              marca                  marca                        marca
+    0:                                                                         
+       a'b'c'd' (  0 ) [x]   ( 0, 2) a'b'_ d' [ ]                              
+    1:                                                                         
+       a'b'c d' (  2 ) [x]                                                     
+                                                                               
+    2:                       ( 2, 3) a'b'c _  [x]   ( 2, 3, 6, 7) a'_ c _  [ ] 
+       a'b'c d  (  3 ) [x]   ( 2, 6) a'_ c d' [x]   ( 2, 3,10,11) _ b'c _  [ ] 
+       a'b c'd  (  5 ) [x]   ( 2,10) _ b'c d' [x]                              
+       a'b c d' (  6 ) [x]                                                     
+       a b'c d' ( 10 ) [x]                                                     
+    3:                                                                         
+       a'b c d  (  7 ) [x]                                                     
+       a b'c d  ( 11 ) [x]   ( 3, 7) a'_ c d  [x]   ( 3, 7,11,15) _ b c _  [ ] 
+       a b c'd  ( 13 ) [x]   ( 3,11) _ b'c d  [x]                              
+    4:                                                                         
+       a b c d  ( 15 ) [x]   ( 5, 7) a'b _ d  [x]   ( 5, 7,13,15) _ b _ d  [ ] 
+                             ( 5,13) _ b c'd  [x]                              
+                                                                               
+                             ( 6, 7) a'b c _  [x]                              
+                                                                               
+                             (10,11) a b'c _  [x]                              
+                                                                               
+                             ( 7,15) _ b c d  [x]                              
+                                                                               
+                             (11,15) a _ c d  [x]                              
+                                                                               
+                             (13,15) a b _ d  [x]                              
+
+
+2. Montar o mapa de cobertura:
+
+           0  2  3  5  6  7  10 11 13 15  
+         -------------------------------  
+   -> Ga | x  x                           ( 0, 2)       (a'b'_ d')
+   -> Gb |    x  x     x  x               ( 2, 3, 6, 7) (a'_ c _ )
+   -> Gc |    x  x            x  x        ( 2, 3,10,11) (_ b'c _ )
+      Gd |       x        x      x     x  ( 3, 7,11,15) (_ _ c d )
+   -> Ge |          x     x         x  x  ( 5, 7,13,15) (_ b _ d )
+         |------------------------------                          
+     [1] | 1        1  1      1     1                             
+
+           ^        ^  ^      ^     ^  
+           |        |  |      |     |  
+
+3. Compor a expressão equivalente
+ 
+   f (a,b,c,d)  = SoP ( 0, 2, 3, 5, 6, 7,10,11,13,15)
+                = Ga      +  Gb   +  Gc   +  Ge
+                 (a'b'd') + (a'c) + (b'c) + (bd)
+
+
+4. Verificar no mapa de Veitch-Karnaugh equivalente
+
+    AB\CD  00 01 11 10 
+         --------------
+    00   |  1     1  1 
+    01   |     1  1  1 
+    11   |     1  1    
+    10   |        1  1 
+
+5. Verificar por MAXTERMOS
+
+PoS ( 1, 4, 8, 9, 12, 14 )
+
+    AB\CD  00 01 11 10 
+         --------------
+    00   |     0       
+    01   |  0          
+    11   |  0        0 
+    10   |  0  0       
+
+           1  4  8  9  12 14  
+         -------------------------------  
+   -> Ga | x        x                     ( 1, 9)       (_ +B +C +D')
+   -> Gb |    x        x                  ( 4,12)       (_ +B'+C +D )
+   => Gc |       x  x                     ( 8, 9)       (A'+B +C +_ )
+      Gd |       x     x                  ( 8,12)       (A'+_ +C +D )
+   -> Ge |             x   x              (12,14)       (A'+B'+_ +D )
+         |------------------------------                          
+     [1] | 1  1            1                                         
+                                                                     
+           ^  ^            ^            
+           |  |            |            
+
+   F (A,B,C,D) =  Ga      .  Gb      .  Gc      .  Ge
+               = (B+C+D') . (B'+C+D) . (A'+B+C) . (A'+B'+D)
+               = A'C + B'C + BD + A'B'D' + CD 
+
+   OBS.: Como se verificou na simplificação por mintermos,
+         CD poderá ser descartado, pois é redundante, logo
+
+   F (A,B,C,D) = A'C + B'C + BD + A'B'D'
+ 
+
+       

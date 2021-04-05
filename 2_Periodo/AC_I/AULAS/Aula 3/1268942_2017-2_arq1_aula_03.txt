@@ -1,0 +1,275 @@
+PUC-Minas - ICEI - Ciência da Computação
+Arquitetura de Computadores I - Aula 03
+
+Representação de reais
+
+0,6 x 2 = 1,2
+0,2 x 2 = 0,4
+0,4 x 2 = 0,8
+0,8 x 2 = 1,6
+0,6 x 2 = 1,2
+
+
+Representação com ponto fixo
+
+ Exemplo:
+
+ x = 13.6     = 1101.10011001...
+         (10)                   (2)
+
+ parte inteira parte fracionária
+  ___________     ___________ 
+ |           |   |           |
+ | 0000 1101 | . | 1001 1001 |
+ |           |   |           |
+  ___________     ___________ 
+   (8 bits)         (8 bits)  
+
+ 
+ Erro relativo ao bit menos significativo:
+ e = 0.00000001 (2) = 1.0e8 (2) = 0,00390625
+
+ OBS.:
+ Se a parte fracionária for expandida para 16 bits,
+ o erro passará a ser de   
+
+ e = 1.0e16 (2) = 0,0000152587890625
+
+
+Representação com ponto flutuante
+
+Representação mínima (para valores exatos)
+
+ Exemplo:
+
+ x = 13.625    = 1101.101
+           (10)          (2)
+
+ Deslocar o ponto decimal até que todos dígitos
+ estejam à direita do mesmo, compensando pelo
+ produto por uma potência de 2.
+
+                    0
+ x =   1101.101  * 2 
+                    1
+ x =   110.1101  * 2 
+                    2
+ x =   11.01101  * 2 
+                    3
+ x =   1.101101  * 2 
+                    4 <- potência
+ x =   0.1101101 * 2 
+          ^
+          |
+       mantissa
+ 
+  sinal        mantissa  
+   ______________________ 
+  |   |      |           |
+  | 0 |      |. 1101101  |
+  |   |      |           |
+   ______________________ 
+   (1)  (???)     (8)   = (1 + ?? + 8) bits 
+      expoente
+
+  expoente = função ( potência, bits )
+
+  para a potência =  4 ->   100 (2) 
+  serão necessários 3 bits para a representação;
+  considerando o sinal do expoente, 
+  para a potência = +4 -> 0 100 (2) 
+  serão necessários 4 bits para a representação
+
+  Tabela para os expoentes com referência central
+
+  0 0000 -8
+  1 0001 -7
+  2 0010 -6
+  3 0011 -5
+  4 0100 -4
+  5 0101 -3
+  6 0110 -2
+  7 0111 -1
+  ---------                     (bits-1)
+  8 1000  0  <- zero central = 2
+  9 1001 +1
+  A 1010 +2
+  B 1011 +3
+  C 1100 +4
+  D 1101 +5
+  E 1110 +6
+  F 1111 +7
+
+                         (bits-1)
+  expoente = potência + 2 
+                         ( 4  -1)
+  expoente =    4     + 2         
+           =    4     + 8 
+           =   12 = 1100
+                        (2)
+
+  Representação mínima
+
+  sinal        mantissa  
+   ______________________ 
+  |   |      |           |
+  | 0 | 1100 |. 1101101  |
+  |   |      |           |
+   ______________________ 
+   (1)   (4)      (8)    = 13 bits
+      expoente
+
+
+  Representação mínima real (alinhada por bytes)
+
+  sinal        mantissa  
+   __________________________ 
+  |   |      |               |
+  | 0 | 1100 |. 1101101 000  |
+  |   |      |               |
+   __________________________ 
+   (1)   (4)      (8    + 3) = 16 bits
+      expoente
+
+
+Representação segundo a norma IEEE-754
+
+Para 16 bits
+
+ Exemplo:
+
+ x = 13.625    = 1101.101
+           (10)          (2)
+
+ Deslocar o ponto decimal até que todos dígitos
+ estejam à direita do mesmo, exceto o primeiro 1,
+ compensando pelo produto por uma potência de 2.
+
+                    0
+ x =   1101.101  * 2 
+                    1
+ x =   110.1101  * 2 
+                    2
+ x =   11.01101  * 2 
+                    3
+ x =   1.101101  * 2 
+
+
+       primeiro valor igual a 1
+       |
+       v           3 <- potência
+ x =   1.101101 * 2 
+            ^
+            |
+         mantissa
+
+  sinal     expoente                 mantissa            
+   _____________________________________________________ 
+  |   |                 |                               |
+  | 0 | _ _ _ _ _ _ _ _ |. 101 1010 0000 0000 0000 0000 |
+  |   |                 |                               |
+   _____________________________________________________ 
+   (1)        (8)                      (23)             = 32 bits  
+             
+
+  expoente = função ( potência, bits )
+
+  valor de referência para o zero = 127
+
+  expoente = potência + 127
+
+           =    3     + 127 = 130 = 1000 0010 (2)
+
+
+  Representação IEEE-754 para 16 bits
+
+  sinal     expoente                 mantissa            
+   _____________________________________________________ 
+  |   |                 |                               |
+  | 0 |    1000 0010    |. 101 1010 0000 0000 0000 0000 |
+  |   |                 |                               |
+   _____________________________________________________ 
+   (1)        (8)                      (23)             = 32 bits  
+             
+  OBS.:
+  Há representações especiais para
+
+  zero   
+
+  sinal     expoente                 mantissa            
+   _____________________________________________________ 
+  |   |                 |                               |
+  | 0 |    0000 0000    |. 000 0000 0000 0000 0000 0000 |
+  |   |                 |                               |
+   _____________________________________________________ 
+
+  -Infinity
+
+  sinal     expoente                 mantissa            
+   _____________________________________________________ 
+  |   |                 |                               |
+  | 1 |    1111 1111    |. 000 0000 0000 0000 0000 0000 |
+  |   |                 |                               |
+   _____________________________________________________ 
+
+  +Infinity
+
+  sinal     expoente                 mantissa            
+   _____________________________________________________ 
+  |   |                 |                               |
+  | 0 |    1111 1111    |. 000 0000 0000 0000 0000 0000 |
+  |   |                 |                               |
+   _____________________________________________________ 
+
+  NaN      (Not_a_Number) 
+
+  sinal     expoente                 mantissa            
+   _____________________________________________________ 
+  |   |                 |                               |
+  | 0 |    1111 1111    |. x00 0000 0000 0000 0000 0000 |
+  |   |                 |                               |
+   _____________________________________________________ 
+
+  OBS.: Para ser NaN basta a mantissa ser diferente de zero.
+
+  Se a representação for de 64 bits, 
+  os bits para representar o expoente serão 11,
+  os bits para representar a mantissa serão 52.       
+  O valor de referência para o expoente será 1023.
+
+
+  Outro exemplo:
+
+  Dado o valor binário em ponto-flutuante em notação IEEE-754
+
+  1 0111 1110 .010 0000 0000 0000 0000 0000
+
+  sinal    = 1   (negativo)
+
+  expoente = 0111 1110 (2) = 126
+
+  mantissa = .01 (simplificada) = (1).01 (expandida)
+                                   ^
+                                   |_____ acréscimo
+
+                        (126-127)            (-1)
+  valor = - 1.01 (2) * 2         = - 1.25 * 2    = -0.625
+
+
+  Mais um exemplo:
+
+  Dado o valor binário em ponto-flutuante em notação IEEE-754
+
+  0 1000 0111 .011 0000 0000 0000 0000 0000
+
+  sinal    = 0   (positivo)
+
+  expoente = 1000 0111 (2) = 135
+
+  mantissa = .011 (simplificada) = (1).011 (expandida)
+                                   ^
+                                   |_____ acréscimo
+
+                         (135-127)             (+8)
+  valor = + 1.011 (2) * 2         = + 1.375 * 2    = +352
+
