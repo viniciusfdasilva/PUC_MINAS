@@ -1,0 +1,162 @@
+Não há um único desenvolvimento,
+em tecnologia ou gestão
+técnica de gement, que por
+se promete até mesmo um pedido
+melhoria de magnitude
+dentro de uma década em
+vidade, confiabilidade, simplicidade
+Fred Brooks, 1986
+Prêmio Turing, 1999
+
+Ensaio clássico de Brook → "Por que o SE é tão difícil?"
+“Não há desenvolvimento único, seja na tecnologia ou
+técnica de gestão, que por si só promete
+uma melhoria de ordem de grandeza dentro de uma década em
+produtividade, confiabilidade, simplicidade ”
+Fred Brooks, 1986
+
+Bala de Prata → abordagem única que por si só pode
+entregar uma melhoria de ordem de magnitude para alguns
+aspecto do desenvolvimento de software
+Uma ordem de grandeza → 10 vezes
+
+Problemas enfrentados pela SE:
+
+A maioria das técnicas ataca os acidentes
+Para uma melhoria de ordem de grandeza:
+
+Essência → dificuldades intrínsecas (domínio)
+Acidente → dificuldades relacionadas à produção
+Acidentes → deve responder por 90% do
+esforço geral
+Ferramentas → deve reduzir os acidentes a zero
+Mas de fato:
+
+Acidentes → não representam 90% do
+esforço geral
+Nova ferramenta ou técnica resolve alguns problemas
+enquanto introduzia outras
+
+Complexidade → problemas podem ser complexos
+Conformidade → alteração de requisitos
+Alterabilidade → pressão para mudar
+Invisibilidade → O software é invisível e
+intangível, difícil de obter "grande figura"
+
+Entidades de software são complexas
+
+Enorme número de estados
+
+Diferente de materiais em outros domínios, não há dois
+entidades são iguais em software
+Grandes sistemas de software têm uma ordem de
+magnitude mais estados do que computadores
+(hardware)
+Aumentando exponencialmente
+
+À medida que o tamanho de um sistema aumenta, o número
+e particularmente os tipos de partes aumentam
+exponencialmente
+
+É impossível abstrair o
+complexidade do domínio da aplicação
+
+Por exemplo → controle de tráfego aéreo, internacional
+banco, aviônicos, software
+Os domínios são intrinsecamente complexos e isso
+complexidade aparecerá no software como
+designers tentam modelar o domínio
+A complexidade também vem dos numerosos
+e relações estreitas entre
+artefatos de software heterogêneos, como
+especificações, documentos, código, casos de teste, etc.
+
+Problemas resultantes da complexidade:
+
+comunicação difícil da equipe
+falhas de produto; superação de custos; agendar atrasos
+rotatividade de pessoal (perda de conhecimento)
+estados não numerados (muitos deles)
+falta de extensibilidade (complexidade da estrutura)
+estados imprevistos (brechas de segurança)
+visão geral do projeto é difícil
+
+Arbitrariedade → alterações não planejadas
+
+Necessidades do cliente → lidar com uma mudança na
+fornecedor imposto pelo cliente
+Questões de regulação → regras de execução que
+pode mudar anualmente
+Mudanças de ambiente → adaptação a mudanças ou
+para um ambiente pré-existente, como
+integrando com sistemas legados
+Outras questões → um novo CIO chega ao
+empresa decidiu "fazer uma marca" por
+mudando completamente o processo de negócios
+É quase impossível planejar arbitrariamente
+mudança. Nós apenas temos que esperar e lidar com isso
+quando isso acontece
+
+Pressão para mudar → cultura, intangibilidade
+Em domínios tangíveis, os clientes entendem como
+retrabalho difícil (e caro) é
+
+Produtos manufaturados raramente são alterados
+depois que eles foram criados
+
+Imagine pedir um novo layout de uma casa depois
+a fundação foi derramada
+Os automóveis são pouco lembrados
+Edifícios são caros para remodelar
+Mas software? Constantemente pediu para mudar
+
+Os clientes geralmente não entendem o suficiente
+software para entender quando um pedido de mudança
+requer retrabalho significativo
+
+Representação → intangibilidade
+Diferente de produtos tangíveis que:
+
+É fácil representar
+
+Blueprints → geometria identifica problemas
+Depois de fabricado raramente mudou
+Imagine pedir um novo layout de uma casa depois do
+fundação foi derramada
+Automóveis → pouco lembrados
+Edifícios → caros para remodelar
+O software é invisível e intangível:
+
+Difícil de representar
+
+Várias notações e diagramas
+Constantemente pediu para mudar
+
+
+Difícil projetar exibições gráficas de software que
+transmitir significado aos desenvolvedores
+Difícil de reduzir o software a diagramas
+
+UML → 13 tipos de diagramas para modelar estrutura de classe, objeto
+relacionamentos, atividades, manipulação de eventos, software
+arquitetura, implantação, pacotes ...
+As notações dos diferentes tipos quase nunca aparecem no
+mesmo diagrama, realmente documentando 13 aspectos diferentes
+Difícil de obter tanto "a grande figura" e visão detalhada
+ao mesmo tempo
+A falta de visualização impede os engenheiros de usar
+as poderosas habilidades visuais do cérebro
+
+Compre x Construir → não desenvolva software quando
+você pode evitar
+Prototipagem rápida → esclarecer requisitos
+Desenvolvimento incremental → não construa
+software, cresça
+Grandes designers → fique atento
+eles, quando você os encontrar, não deixe
+Nenhuma técnica única produz uma ordem de magnitude
+aumentar por si só, mas várias técnicas juntas podem
+alcançá-lo, exigindo a aplicação de toda a indústria e
+disciplina
+
+

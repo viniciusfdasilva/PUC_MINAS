@@ -1,0 +1,80 @@
+Nome: Vinicius Francisco da Silva
+Matrícula: 576920
+
+Caso de Uso: CRUD USUÁRIO
+Ator: Locador, Locatário
+Definição: Locador, Locatário que é um tipo de usuário do sistema faz seu cadastro, pode alterar seus dados ao longo do uso do sistema e pode excluír sua conta
+Fluxo: I - Terá uma tela inicial em que o usuário poderá clicar em cadastrar que será redirecionado para a tela de cadastro.
+       II - O usuário digitará os dados necessários para realizar o cadastro e clicará no botão CADASTRAR e o cadastro será feito
+Pós Condição: Usuário cadastrado no sistema e pronto para usar o app
+
+
+Caso de Uso: CRUD LOCAL
+Ator: Locador 
+Definição: Cadastro do local que será ofertado aos usuários.
+Pré condição: Locador cadastrado no sistema.
+
+Fluxo: I - Terá a tela principal em que o locador terá a opção de cadastrar um novo local. Quando clicado será redirecionado para a tela
+de cadastro. Na tela o locador digitará as informações necessárias, como endereço e fotos do local para divulgação da oferta.
+       II - Ao clicar no botão de cadastrar as informações serão enviadas para avaliação e caso aprovada será divulgada a orferta do local.
+Pos condição: Oferta do local divulgada para os locatários
+
+
+Caso de Uso: Cancelar reserva
+Ator: Locador,Locatário
+Definição: Opção que o locador terá para cancelar a reserva realizada pelo locatário por algum problema obtido ao longo da negociação.
+Pré condição: Locador e locatário cadastrados no sistema, e locatário ter feito reserva.
+Fluxo: I - Terá a tela com a descrição da reserva e terá uma opção de realizar o cancelamento da reserva.
+       II - Ao clicar no cancelamento o locatário ou o locacador comentará o motivo, e, caso o check-in não tenha sido realizado
+       III - O comentar o motivo do cancelamento da reserva está incluso no ato do cancelamento, e pode ser opcional.
+o locador poderá cancelar a reserva.
+Pós condição: Reserva cancelada e pagamento não realizado
+
+
+Caso de uso: Aprovar reserva
+Ator: Locador
+Definição: O locador ao receber a oferta do locatário irá aprovar a reserva.
+Pré condição: Locador e locatário cadastrados no sistema, locatário solicitar a aprovação da reserva.
+Fluxo: I - Na tela que o locador tem para verificar as solicitações de reserva ele clicará na reserva.
+       II - Na tela com a descrição da solicatação o locador terá mais informações sobre o locatário
+e terá um botão para aprovar a reserva.
+Pós condição: Reserva feita e local disponível para uso do locatário.
+
+Caso de uso: Realizar reserva
+Ator: Locatário
+Pré condição: Locador e locatário cadastrados no sistema, local cadastrado no sistema
+Definição: O locatário ao visualizar uma oferta poderá solicitar a reserva ao locador passando algumas informações adicionais.
+Fluxo: I - Na tela de ofertas de lugares que poderá ser filtrado por diversos atributos como, país,proximidade,estado,cidade dentre outros.
+       II - Ao clicar na oferta o usuário terá informações de quando o local estará disponível para uso e poderá fazer a reserva.
+       III - Ao clicar em realizar reserva o sistema colherá suas informações e você terá a opção de tecer alguns comentários que também estará
+incluso no ato de realizar a reserva.
+       IV - Ao clicar a oferta será transformado em uma reserva pendente que deverá ser aprovada pelo locador.
+Pós condição: Oferta de reserva enviado para aprovação do locador.
+
+Caso de uso: Realizar check-in
+Ator: Locatário
+Pré condição: Locador e locatário cadastrados no sistema, local cadastrado no sistema e reserva aprovada.
+Definição: Ao chegar no local o locador se encontrará com o locatário o será realizado o check-in.
+Fluxo: I - Terá uma tela para o locador em que ele realizará o check-in.
+       II - Na tela da reserva o locador terá um botão para iniciar o check-in
+       III - Ao pressionar o locatário será notificado e o check-in será iniciado caso o locatário aprove o inicio.
+Pós condição: locatário pronto para utilizar o local.
+
+Caso de uso: Realizar check-out
+Ator: Locatário
+Pré condição: Locador e locatário cadastrados no sistema, local cadastrado no sistema e reserva aprovada, check-in realizado
+Definição: Ao sair do local o locador se encontrará com o locatário o será realizado o check-out.
+Fluxo: I - Terá uma tela para o locador em que ele realizará o check-out.
+       II - Na tela da reserva o locador terá um botão para iniciar o check-out
+       III - Ao pressionar o locatário será notificado e o check-out será realizado caso o locatário aprove o check-out.
+Pós condição: Local liberado para uso.
+
+Caso de uso: Avaliar serviço
+Ator: Locatário
+Pré condição: Locador e locatário cadastrados no sistema, local cadastrado no sistema e reserva aprovada,check-in e check-out realizado
+Definição: Após a hospedagem o usuário receberá uma notificação para realizar a avaliação do local.
+Fluxo: I - O usuário entrará na tela de avaliação. Dentro dela o usuário será perguntado sobre a sua hospedagem e cada quesito será avaliado
+por nota de zero a cinco.
+       II - Após realizar a avaliação ele poderá tecer comentários adicionais e poderá compartilhar o local em suas redes sociais que estão inclusos em avaliação.
+
+

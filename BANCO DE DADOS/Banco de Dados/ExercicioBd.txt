@@ -1,0 +1,19 @@
+Dado o esquema relacional
+
+Ambulatorio(|numeroA|,andar,capacidade)
+Médico(|CRM|,nome,idade,cidade,especialidade,#numeroA)
+Paciente(|RG|,nome,idade,cidade,doença)
+Consulta(#CRM,#RG,data,hora)
+Funcionario(|RG|,nome,idade,cidade,salário)
+
+1 Buscar os dados dos pacientes que estão com dengue
+	SELECT  * FROM PACIENTE WHERE DOENCA = 'dengue'
+
+2 Buscar os dados dos médicos cardiologistas com mais de 44 anos
+	SELECT * FROM MEDICO WHERE ESPECIALIDADE = 'cardiologista' AND IDADE > 44
+	
+3 buscar os dados das consultas exceto aquelas marcadas para os médicos com CRM 4656 E 1879
+	SELECT * FROM CONSULTAS WHERE CRM <> 4656 AND CRM <> 1879
+
+4 Buscar os dados dos ambulatórios do quarto andar que ou tenham capacidade igual a 50 ou tenham numero superior a 10
+	SELECT * FROM AMBULATORIO WHERE ANDAR = 4 OR capacidade = 50 OR numeroA > 10

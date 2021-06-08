@@ -1,0 +1,44 @@
+Nós construímos coisas para as pessoas
+Pessoas → Clientes
+Coisas → Software
+Nós → Engenheiros
+Construir → Processo
+Nós “usamos sistematicamente recursos científicos e tecnológicos conhecimento, métodos e experiência para projetar, implementar, testar, implantar e documentar software” IEEE
+
+
+Eles precisam e exigem
+Necessidades → expressas porrequisitos
+Exigências → refletidas em qualidade de software
+Funcional → quão bem o software está em conformidade
+com requisitos funcionais? É desenvolvidocorretamente?
+Não-funcional → como o software atende requisitos não funcionais que suportam o entrega dos requisitos funcionais, tais como Escalabilidade, robustez ou manutenção? É isso funciona conforme necessário?
+
+
+Software → algoritmos + dados relacionados Fornece especificação não ambígua de como resolver uma classe de problemas Algoritmos são representados em códigos-fonte legíveis por humanos escritos usando linguagens de programação
+O código fonte pode ser convertido em uma imagem executável por um compilador ou executado imediatamente por um intérprete
+Dados relacionados geralmente incluem códigos de máquina, interpretados códigos, bibliotecas, documentação e mídia digital
+A palavra algoritmo deriva do século IX persa o matemático Muhammad ibn Mūsā al'Khwārizmī, "Algoritmi" latinizado
+
+
+Construir software é um trabalho árduo “Não há desenvolvimento único, seja na tecnologia ou técnica de gestão, que por si só promete
+uma melhoria de ordem de grandeza dentro de uma década em produtividade, confiabilidade, simplicidade ” Fred Brooks, 1986
+Brooks divide os problemas enfrentados pela SE em: Essence → dificuldades intrínsecas na natureza do software Acidente → dificuldades relacionadas à produção Para Brooks, a maioria das técnicas ataca os acidentes
+
+
+Fator de 10 melhorias?
+1. Os acidentes da SE devem responder por 90% dos esforço geral
+2. Ferramentas devem reduzir problemas acidentais a zero 
+Brooks não acredita que o primeiro seja verdadeiro
+Este último é quase impossível. Novas ferramentas e técnicas resolver alguns problemas ao introduzir outras
+Esforço acidental não é 90% do trabalho, é muito menor do que isso, e reduzi-lo a zero não nos dará uma melhoria de ordem de grandeza
+
+
+Princípios de engenharia aplicados a produção de software
+Requisito de software → elicitação, análise, especificação e validação de requisitos 
+Design de software → definição da arquitetura, componentes, interfaces e características
+Construção de software → codificação, verificação, unidade e testes de integração e depuração
+Teste de software → investigação técnica para atesta qualidade de software
+Manutenção de software → atividades necessárias para fornecer suporte econômico ao software
+
+
+

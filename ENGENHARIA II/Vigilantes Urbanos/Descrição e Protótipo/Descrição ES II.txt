@@ -1,0 +1,53 @@
+Nome: Vinicius Francisco da Silva
+Matrícula: 576920
+
+									Descrição:
+	
+		O aplicativo apresenta um design bem simples que possibilita diversos usuários consigam menusear. A tela inicial do aplicativo 		      (TELA 1 no arquivo pdf) apresenta um layout que possibilitará o usuário entrar em sua conta digitando seu email e sua senha, 		      digitando-os e apertando o botão "ENTRAR" o mesmo entrará em sua conta. Na mesma tela caso o usuário ainda não tenha um cadastro 
+	      no aplicativo o usuário poderá clicar na frase "Não tem conta? cadastre-se" abaixo ao botão "ENTRAR" que será realizado o redi-
+	      recionamento do usuário para a tela de cadastro (TELA 3). Na tela de cadastro o usuário digitará o seu nome,email,senha e a conta 	      bancária para receber a bonificação e o usuário tera um Switch para marcar se ele deseja ou não se manter conectado. Ao digitar  		      tudo o usuário terá uma conta criada, vale resaltar que caso o usuário clique nos botões tando para fazer login (TELA 1) quanto 		      para realizar o cadastro (TELA 3)	caso o usuário não digite os dados ou deixe algum campo em branco o aplicativo notificará o 		      usuário.
+
+		Após ter seu cadastro realizado ou após logar caso o usuário já tenha uma conta ele será redirecionado para o menu inicial (TELA 		      4) onde o usuário poderá ver todos os incidentes que ele reportou ao OAP (Órgão de Administração Pública) cada lista será organiza-
+	      do em uma lista de incidentes. No canto superior o aplicativo apresenta um ícone para pesquisar. Quando o usuário clicar nele apare-
+	      cerá um campo de texto onde o usuário digitará o filtro de pesquisa, podendo ser eles somente, sililaridade de incidentes ou geolo-
+	      calização. Quando o usúario digita, automaticamente ele faz a pesquisa pelo filtro gerando um nova lista de incidentes. Nela o usuá-
+	      rio terá cada incidente identificado pelo seu código gerado automaticamente no momento da confirmação. Na mesma tela o usuário terá 		      a opção de criar um novo registro de incidente ou visualizar um registro de incidente já feito.
+
+		* [Opção do usuário por criar um novo registro de incidente:]
+			Caso o usuário escolha criar um novo registro clicando no botão com o símbolo de soma (+) ele será redirecionado para 			      outra tela (TELA 6). Nela o usuário irá digitar a descrição breve do incidente o local e a data/hora. Na borda inferior
+		      o usuário terá as opções para realizar a filmagem ou tirar fotos onde serão armazenados na parte superior aos dados de
+		      local, data e descrição. Pressionado o botão confirmar caso todos os dados sejam preenchidos o usuário será redirecionado
+		      para a (TELA 7) onde será informado o código gerado do incidente e as informações de recebimento da bonificação. Pressio-
+		      nado o botão de OK o apliativo leverá o usuário novamente para o menu principal.
+
+		* [Opção do usuário por consultar um regritro de incidente:]
+
+			Caso o usuário escolhar consultar um registro já existente clicando no registro desejado ele será redirecionado para
+		      outra tela (TELA 5). Nela o usuário poderá visualizar mais detalhes sobre o incidênte e todas as informações preenchidas
+		      por si mesmo. Na mesma tela ele poderá ver através de um Switch que o mesmo não poderá manipular (é somente para a visua-
+		      lização) a situação da sua bonificação, caso já esteja liberada o Switch é marcado com enable (Habilitado), caso contrário
+		      será marcado como disable (Desabilitado).
+
+		     	Na (TELA 5) também mostra na borda superior um menu com opções para as configurações, menu este que está presente também
+		      na (TELA 4), e (TELA 6). E também tem um ícone para "voltar á tela anterior" que está presente também na (TELA 2), 
+		      (TELA3), (TELA 4) e (TELA 5) e sua funcão como dita é retroceder á tela anterior. No menu caso o usuário clique na opção
+		      "Sair" o mesmo será deslogado do aplicativo e redireciondo para a (TELA 1), caso o usuário clique na opção "Configurações"
+		      ele será redirecionado para a (TELA 2).
+
+	      Na (TELA 2) o usuário poderá visualizar seus dados de cadastro e caso deseje editar o campo que marca se ele quer ou não se man-
+	     ter conectado ele poderá realizar a edição. Após clicar em "SALVAR" aparecerá uma mensagem que dirá que as informações foram alte-
+	     radas com sucesso.
+
+	      Toda vez que o usuário entrar no aplicativo caso ele esteja logado se uma bonificação dele for aprovada a primeira tela
+	    que será mostrada para ele será a (TELA 8) com o código do incidente dizendo que a bonificação foi aprovada e já está disponivel pa-
+	    ra uso. Ao clicar em OK o usuário será redirecionado para o menu inicial (TELA 4).
+
+	      Por fim, qualquer ação do usuário no aplicativo pode ser realizado de forma online ou offline. Quando a conecção estiver online e o
+	     usuário enviar o incidênte para o Orgão de Administração Pública o registro ficará armazenado e quando for estabelecido a conexão no
+	     dispositivo o mesmo será enviado para a OAP. Se o celular estiver conectado o aplicativo já enviará o registro para a OAP.
+
+	      	
+
+	
+
+		 
