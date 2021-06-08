@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/vinicius/PUC_MINAS/Computação/GRAFOS/TpGraph/Graph.h
+stdlib.h
+-
+
+/home/vinicius/PUC_MINAS/Computação/GRAFOS/TpGraph/main.cpp
+iostream
+-
+graph
+/home/vinicius/PUC_MINAS/Computação/GRAFOS/TpGraph/graph
+Graph.h
+/home/vinicius/PUC_MINAS/Computação/GRAFOS/TpGraph/Graph.h
+

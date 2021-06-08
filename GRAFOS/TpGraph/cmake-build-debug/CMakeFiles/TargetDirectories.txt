@@ -1,0 +1,3 @@
+/home/vinicius/PUC_MINAS/Computação/GRAFOS/TpGraph/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/vinicius/PUC_MINAS/Computação/GRAFOS/TpGraph/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/vinicius/PUC_MINAS/Computação/GRAFOS/TpGraph/cmake-build-debug/CMakeFiles/Graph.dir

@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <SCRIPT src="https://java.com/js/dtjava.js"></SCRIPT><script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'ControleAereo.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48am5scCBzcGVjPSIxLjAiIHhtbG5zOmpmeD0iaHR0cDovL2phdmFmeC5jb20iIGhyZWY9IkNvbnRyb2xlQWVyZW8uam5scCI+CiAgICA8aW5mb3JtYXRpb24+CiAgICAgICAgPHRpdGxlPkNvbnRyb2xlQWVyZW88L3RpdGxlPgogICAgICAgIDx2ZW5kb3I+VmluaWNpdXMgU2lsdmE8L3ZlbmRvcj4KICAgICAgICA8ZGVzY3JpcHRpb24+bnVsbDwvZGVzY3JpcHRpb24+CiAgICAgICAgPG9mZmxpbmUtYWxsb3dlZC8+CiAgICA8L2luZm9ybWF0aW9uPgogICAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+CiAgICA8cmVzb3VyY2VzPgogICAgICAgIDxqMnNlIHZlcnNpb249IjkrIiBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+CiAgICAgICAgPGphciBocmVmPSJDb250cm9sZUFlcmVvLmphciIgc2l6ZT0iNDIyNDg2IiBkb3dubG9hZD0iZWFnZXIiLz4KICAgIDwvcmVzb3VyY2VzPgogICAgPGpmeDpqYXZhZngtZGVzYyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgbWFpbi1jbGFzcz0iY29udHJvbGVhZXJlby5NYWluIiBuYW1lPSJNYWluIi8+Cjwvam5scD4KCg=='
+            },
+            {
+                javafx : '9+'
+            },
+            {}
+        );
+        return false;
+    }
+</script><script>
+    function javafxEmbedcontroleaereo() {
+        dtjava.embed(
+            {
+                id : 'controleaereo',
+                url : 'ControleAereo.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48am5scCBzcGVjPSIxLjAiIHhtbG5zOmpmeD0iaHR0cDovL2phdmFmeC5jb20iIGhyZWY9IkNvbnRyb2xlQWVyZW8uam5scCI+CiAgICA8aW5mb3JtYXRpb24+CiAgICAgICAgPHRpdGxlPkNvbnRyb2xlQWVyZW88L3RpdGxlPgogICAgICAgIDx2ZW5kb3I+VmluaWNpdXMgU2lsdmE8L3ZlbmRvcj4KICAgICAgICA8ZGVzY3JpcHRpb24+bnVsbDwvZGVzY3JpcHRpb24+CiAgICAgICAgPG9mZmxpbmUtYWxsb3dlZC8+CiAgICA8L2luZm9ybWF0aW9uPgogICAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+CiAgICA8cmVzb3VyY2VzPgogICAgICAgIDxqMnNlIHZlcnNpb249IjkrIiBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+CiAgICAgICAgPGphciBocmVmPSJDb250cm9sZUFlcmVvLmphciIgc2l6ZT0iNDIyNDg2IiBkb3dubG9hZD0iZWFnZXIiLz4KICAgIDwvcmVzb3VyY2VzPgogICAgPGpmeDpqYXZhZngtZGVzYyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgbWFpbi1jbGFzcz0iY29udHJvbGVhZXJlby5NYWluIiBuYW1lPSJNYWluIi8+Cjwvam5scD4KCg=='
+            },
+            {
+                javafx : '9+'
+            },
+            {}
+        );
+    }
+    
+            <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedcontroleaereo);
+</script>
+    </head>
+    <body>
+        <h2>
+            Test page for <b>Main</b>
+        </h2>
+        <b>Webstart:</b><a href="ControleAereo.jnlp" onclick="return launchApplication('ControleAereo.jnlp');">click to launch this app as webstart</a>
+        <br>
+        <hr>
+        <br>
+        
+        <!-- Applet will be inserted here -->
+        <div id="javafx-app-placeholder"></div>
+    </body>
+</html>
