@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1456958428 source:d:\__aulas_puc\_arduino_c#_c_unity_java\teste_codeblock\teste_envia_cpp\teste_envia.cpp
+	<iostream>
+	<windows.h>
+	<cstdlib>
+	<string.h>
+
+1457058952 source:i:\sga_arduino\teste_envia_cpp\teste_envia.cpp
+	<iostream>
+	<windows.h>
+	<cstdlib>
+	<string.h>
+
+1457058952 source:d:\__aulas_puc\2016_2\labac\rel05_envia_arduino\teste_envia_cpp\teste_envia.cpp
+	<iostream>
+	<windows.h>
+	<cstdlib>
+	<string.h>
+

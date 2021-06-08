@@ -1,0 +1,3186 @@
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email   nome   nome   primeiroNumero  0  resultado  56  segundoNumero  0  tempo  7  total  3  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> nome   joao antonio <============
+inicio
+morreu
+soma
+007
+020
+107
+150
+primeiroNumero  27  resultado  84  segundoNumero  57
+acertos  1  chance  2
+inicio
+morreu
+soma
+dezena2  30  unidade1  4  unidade2  9
+004
+020
+109
+130
+primeiroNumero  24  resultado  63  segundoNumero  39
+acertos  2  chance  1
+inicio
+morreu
+soma
+dezena1  70  dezena2  10  unidade1  7  unidade2  2
+007
+070
+102
+110
+primeiroNumero  77  resultado  89  segundoNumero  12
+acertos  3  chance  0
+inicio
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email   nome   nome   primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> nome   Lilian Guimaraes Pinheiro <============
+inicio
+morreu
+soma
+dezena1  90  dezena2  0  unidade1  5  unidade2  0
+005
+090
+100
+1a0
+primeiroNumero  95  resultado  95  segundoNumero  0
+acertos  1  chance  2
+inicio
+morreu
+soma
+dezena1  80  dezena2  50  unidade1  2  unidade2  6
+002
+080
+106
+150
+primeiroNumero  82  resultado  138  segundoNumero  56
+acertos  2  chance  1
+inicio
+morreu
+soma
+dezena1  60  dezena2  60  unidade1  4  unidade2  2
+004
+060
+102
+160
+primeiroNumero  64  resultado  126  segundoNumero  62
+acertos  3  chance  0
+inicio
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email   nome   nome   primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> nome   Vinícius <============
+inicio
+morreu
+soma
+dezena1  0  dezena2  20  unidade1  0  unidade2  0
+000
+0a0
+100
+120
+primeiroNumero  0  resultado  20  segundoNumero  20
+acertos  1  chance  2
+inicio
+morreu
+soma
+dezena1  20  dezena2  50  unidade1  9  unidade2  9
+009
+020
+109
+150
+primeiroNumero  29  resultado  88  segundoNumero  59
+chance  1
+inicio
+morreu
+soma
+dezena1  0  dezena2  90  unidade1  4  unidade2  2
+004
+0a0
+102
+190
+primeiroNumero  4  resultado  96  segundoNumero  92
+acertos  2  chance  0
+inicio
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email   nome   nome   primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> nome   marco <============
+inicio
+morreu
+soma
+dezena1  50  dezena2  50  unidade1  6  unidade2  6
+006
+050
+106
+150
+primeiroNumero  56  resultado  112  segundoNumero  56
+chance  2
+inicio
+morreu
+soma
+dezena1  60  dezena2  0  unidade1  1  unidade2  2
+001
+060
+102
+1a0
+primeiroNumero  61  resultado  63  segundoNumero  2
+acertos  1  chance  1
+inicio
+morreu
+soma
+dezena1  0  dezena2  80  unidade1  4  unidade2  9
+004
+0a0
+109
+180
+primeiroNumero  4  resultado  93  segundoNumero  89
+acertos  2  chance  0
+inicio
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email   nome   nome   primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> nome   Bruna <============
+inicio
+morreu
+soma
+dezena1  90  dezena2  20  unidade1  1  unidade2  9
+001
+090
+109
+120
+primeiroNumero  91  resultado  120  segundoNumero  29
+chance  2
+inicio
+morreu
+soma
+dezena1  60  unidade1  3  unidade2  0
+003
+060
+100
+120
+primeiroNumero  63  resultado  83  segundoNumero  20
+acertos  1  chance  1
+inicio
+morreu
+soma
+dezena2  70  unidade1  2  unidade2  6
+002
+060
+106
+170
+primeiroNumero  62  resultado  138  segundoNumero  76
+acertos  2  chance  0
+inicio
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email   nome   nome   primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> nome   henrique <============
+email   henriquelopes98@hotmail.com
+inicio
+morreu
+soma
+dezena1  80  dezena2  20  unidade1  0  unidade2  1
+000
+080
+101
+120
+primeiroNumero  80  resultado  101  segundoNumero  21
+acertos  1  chance  2
+inicio
+morreu
+soma
+dezena2  30  unidade1  9  unidade2  8
+009
+080
+108
+130
+primeiroNumero  89  resultado  127  segundoNumero  38
+acertos  2  chance  1
+inicio
+morreu
+soma
+dezena1  0  unidade1  4  unidade2  4
+004
+0a0
+104
+130
+primeiroNumero  4  resultado  38  segundoNumero  34
+inicio
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email   nome   nome   primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> nome   Diogo <============
+inicio
+morreu
+soma
+dezena1  20  dezena2  30  unidade1  8  unidade2  6
+008
+020
+106
+130
+primeiroNumero  28  resultado  64  segundoNumero  36
+
+=========> dezena1  0  dezena2  0  email   email   nome   nome   primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> nome   Diogo <============
+inicio
+morreu
+soma
+008
+070
+108
+160
+primeiroNumero  78  resultado  146  segundoNumero  68
+acertos  1  chance  2
+inicio
+morreu
+soma
+003
+010
+106
+1a0
+primeiroNumero  13  resultado  19  segundoNumero  6
+acertos  2  chance  1
+inicio
+morreu
+soma
+dezena1  40  unidade1  9
+009
+040
+106
+1a0
+primeiroNumero  49  resultado  55
+acertos  3  chance  0
+inicio
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email   nome   nome   primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> nome   pedro <============
+email   pedrofranca698@gmail.com
+inicio
+morreu
+soma
+dezena1  90  dezena2  0  unidade1  3  unidade2  8
+003
+090
+108
+1a0
+primeiroNumero  93  resultado  101  segundoNumero  8
+chance  2
+inicio
+morreu
+soma
+dezena1  40  dezena2  10  unidade1  4
+004
+040
+108
+110
+primeiroNumero  44  resultado  62  segundoNumero  18
+acertos  1  chance  1
+inicio
+morreu
+soma
+dezena1  60  dezena2  30  unidade1  0  unidade2  0
+000
+060
+100
+130
+primeiroNumero  60  resultado  90  segundoNumero  30
+acertos  2  chance  0
+inicio
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email   nome   nome   primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> nome   henrique <============
+inicio
+morreu
+soma
+dezena1  70  dezena2  60  unidade1  4  unidade2  1
+004
+070
+101
+160
+primeiroNumero  74  resultado  135  segundoNumero  61
+acertos  1  chance  2
+inicio
+morreu
+soma
+dezena1  50  dezena2  50  unidade1  1  unidade2  6
+001
+050
+106
+150
+primeiroNumero  51  resultado  107  segundoNumero  56
+acertos  2  chance  1
+inicio
+morreu
+soma
+dezena1  30  dezena2  70  unidade1  7  unidade2  3
+007
+030
+103
+170
+primeiroNumero  37  resultado  110  segundoNumero  73
+acertos  3  chance  0
+inicio
+morreu
+FIM
+
+=========> acertos  3  chance  0  dezena1  30  dezena2  70  email   henriquelopes98@hotmail.com       henrique   primeiroNumero  37  resultado  110  segundoNumero  73  tempo  599  total  3  unidade1  7  unidade2  3  velocidade  248 <============
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> lORENA <============
+email   lorenaparreiraresende20@hotmail.com
+inicio
+morreu
+soma
+dezena1  40  dezena2  0  unidade1  3  unidade2  1  velocidade  10
+003
+040
+101
+1a0
+primeiroNumero  43  resultado  44  segundoNumero  1
+chance  2
+inicio
+morreu
+soma
+dezena1  50  dezena2  90  unidade1  5  unidade2  4
+005
+050
+104
+190
+primeiroNumero  55  resultado  149  segundoNumero  94
+chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  40  dezena2  10  unidade1  9  unidade2  9
+009
+040
+109
+110
+primeiroNumero  49  resultado  68  segundoNumero  19
+acertos  1  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> tabata <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  40  dezena2  70  unidade1  4  unidade2  7
+004
+040
+107
+170
+inicio
+morreu
+soma
+dezena1  70  dezena2  80  unidade1  7  unidade2  0
+007
+070
+100
+180
+primeiroNumero  77  resultado  157  segundoNumero  80
+acertos  1  chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  90  dezena2  50  unidade1  4  unidade2  1
+004
+090
+101
+150
+primeiroNumero  94  resultado  145  segundoNumero  51
+chance  0
+inicio
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> ana <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  30  dezena2  60  unidade1  4  unidade2  1
+004
+030
+101
+160
+primeiroNumero  34  resultado  95  segundoNumero  61
+chance  2
+inicio
+morreu
+soma
+dezena1  60  dezena2  0  unidade1  5  unidade2  0  velocidade  10
+005
+060
+100
+1a0
+primeiroNumero  65  resultado  65  segundoNumero  0
+acertos  1  chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  80  dezena2  80  unidade1  2  unidade2  1
+002
+080
+101
+180
+primeiroNumero  82  resultado  163  segundoNumero  81
+acertos  2  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> carol <============
+email
+inicio
+velocidade  10
+morreu
+soma
+dezena1  90  dezena2  50  unidade1  4  unidade2  9
+004
+090
+109
+150
+primeiroNumero  94  resultado  153  segundoNumero  59
+chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  20  unidade1  8  unidade2  2
+008
+020
+102
+150
+primeiroNumero  28  resultado  80  segundoNumero  52
+acertos  1  chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  0  dezena2  70  unidade1  7
+007
+0a0
+102
+170
+primeiroNumero  7  resultado  79  segundoNumero  72
+acertos  2  chance  0
+inicio
+morreu
+velocidade  10
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========>  <============
+email
+inicio
+morreu
+soma
+006
+060
+108
+120
+
+=========> dezena1  0  dezena2  0  email   email           unidade1  0  unidade2  0  velocidade  8 <============
+
+=========>  <============
+email
+inicio
+morreu
+soma
+dezena1  70  dezena2  10  unidade1  9  unidade2  1
+009
+070
+101
+110
+
+=========> dezena1  0  dezena2  0  email   email           unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  resultado  79  segundoNumero  0  tempo  3  total  3  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> victor <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  80  dezena2  60  unidade1  1  unidade2  2
+001
+080
+102
+160
+primeiroNumero  81  resultado  143  segundoNumero  62
+acertos  1  chance  2
+inicio
+morreu
+soma
+dezena2  50  unidade1  6  unidade2  6
+006
+080
+106
+150
+primeiroNumero  86  resultado  142  segundoNumero  56
+acertos  2  chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  30  dezena2  70  unidade1  5  unidade2  8
+005
+030
+108
+170
+primeiroNumero  35  resultado  113  segundoNumero  78
+acertos  3  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========>  <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  10  dezena2  20  unidade1  4  unidade2  7
+004
+010
+107
+120
+primeiroNumero  14  resultado  41  segundoNumero  27
+chance  2
+inicio
+velocidade  10
+morreu
+soma
+003
+060
+107
+1a0
+primeiroNumero  63  resultado  70  segundoNumero  7
+chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  10  dezena2  20  unidade1  9  unidade2  4
+009
+010
+104
+120
+primeiroNumero  19  resultado  43  segundoNumero  24
+chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> karol <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  70  dezena2  80  unidade1  9  unidade2  0
+009
+070
+100
+180
+primeiroNumero  79  resultado  159  segundoNumero  80
+acertos  1  chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  10  dezena2  60  unidade1  1  unidade2  9
+001
+010
+109
+160
+primeiroNumero  11  resultado  80  segundoNumero  69
+acertos  2  chance  1
+inicio
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0 <============
+
+=========> karol <============
+email   karol.rb@live.com
+inicio
+morreu
+soma
+dezena1  0  dezena2  0  unidade1  5  unidade2  4
+005
+0a0
+104
+1a0
+primeiroNumero  5  resultado  9  segundoNumero  4
+
+=========> dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> karol <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  0  dezena2  70  unidade1  2  unidade2  7
+002
+0a0
+107
+170
+primeiroNumero  2  resultado  79  segundoNumero  77
+acertos  1  chance  2
+inicio
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> karol <============
+inicio
+morreu
+soma
+dezena1  30  dezena2  80  unidade1  3  unidade2  2  velocidade  10
+003
+030
+102
+180
+primeiroNumero  33  resultado  115  segundoNumero  82
+chance  2
+inicio
+morreu
+velocidade  10
+soma
+dezena2  10  unidade1  1  unidade2  9
+001
+030
+109
+110
+primeiroNumero  31  resultado  50  segundoNumero  19
+
+=========> chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========>  <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  0  dezena2  10  unidade1  7  unidade2  5
+007
+0a0
+105
+110
+primeiroNumero  7  resultado  22  segundoNumero  15
+
+=========> dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========>  <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  40  dezena2  30  unidade1  4  unidade2  8
+004
+040
+108
+130
+
+=========> dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========>  <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  40  dezena2  60  unidade1  7  unidade2  2
+007
+040
+102
+160
+primeiroNumero  47  resultado  109  segundoNumero  62
+acertos  1  chance  2
+inicio
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========>  <============
+inicio
+
+=========> email   email <============
+
+=========>  <============
+email
+inicio
+morreu
+soma
+dezena1  80  dezena2  90  unidade1  6  unidade2  2
+006
+080
+102
+190
+primeiroNumero  86  resultado  178  segundoNumero  92
+chance  2
+inicio
+morreu
+velocidade  10
+soma
+dezena1  10  dezena2  30  unidade2  6
+006
+010
+106
+130
+primeiroNumero  16  resultado  52  segundoNumero  36
+acertos  1  chance  1
+inicio
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0 <============
+
+=========>  <============
+email
+inicio
+
+=========> email   email           velocidade  8 <============
+
+=========>  <============
+
+=========> tempo  0 <============
+inicio
+
+=========> marcely <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  80  dezena2  60  unidade1  6  unidade2  6
+006
+080
+106
+160
+primeiroNumero  86  resultado  152  segundoNumero  66
+acertos  1  chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  30  dezena2  20  unidade1  3  unidade2  8
+003
+030
+108
+120
+primeiroNumero  33  resultado  61  segundoNumero  28
+acertos  2  chance  1
+inicio
+morreu
+soma
+dezena1  0  dezena2  30  unidade2  6
+003
+0a0
+106
+130
+primeiroNumero  3  resultado  39  segundoNumero  36
+acertos  3  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========>  <============
+email
+inicio
+
+=========> email   email <============
+
+=========>  <============
+email
+inicio
+
+=========> email   email <============
+
+=========> jubs <============
+email   juliamoraesfreitas@gmail.com
+inicio
+morreu
+soma
+dezena1  80  dezena2  0  unidade1  7  unidade2  3
+007
+080
+103
+1a0
+primeiroNumero  87  resultado  90  segundoNumero  3
+chance  2
+inicio
+morreu
+soma
+dezena1  90  dezena2  90  unidade1  1  unidade2  8  velocidade  10
+001
+090
+108
+190
+primeiroNumero  91  resultado  189  segundoNumero  98
+acertos  1  chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  20  dezena2  10  unidade1  5
+005
+020
+108
+110
+primeiroNumero  25  resultado  43  segundoNumero  18
+acertos  2  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> pablo <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  70  dezena2  40  unidade1  5  unidade2  2
+005
+070
+102
+140
+primeiroNumero  75  resultado  117  segundoNumero  42
+acertos  1  chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  50  dezena2  20  unidade1  4  unidade2  5
+004
+050
+105
+120
+primeiroNumero  54  resultado  79  segundoNumero  25
+acertos  2  chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  10  dezena2  60  unidade1  0  unidade2  6
+000
+010
+106
+160
+primeiroNumero  10  resultado  76  segundoNumero  66
+acertos  3  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> bibi <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  90  dezena2  50  unidade1  1  unidade2  7
+001
+090
+107
+150
+primeiroNumero  91  resultado  148  segundoNumero  57
+acertos  1  chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  20  dezena2  30  unidade1  2  unidade2  4
+002
+020
+104
+130
+primeiroNumero  22  resultado  56  segundoNumero  34
+inicio
+velocidade  10
+morreu
+soma
+dezena1  0  dezena2  20  unidade1  6  unidade2  0
+006
+0a0
+100
+120
+primeiroNumero  6  resultado  26  segundoNumero  20
+acertos  3  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> grasielly <============
+email   grasirobs2001@hotmail.com
+inicio
+velocidade  10
+morreu
+soma
+dezena1  30  dezena2  70  unidade1  7  unidade2  9
+007
+030
+109
+170
+primeiroNumero  37  resultado  116  segundoNumero  79
+acertos  1  chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  0  unidade1  4  unidade2  6
+004
+0a0
+106
+170
+primeiroNumero  4  resultado  80  segundoNumero  76
+acertos  2  chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  50  dezena2  50  unidade1  0  unidade2  7
+000
+050
+107
+150
+primeiroNumero  50  resultado  107  segundoNumero  57
+acertos  3  chance  0
+inicio
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> nubia <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  30  dezena2  50  unidade1  5  unidade2  4
+005
+030
+104
+150
+primeiroNumero  35  resultado  89  segundoNumero  54
+acertos  1  chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  40  dezena2  30  unidade1  4
+004
+040
+104
+130
+inicio
+velocidade  10
+morreu
+soma
+dezena1  70  dezena2  10  unidade1  7  unidade2  1
+007
+070
+101
+110
+primeiroNumero  77  resultado  88  segundoNumero  11
+acertos  3  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  3  chance  0  dezena1  70  dezena2  10  email   nubiavictoria@yahoo.com       nubia   primeiroNumero  77  resultado  88  segundoNumero  11  tempo  118  total  3  unidade1  7  unidade2  1  velocidade  56 <============
+
+=========> acertos  3  chance  0  dezena1  70  dezena2  10  email   nubiavictoria@yahoo.com       nubia   primeiroNumero  77  resultado  88  segundoNumero  11  tempo  194  total  3  unidade1  7  unidade2  1  velocidade  86 <============
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> João <============
+email   Joaovictorguimaraesn@hotmail.com
+inicio
+velocidade  10
+morreu
+soma
+dezena1  90  dezena2  60  unidade1  5  unidade2  4
+005
+090
+104
+160
+primeiroNumero  95  resultado  159  segundoNumero  64
+acertos  1  chance  2
+inicio
+morreu
+soma
+dezena1  50  dezena2  50  unidade1  6
+006
+050
+104
+150
+primeiroNumero  56  resultado  110  segundoNumero  54
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> tfg5ty6huh <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  90  dezena2  70  unidade1  1  unidade2  0
+001
+090
+100
+170
+primeiroNumero  91  resultado  161  segundoNumero  70
+chance  2
+inicio
+
+=========> chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0 <============
+
+=========> marcio <============
+email   marciosantosbds@gmail.com
+inicio
+morreu
+soma
+dezena1  80  dezena2  20  unidade1  3  unidade2  7
+003
+080
+107
+120
+primeiroNumero  83  resultado  110  segundoNumero  27
+chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  30  dezena2  50  unidade1  9  unidade2  1
+009
+030
+101
+150
+primeiroNumero  39  resultado  90  segundoNumero  51
+chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  20  dezena2  70  unidade1  0
+000
+020
+101
+170
+primeiroNumero  20  resultado  91  segundoNumero  71
+acertos  1  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  resultado  91  segundoNumero  0  tempo  69  total  3  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  resultado  91  segundoNumero  0  tempo  69  total  3  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> jullyana <============
+email   jullyanaglaucia@gmail.com
+inicio
+velocidade  10
+morreu
+soma
+dezena1  30  dezena2  30  unidade1  9  unidade2  3
+009
+030
+103
+130
+primeiroNumero  39  resultado  72  segundoNumero  33
+acertos  1  chance  2
+inicio
+morreu
+soma
+dezena1  90  dezena2  60  unidade1  4
+004
+090
+103
+160
+primeiroNumero  94  resultado  157  segundoNumero  63
+acertos  2  chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  50  dezena2  40  unidade1  3  unidade2  4
+003
+050
+104
+140
+primeiroNumero  53  resultado  97  segundoNumero  44
+acertos  3  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> karol <============
+email   karol.rb@live.com
+inicio
+velocidade  10
+morreu
+soma
+dezena1  50  dezena2  50  unidade1  1  unidade2  3
+001
+050
+103
+150
+primeiroNumero  51  resultado  104  segundoNumero  53
+
+=========> dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========>  <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  30  dezena2  10  unidade1  8  unidade2  9
+008
+030
+109
+110
+primeiroNumero  38  resultado  57  segundoNumero  19
+acertos  1  chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  90  dezena2  50  unidade1  7  unidade2  8
+007
+090
+108
+150
+primeiroNumero  97  resultado  155  segundoNumero  58
+chance  1
+inicio
+morreu
+soma
+dezena1  30  dezena2  90  unidade1  2  unidade2  7
+002
+030
+107
+190
+primeiroNumero  32  resultado  129  segundoNumero  97
+acertos  2  chance  0
+inicio
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0 <============
+
+=========> gusmaogenteboa <============
+email   gusmao@genteboa.com
+inicio
+morreu
+soma
+dezena1  20  dezena2  60  unidade1  9  unidade2  0
+009
+020
+100
+160
+primeiroNumero  29  resultado  89  segundoNumero  60
+acertos  1  chance  2
+inicio
+morreu
+soma
+dezena1  90  dezena2  30  unidade1  0  unidade2  2  velocidade  10
+000
+090
+102
+130
+primeiroNumero  90  resultado  122  segundoNumero  32
+chance  1
+inicio
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0 <============
+
+=========> terenzi <============
+email   danterenzi@bol.com.br
+inicio
+morreu
+soma
+dezena1  30  dezena2  40  unidade1  8  unidade2  1
+008
+030
+101
+140
+primeiroNumero  38  resultado  79  segundoNumero  41
+acertos  1  chance  2
+inicio
+morreu
+velocidade  10
+soma
+dezena1  80  dezena2  80  unidade1  9  unidade2  0
+009
+080
+100
+180
+primeiroNumero  89  resultado  169  segundoNumero  80
+acertos  2  chance  1
+inicio
+morreu
+velocidade  10
+soma
+dezena1  90  dezena2  0  unidade1  0  unidade2  2
+000
+090
+102
+1a0
+primeiroNumero  90  resultado  92  segundoNumero  2
+acertos  3  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+acertos  8
+acertos  14
+acertos  22
+acertos  29
+acertos  34
+acertos  38
+acertos  45
+acertos  47
+acertos  51
+acertos  55
+acertos  59
+acertos  63
+acertos  67
+acertos  70
+acertos  74
+acertos  76
+acertos  80
+acertos  82
+acertos  84
+acertos  86
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> caio <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  0  dezena2  60  unidade1  0  unidade2  1
+000
+0a0
+101
+160
+primeiroNumero  0  resultado  61  segundoNumero  61
+acertos  1  chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena2  90  unidade1  4  unidade2  2
+004
+0a0
+102
+190
+primeiroNumero  4  resultado  96  segundoNumero  92
+acertos  2  chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  30  dezena2  0  unidade1  1  unidade2  8
+001
+030
+108
+1a0
+primeiroNumero  31  resultado  39  segundoNumero  8
+acertos  3  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+acertos  8
+acertos  11
+acertos  13
+acertos  18
+acertos  24
+acertos  32
+acertos  41
+acertos  42
+acertos  45
+acertos  46
+acertos  49
+acertos  51
+acertos  58
+acertos  67
+acertos  80
+acertos  100
+acertos  95
+acertos  91
+acertos  86
+acertos  82
+acertos  79
+acertos  76
+acertos  75
+acertos  74
+acertos  71
+acertos  68
+acertos  66
+acertos  63
+acertos  62
+acertos  61
+acertos  57
+acertos  54
+acertos  51
+acertos  50
+acertos  49
+acertos  46
+acertos  45
+acertos  41
+acertos  36
+acertos  33
+acertos  32
+acertos  28
+acertos  24
+acertos  21
+acertos  20
+acertos  17
+acertos  14
+acertos  13
+acertos  12
+acertos  11
+acertos  9
+acertos  8
+acertos  7
+acertos  5
+acertos  4
+acertos  3
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> p <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  90  dezena2  40  unidade1  9  unidade2  0
+009
+090
+100
+140
+primeiroNumero  99  resultado  139  segundoNumero  40
+chance  2
+inicio
+morreu
+soma
+dezena1  20  dezena2  90  unidade1  5  unidade2  3
+005
+020
+103
+190
+primeiroNumero  25  resultado  118  segundoNumero  93
+chance  1
+inicio
+morreu
+soma
+dezena2  80  unidade1  3  unidade2  2
+003
+020
+102
+180
+primeiroNumero  23  resultado  105  segundoNumero  82
+chance  0
+inicio
+morreu
+FIM
+velocidade  10
+acertos  3
+acertos  11
+acertos  26
+acertos  28
+acertos  30
+acertos  32
+acertos  33
+acertos  30
+acertos  28
+acertos  26
+acertos  24
+acertos  22
+acertos  20
+acertos  16
+acertos  14
+acertos  12
+acertos  9
+acertos  8
+acertos  4
+acertos  0
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========>  <============
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email          primeiroNumero  0  resultado  105  segundoNumero  0  tempo  15  total  3  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========>  <============
+
+=========> Piaui <============
+email   guilherme.silva.998109@sga.pucminas.br
+inicio
+morreu
+soma
+dezena1  90  dezena2  60  unidade1  6  unidade2  9
+006
+090
+109
+160
+primeiroNumero  96  resultado  165  segundoNumero  69
+chance  2
+inicio
+
+=========> chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0 <============
+
+=========>  <============
+email
+inicio
+morreu
+soma
+002
+0a0
+104
+170
+primeiroNumero  2  resultado  76  segundoNumero  74
+chance  2
+inicio
+
+=========> chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0 <============
+
+=========>  <============
+email
+inicio
+
+=========> email   email <============
+
+=========>  <============
+email
+inicio
+morreu
+soma
+dezena1  60  dezena2  60  unidade1  0  unidade2  8
+000
+060
+108
+160
+primeiroNumero  60  resultado  128  segundoNumero  68
+acertos  1  chance  2
+inicio
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0 <============
+
+=========>  <============
+email
+inicio
+morreu
+soma
+dezena1  80  dezena2  10  unidade1  9  unidade2  9
+009
+080
+109
+110
+primeiroNumero  89  resultado  108  segundoNumero  19
+
+=========> dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========>  <============
+email
+inicio
+morreu
+soma
+dezena1  50  dezena2  90  unidade1  7  unidade2  4
+007
+050
+104
+190
+primeiroNumero  57  resultado  151  segundoNumero  94
+
+=========> dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> Ana Flavia <============
+inicio
+morreu
+soma
+dezena1  40  dezena2  0  unidade1  9  unidade2  2  velocidade  10
+009
+040
+102
+1a0
+primeiroNumero  49  resultado  51  segundoNumero  2
+chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  20  dezena2  10  unidade1  5  unidade2  9
+005
+020
+109
+110
+primeiroNumero  25  resultado  44  segundoNumero  19
+chance  1
+inicio
+morreu
+soma
+dezena1  60  dezena2  0  unidade1  4  unidade2  4
+004
+060
+104
+1a0
+primeiroNumero  64  resultado  68  segundoNumero  4
+acertos  1  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> Kymberlly <============
+email   kymberllyglaucia@hotmail.com
+inicio
+velocidade  10
+morreu
+soma
+dezena1  10  dezena2  90  unidade1  9  unidade2  6
+009
+010
+106
+190
+primeiroNumero  19  resultado  115  segundoNumero  96
+chance  2
+inicio
+
+=========> chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0 <============
+
+=========> vinicius <============
+email   silva
+inicio
+
+=========> email   email <============
+
+=========> acertos  1  chance  0  dezena1  50  dezena2  20  email   aluno@teste       Aluno   primeiroNumero  54  resultado  82  segundoNumero  28  tempo  2  total  3  unidade1  4  unidade2  8  velocidade  10 <============
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> Geyson <============
+inicio
+morreu
+soma
+dezena1  70  dezena2  90  unidade1  4  unidade2  8
+004
+070
+108
+190
+primeiroNumero  74  resultado  172  segundoNumero  98
+acertos  1  chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  30  dezena2  40
+004
+030
+108
+140
+primeiroNumero  34  resultado  82  segundoNumero  48
+acertos  2  chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  60  dezena2  90  unidade2  7
+004
+060
+107
+190
+primeiroNumero  64  resultado  161  segundoNumero  97
+chance  0
+inicio
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> luiz <============
+inicio
+morreu
+soma
+dezena1  80  dezena2  40  unidade1  2  unidade2  5
+002
+080
+105
+140
+primeiroNumero  82  resultado  127  segundoNumero  45
+acertos  1  chance  2
+inicio
+morreu
+soma
+dezena1  30  unidade1  6  unidade2  7  velocidade  10
+006
+030
+107
+140
+primeiroNumero  36  resultado  83  segundoNumero  47
+acertos  2  chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  90  dezena2  50  unidade2  2
+006
+090
+102
+150
+primeiroNumero  96  resultado  148  segundoNumero  52
+acertos  3  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> LUDMILA <============
+email   ludsoar@icloud.com
+inicio
+velocidade  10
+morreu
+soma
+dezena1  10  dezena2  40  unidade1  4  unidade2  1
+004
+010
+101
+140
+primeiroNumero  14  resultado  55  segundoNumero  41
+acertos  1  chance  2
+inicio
+morreu
+soma
+dezena1  30  dezena2  30  unidade1  1  unidade2  7  velocidade  10
+001
+030
+107
+130
+primeiroNumero  31  resultado  68  segundoNumero  37
+acertos  2  chance  1
+inicio
+morreu
+soma
+unidade1  9  unidade2  3
+009
+030
+103
+130
+primeiroNumero  39  resultado  72  segundoNumero  33
+acertos  3  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> carolina <============
+inicio
+morreu
+soma
+dezena1  40  dezena2  90  unidade1  8  unidade2  6
+008
+040
+106
+190
+primeiroNumero  48  resultado  144  segundoNumero  96
+acertos  1  chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  50  dezena2  10  unidade1  2  unidade2  7
+002
+050
+107
+110
+primeiroNumero  52  resultado  69  segundoNumero  17
+acertos  2  chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  60  unidade1  9  unidade2  2
+009
+060
+102
+110
+primeiroNumero  69  resultado  81  segundoNumero  12
+chance  0
+inicio
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> cora <============
+inicio
+morreu
+soma
+dezena1  20  dezena2  90  unidade1  0  unidade2  5  velocidade  10
+000
+020
+105
+190
+acertos  1  chance  2
+inicio
+morreu
+soma
+dezena1  60  dezena2  0  unidade1  3  unidade2  2
+003
+060
+102
+1a0
+primeiroNumero  63  resultado  65  segundoNumero  2
+acertos  2  chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena2  10  unidade1  9  unidade2  0
+009
+060
+100
+110
+primeiroNumero  69  resultado  79  segundoNumero  10
+acertos  3  chance  0
+inicio
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> Paula <============
+inicio
+morreu
+soma
+dezena1  70  dezena2  30  unidade1  8  unidade2  5
+008
+070
+105
+130
+primeiroNumero  78  resultado  113  segundoNumero  35
+acertos  1  chance  2
+inicio
+morreu
+soma
+dezena1  40  dezena2  0  unidade1  2  unidade2  9
+002
+040
+109
+1a0
+primeiroNumero  42  resultado  51  segundoNumero  9
+acertos  2  chance  1
+inicio
+morreu
+soma
+dezena1  20  dezena2  70  unidade1  5  unidade2  1
+005
+020
+101
+170
+primeiroNumero  25  resultado  96  segundoNumero  71
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> jhonatan <============
+inicio
+morreu
+soma
+dezena1  60  dezena2  30  unidade1  9  unidade2  7
+009
+060
+107
+130
+primeiroNumero  69  resultado  106  segundoNumero  37
+acertos  1  chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  80  dezena2  70  unidade1  6  unidade2  0
+006
+080
+100
+170
+primeiroNumero  86  resultado  156  segundoNumero  70
+acertos  2  chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  70  dezena2  80  unidade1  7  unidade2  4
+007
+070
+104
+180
+primeiroNumero  77  resultado  161  segundoNumero  84
+chance  0
+inicio
+morreu
+velocidade  10
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> lucas <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  50  dezena2  70  unidade1  2  unidade2  9
+002
+050
+109
+170
+primeiroNumero  52  resultado  131  segundoNumero  79
+acertos  1  chance  2
+inicio
+morreu
+soma
+dezena1  80  dezena2  80  velocidade  10
+002
+080
+109
+180
+primeiroNumero  82  resultado  171  segundoNumero  89
+acertos  2  chance  1
+inicio
+morreu
+soma
+dezena1  50  dezena2  60  unidade1  6  unidade2  5
+006
+050
+105
+160
+primeiroNumero  56  resultado  121  segundoNumero  65
+acertos  3  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> larissa <============
+email   larissacristinareissouza@gmail.com
+inicio
+velocidade  10
+morreu
+soma
+dezena1  0  dezena2  70  unidade1  7  unidade2  9
+007
+0a0
+109
+170
+primeiroNumero  7  resultado  86  segundoNumero  79
+inicio
+velocidade  10
+morreu
+soma
+dezena1  40  dezena2  30  unidade1  5  unidade2  4
+005
+040
+104
+130
+primeiroNumero  45  resultado  79  segundoNumero  34
+acertos  2  chance  1
+inicio
+morreu
+soma
+dezena1  80  dezena2  60  unidade1  4
+004
+080
+104
+160
+primeiroNumero  84  resultado  148  segundoNumero  64
+acertos  3  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> jennifer <============
+inicio
+morreu
+soma
+dezena1  90  dezena2  70  unidade1  1  unidade2  8
+001
+090
+108
+170
+primeiroNumero  91  resultado  169  segundoNumero  78
+chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  80  dezena2  40  unidade1  8  unidade2  7
+008
+080
+107
+140
+inicio
+morreu
+soma
+dezena1  10  dezena2  90  unidade1  9  unidade2  1
+009
+010
+101
+190
+acertos  2  chance  0
+inicio
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> bruna <============
+inicio
+morreu
+soma
+dezena1  30  dezena2  80  unidade1  3  unidade2  6
+003
+030
+106
+180
+primeiroNumero  33  resultado  119  segundoNumero  86
+chance  2
+inicio
+morreu
+soma
+dezena1  90  dezena2  30  unidade1  2  unidade2  8  velocidade  10
+002
+090
+108
+130
+
+=========> chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> leandra <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  20  dezena2  70  unidade1  1  unidade2  9
+001
+020
+109
+170
+primeiroNumero  21  resultado  100  segundoNumero  79
+inicio
+morreu
+soma
+unidade1  9  unidade2  3
+009
+020
+103
+170
+primeiroNumero  29  resultado  102  segundoNumero  73
+acertos  2  chance  1
+inicio
+morreu
+soma
+dezena1  60  dezena2  0  unidade1  3
+003
+060
+103
+1a0
+primeiroNumero  63  resultado  66  segundoNumero  3
+acertos  3  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> Rafael <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  20  dezena2  40  unidade1  4  unidade2  3
+004
+020
+103
+140
+primeiroNumero  24  resultado  67  segundoNumero  43
+acertos  1  chance  2
+inicio
+morreu
+velocidade  10
+soma
+dezena1  10  unidade1  3  unidade2  1
+003
+010
+101
+140
+primeiroNumero  13  resultado  54  segundoNumero  41
+chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  60  dezena2  80  unidade1  1  unidade2  7
+001
+060
+107
+180
+primeiroNumero  61  resultado  148  segundoNumero  87
+acertos  2  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> Igor <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  70  dezena2  10  unidade1  0  unidade2  7
+000
+070
+107
+110
+primeiroNumero  70  resultado  87  segundoNumero  17
+acertos  1  chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  40  dezena2  40  unidade1  4  unidade2  1
+004
+040
+101
+140
+primeiroNumero  44  resultado  85  segundoNumero  41
+acertos  2  chance  1
+inicio
+morreu
+soma
+dezena1  60  dezena2  70  unidade1  2  unidade2  2
+002
+060
+102
+170
+primeiroNumero  62  resultado  134  segundoNumero  72
+acertos  3  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> edy <============
+email   edmylsomnascimento567@gmail.com
+inicio
+velocidade  10
+morreu
+soma
+dezena1  50  dezena2  80  unidade1  0  unidade2  5
+000
+050
+105
+180
+primeiroNumero  50  resultado  135  segundoNumero  85
+acertos  1  chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  90  unidade1  1  unidade2  3
+001
+090
+103
+180
+acertos  2  chance  1
+inicio
+morreu
+soma
+dezena1  0  dezena2  50  unidade1  9  unidade2  1
+009
+0a0
+101
+150
+primeiroNumero  9  resultado  60  segundoNumero  51
+acertos  3  chance  0
+inicio
+morreu
+FIM
+velocidade  10
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> maria <============
+inicio
+morreu
+soma
+dezena1  0  dezena2  30  unidade1  8  unidade2  5
+008
+0a0
+105
+130
+primeiroNumero  8  resultado  43  segundoNumero  35
+acertos  1  chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  30  dezena2  10  unidade1  4  unidade2  1
+004
+030
+101
+110
+primeiroNumero  34  resultado  45  segundoNumero  11
+acertos  2  chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  70  dezena2  70  unidade1  2  unidade2  6
+002
+070
+106
+170
+primeiroNumero  72  resultado  148  segundoNumero  76
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========>  <============
+email
+inicio
+velocidade  10
+morreu
+soma
+dezena1  80  dezena2  0  unidade1  8  unidade2  2
+008
+080
+102
+1a0
+primeiroNumero  88  resultado  90  segundoNumero  2
+chance  2
+inicio
+
+=========> chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0 <============
+
+=========> nando <============
+email   fernandinhokeke@gmail.com
+inicio
+morreu
+soma
+dezena1  10  dezena2  50  unidade1  2  unidade2  9
+002
+010
+109
+150
+primeiroNumero  12  resultado  71  segundoNumero  59
+acertos  1  chance  2
+inicio
+morreu
+soma
+dezena2  0  unidade1  7  unidade2  3
+007
+010
+103
+1a0
+primeiroNumero  17  resultado  20  segundoNumero  3
+acertos  2  chance  1
+inicio
+morreu
+soma
+dezena1  90  dezena2  90  unidade1  0  unidade2  6
+000
+090
+106
+190
+primeiroNumero  90  resultado  186  segundoNumero  96
+acertos  3  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> livia <============
+email
+inicio
+velocidade  10
+morreu
+soma
+dezena1  60  dezena2  10  unidade1  6  unidade2  7
+006
+060
+107
+110
+primeiroNumero  66  resultado  83  segundoNumero  17
+acertos  1  chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  70  dezena2  70  unidade1  8  unidade2  6
+008
+070
+106
+170
+inicio
+velocidade  10
+morreu
+soma
+dezena1  40  dezena2  90  unidade1  1  unidade2  4
+001
+040
+104
+190
+primeiroNumero  41  resultado  135  segundoNumero  94
+acertos  3  chance  0
+inicio
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> hed <============
+email   hedsleymiranda@gmail.com
+inicio
+velocidade  10
+morreu
+soma
+dezena1  0  dezena2  90  unidade1  5  unidade2  1
+005
+0a0
+101
+190
+primeiroNumero  5  resultado  96  segundoNumero  91
+acertos  1  chance  2
+inicio
+morreu
+soma
+dezena1  40  dezena2  70  unidade1  8  unidade2  7
+008
+040
+107
+170
+primeiroNumero  48  resultado  125  segundoNumero  77
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> esther <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  70  dezena2  90  unidade1  6  unidade2  8
+006
+070
+108
+190
+primeiroNumero  76  resultado  174  segundoNumero  98
+inicio
+velocidade  10
+morreu
+soma
+dezena1  30  dezena2  10  unidade1  9  unidade2  4
+009
+030
+104
+110
+primeiroNumero  39  resultado  53  segundoNumero  14
+chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  40  unidade1  8  unidade2  1
+008
+040
+101
+110
+primeiroNumero  48  resultado  59  segundoNumero  11
+acertos  1  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> lucas <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  90  dezena2  30  unidade1  5  unidade2  6
+005
+090
+106
+130
+
+=========> dezena1  0  dezena2  0  email   email           unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> rodnei ramon de alencar freitas <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  40  dezena2  20  unidade1  0  unidade2  1
+000
+040
+101
+120
+primeiroNumero  40  resultado  61  segundoNumero  21
+acertos  1  chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  0  dezena2  80  unidade1  7  unidade2  8
+007
+0a0
+108
+180
+primeiroNumero  7  resultado  95  segundoNumero  88
+acertos  2  chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  10  dezena2  60  unidade1  4  unidade2  9
+004
+010
+109
+160
+primeiroNumero  14  resultado  83  segundoNumero  69
+chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> jhonyster <============
+email   jhonybrian2003@gmail.com
+inicio
+velocidade  10
+morreu
+soma
+dezena1  80  dezena2  70  unidade1  7  unidade2  4
+007
+080
+104
+170
+primeiroNumero  87  resultado  161  segundoNumero  74
+chance  2
+inicio
+morreu
+soma
+dezena1  60  dezena2  10  unidade2  3
+007
+060
+103
+110
+primeiroNumero  67  resultado  80  segundoNumero  13
+acertos  1  chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  80  dezena2  30  unidade1  4  unidade2  8
+004
+080
+108
+130
+primeiroNumero  84  resultado  122  segundoNumero  38
+acertos  2  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> Eliza <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  10  dezena2  40  unidade1  3  unidade2  8
+003
+010
+108
+140
+primeiroNumero  13  resultado  61  segundoNumero  48
+acertos  1  chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  60  dezena2  0  unidade1  5
+005
+060
+108
+1a0
+primeiroNumero  65  resultado  73  segundoNumero  8
+acertos  2  chance  1
+inicio
+morreu
+soma
+dezena2  90  unidade1  3  unidade2  7
+003
+060
+107
+190
+primeiroNumero  63  resultado  160  segundoNumero  97
+acertos  3  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> Carol <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  10  dezena2  80  unidade1  0  unidade2  8
+000
+010
+108
+180
+inicio
+velocidade  10
+morreu
+soma
+dezena1  0  dezena2  10  unidade1  7
+007
+0a0
+108
+110
+primeiroNumero  7  resultado  25  segundoNumero  18
+acertos  2  chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  70  dezena2  50  unidade1  6  unidade2  9
+006
+070
+109
+150
+primeiroNumero  76  resultado  135  segundoNumero  59
+acertos  3  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> Davidson <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  0  dezena2  60  unidade1  5  unidade2  7
+005
+0a0
+107
+160
+primeiroNumero  5  resultado  72  segundoNumero  67
+acertos  1  chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  50  dezena2  90  unidade1  1  unidade2  8
+001
+050
+108
+190
+acertos  2  chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  0  dezena2  20  unidade1  9  unidade2  3
+009
+0a0
+103
+120
+primeiroNumero  9  resultado  32  segundoNumero  23
+acertos  3  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> Daniel <============
+inicio
+morreu
+soma
+dezena1  20  dezena2  80  unidade1  2  unidade2  0
+002
+020
+100
+180
+primeiroNumero  22  resultado  102  segundoNumero  80
+
+=========> dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========>  <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  60  dezena2  90  unidade1  8  unidade2  3
+008
+060
+103
+190
+primeiroNumero  68  resultado  161  segundoNumero  93
+
+=========> dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========>  <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  50  dezena2  70  unidade1  0  unidade2  6
+000
+050
+106
+170
+primeiroNumero  50  resultado  126  segundoNumero  76
+chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  30  dezena2  20  unidade2  3
+000
+030
+103
+120
+primeiroNumero  30  resultado  53  segundoNumero  23
+
+=========> chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========>  <============
+inicio
+
+=========> email   email <============
+
+=========>  <============
+velocidade  10
+inicio
+morreu
+soma
+dezena1  10  dezena2  80  unidade1  7  unidade2  1
+007
+010
+101
+180
+primeiroNumero  17  resultado  98  segundoNumero  81
+chance  2
+inicio
+
+=========> chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0 <============
+
+=========>  <============
+email
+inicio
+
+=========> email   email <============
+
+=========>  <============
+
+=========>  <============
+inicio
+
+=========> sandra <============
+inicio
+morreu
+velocidade  10
+soma
+dezena1  50  dezena2  10  unidade1  5  unidade2  2
+005
+050
+102
+110
+acertos  1  chance  2
+inicio
+morreu
+soma
+dezena1  10  dezena2  0  unidade1  3  unidade2  0  velocidade  10
+003
+010
+100
+1a0
+primeiroNumero  13  resultado  13  segundoNumero  0
+acertos  2  chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  20  dezena2  10  unidade1  9  unidade2  5
+009
+020
+105
+110
+primeiroNumero  29  resultado  44  segundoNumero  15
+acertos  3  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========>  <============
+email
+inicio
+
+=========> email   email <============
+
+=========>  <============
+email
+inicio
+
+=========> email   email <============
+
+=========>  <============
+email
+inicio
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  resultado  112  segundoNumero  0  tempo  2  total  3  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> Hebert <============
+email   hebert.parreiras1@gmail.com
+inicio
+velocidade  10
+morreu
+soma
+dezena1  50  dezena2  0  unidade1  6  unidade2  7
+006
+050
+107
+1a0
+primeiroNumero  56  resultado  63  segundoNumero  7
+acertos  1  chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  80  dezena2  90  unidade1  1  unidade2  9
+001
+080
+109
+190
+primeiroNumero  81  resultado  180  segundoNumero  99
+acertos  2  chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  0  dezena2  80  unidade1  4  unidade2  1
+004
+0a0
+101
+180
+primeiroNumero  4  resultado  85  segundoNumero  81
+acertos  3  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> rhayan <============
+email   rhayanbarcelos64@gmail.com
+inicio
+velocidade  10
+morreu
+soma
+dezena1  50  dezena2  60  unidade1  7  unidade2  5
+007
+050
+105
+160
+primeiroNumero  57  resultado  122  segundoNumero  65
+acertos  1  chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  30  dezena2  10  unidade1  2  unidade2  2
+002
+030
+102
+110
+primeiroNumero  32  resultado  44  segundoNumero  12
+acertos  2  chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  0  dezena2  70  unidade1  3  unidade2  7
+003
+0a0
+107
+170
+primeiroNumero  3  resultado  80  segundoNumero  77
+acertos  3  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> Guilherme <============
+email   guipsarmento@yahoo.com.br
+inicio
+velocidade  10
+morreu
+soma
+dezena1  0  dezena2  80  unidade1  0  unidade2  8
+000
+0a0
+108
+180
+primeiroNumero  0  resultado  88  segundoNumero  88
+acertos  1  chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  50  dezena2  90  unidade1  7  unidade2  5
+007
+050
+105
+190
+primeiroNumero  57  resultado  152  segundoNumero  95
+acertos  2  chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  40  unidade1  4  unidade2  3
+004
+040
+103
+190
+primeiroNumero  44  resultado  137  segundoNumero  93
+acertos  3  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> ramon <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  80  dezena2  50  unidade1  3  unidade2  2
+003
+080
+102
+150
+primeiroNumero  83  resultado  135  segundoNumero  52
+chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  30  dezena2  90  unidade1  5  unidade2  1
+005
+030
+101
+190
+primeiroNumero  35  resultado  126  segundoNumero  91
+acertos  1  chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  40  dezena2  70
+005
+040
+101
+170
+primeiroNumero  45  resultado  116  segundoNumero  71
+acertos  2  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> hhil <============
+email   jgkj
+inicio
+morreu
+soma
+dezena1  80  dezena2  30  unidade1  7  unidade2  0
+007
+080
+100
+130
+primeiroNumero  87  resultado  117  segundoNumero  30
+
+=========> dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========>  <============
+inicio
+morreu
+soma
+dezena1  80  dezena2  20  unidade1  7  unidade2  2  velocidade  10
+007
+080
+102
+120
+primeiroNumero  87  resultado  109  segundoNumero  22
+
+=========> dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========>  <============
+inicio
+
+=========> email   email <============
+
+=========>  <============
+email
+inicio
+
+=========> email   email <============
+
+=========> josué <============
+email   josue339@icloud.com
+inicio
+morreu
+soma
+dezena1  30  dezena2  80  unidade1  0  unidade2  7
+000
+030
+107
+180
+primeiroNumero  30  resultado  117  segundoNumero  87
+
+=========> dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> laura <============
+email   lauraxavier018@gmail.com
+inicio
+velocidade  10
+morreu
+soma
+dezena1  90  dezena2  80  unidade1  6  unidade2  9
+006
+090
+109
+180
+primeiroNumero  96  resultado  185  segundoNumero  89
+acertos  1  chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  80  dezena2  60  unidade1  5  unidade2  8
+005
+080
+108
+160
+inicio
+velocidade  10
+morreu
+soma
+dezena1  60  dezena2  20  unidade1  3  unidade2  1
+003
+060
+101
+120
+primeiroNumero  63  resultado  84  segundoNumero  21
+acertos  3  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> hed <============
+email   hedsleymiranda@gmail.com
+inicio
+velocidade  10
+morreu
+soma
+dezena1  70  dezena2  90  unidade1  1  unidade2  1
+001
+070
+101
+190
+primeiroNumero  71  resultado  162  segundoNumero  91
+acertos  1  chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  90  dezena2  20  unidade1  7  unidade2  7
+007
+090
+107
+120
+primeiroNumero  97  resultado  124  segundoNumero  27
+acertos  2  chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  10  unidade1  5  unidade2  1
+005
+010
+101
+120
+primeiroNumero  15  resultado  36  segundoNumero  21
+acertos  3  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> Lucas Samuel <============
+email   lucassamumtz@gmail.com
+inicio
+velocidade  10
+morreu
+soma
+dezena1  80  dezena2  90  unidade1  5  unidade2  3
+005
+080
+103
+190
+primeiroNumero  85  resultado  178  segundoNumero  93
+acertos  1  chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  30  dezena2  60  unidade1  9  unidade2  2
+009
+030
+102
+160
+primeiroNumero  39  resultado  101  segundoNumero  62
+chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  40  dezena2  10  unidade1  0
+000
+040
+102
+110
+primeiroNumero  40  resultado  52  segundoNumero  12
+acertos  2  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> maxsuel <============
+email   maxsuelcostaluz@gmail.com
+inicio
+morreu
+soma
+dezena1  50  dezena2  40  unidade1  2  unidade2  1
+002
+050
+101
+140
+primeiroNumero  52  resultado  93  segundoNumero  41
+acertos  1  chance  2
+inicio
+morreu
+soma
+dezena1  60  dezena2  0  unidade1  1
+001
+060
+101
+1a0
+primeiroNumero  61  resultado  62  segundoNumero  1
+acertos  2  chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  70  dezena2  80  unidade1  9  unidade2  9
+009
+070
+109
+180
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========>  <============
+inicio
+velocidade  10
+morreu
+soma
+dezena1  20  dezena2  40  unidade1  5  unidade2  7
+005
+020
+107
+140
+primeiroNumero  25  resultado  72  segundoNumero  47
+acertos  1  chance  2
+inicio
+velocidade  10
+morreu
+soma
+dezena1  70  dezena2  0  unidade1  6  unidade2  2
+006
+070
+102
+1a0
+primeiroNumero  76  resultado  78  segundoNumero  2
+acertos  2  chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena1  80  dezena2  40  unidade1  9  unidade2  9
+009
+080
+109
+140
+primeiroNumero  89  resultado  138  segundoNumero  49
+acertos  3  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============
+
+=========> Jamile <============
+inicio
+morreu
+soma
+dezena1  60  dezena2  60  unidade1  9  unidade2  1
+009
+060
+101
+160
+primeiroNumero  69  resultado  130  segundoNumero  61
+acertos  1  chance  2
+inicio
+morreu
+soma
+dezena1  80  dezena2  80  unidade2  0
+009
+080
+100
+180
+primeiroNumero  89  resultado  169  segundoNumero  80
+acertos  2  chance  1
+inicio
+velocidade  10
+morreu
+soma
+dezena2  30  unidade1  3
+003
+080
+100
+130
+primeiroNumero  83  resultado  113  segundoNumero  30
+acertos  3  chance  0
+inicio
+velocidade  10
+morreu
+FIM
+
+=========> acertos  0  chance  3  dezena1  0  dezena2  0  email   email           primeiroNumero  0  segundoNumero  0  unidade1  0  unidade2  0  velocidade  8 <============

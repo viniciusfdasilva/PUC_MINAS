@@ -1,0 +1,1398 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.21)  23 JUN 2020 18:49
+entering extended mode
+**./Run_This_Example.tex
+(Run_This_Example.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-04-06> (krantz.cls
+Document Class: krantz 2005/09/16 v1.4f Standard LaTeX document class
+("C:\Users\vinic\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\bk10.clo"
+File: bk10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\trimheight=\dimen134
+\trimwidth=\dimen135
+\normaltextheight=\dimen136
+\tempa=\dimen137
+\tempdimen=\dimen138
+\htrim=\dimen139
+\vtrimtop=\dimen140
+\vtrimbot=\dimen141
+\ul@box=\box45
+\ur@box=\box46
+\ll@box=\box47
+\lr@box=\box48
+\@cipboxa=\box49
+\@cipboxb=\box50
+\@ciprulewidth=\dimen142
+\c@part=\count167
+\c@chapter=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\@chaptoc=\write3
+\secwd=\dimen143
+\subsecwd=\dimen144
+\subsubsecwd=\dimen145
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\c@numauthors=\count176
+\section@toc@skip=\skip49
+\SectionTOCWidth=\skip50
+\subsection@toc@skip=\skip51
+\SubSectionTOCWidth=\skip52
+\subsubsection@toc@skip=\skip53
+\SubSubSectionTOCWidth=\skip54
+\paragraph@toc@skip=\skip55
+\ParagraphTOCWidth=\skip56
+\subparagraph@toc@skip=\skip57
+\@AUonebox=\box51
+\@AUtwobox=\box52
+\@AUthreebox=\box53
+\@AUfourbox=\box54
+\@AUaffonebox=\box55
+\@AUafftwobox=\box56
+\@AUaffthreebox=\box57
+\@AUafffourbox=\box58
+\@finalAUboxfromone=\box59
+\@finalAUboxfromtwo=\box60
+\@finalAUboxfromthree=\box61
+\@finalAUboxfromfour=\box62
+\c@chaptocdepth=\count177
+\bibindent=\dimen146
+\tempbox=\box63
+\nomenwidth=\dimen147
+\@tablebox=\box64
+\@tabletitlebox=\box65
+\@tablewidth=\dimen148
+\@tabletitlewidth=\dimen149
+\max@tablewidth=\dimen150
+\tempbox=\box66
+\tempdimen=\dimen151
+\tempbox=\box67
+\notewidth=\dimen152
+\wherebox=\box68
+\wherewidth=\dimen153
+\listtextleftmargin=\skip58
+\listtextleftmarginii=\skip59
+\listtextleftmarginiii=\skip60
+\listtextrightmargin=\skip61
+\listlabelleftskip=\skip62
+\listlabelleftskipii=\skip63
+\listlabelleftskipiii=\skip64
+\abovelistskipi=\skip65
+\belowlistskipi=\skip66
+\abovelistskipii=\skip67
+\belowlistskipii=\skip68
+\abovelistskipiii=\skip69
+\belowlistskipiii=\skip70
+\labelsepi=\skip71
+\labelsepii=\skip72
+\labelsepiii=\skip73
+\itemsepi=\skip74
+\itemsepii=\skip75
+\itemsepiii=\skip76
+\enumdimwd=\dimen154
+\enumdim=\dimen155
+\concolwidth=\dimen156
+\stempbox=\box69
+)
+("C:\Users\vinic\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fixltx2e.sty"
+Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
+Applying: [2015/01/01] Old fixltx2e package on input line 46.
+
+Package fixltx2e Warning: fixltx2e is not required with releases after 2015
+(fixltx2e)                All fixes are now in the LaTeX kernel.
+(fixltx2e)                See the latexrelease package for details.
+
+Already applied: [0000/00/00] Old fixltx2e package on input line 53.
+) ("C:\Users\vinic\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fix-cm.sty"
+Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
+("C:\Users\vinic\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1enc.def"
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+))
+("C:\Users\vinic\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb.s
+ty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Users\vinic\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.
+sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks15
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("C:\Users\vinic\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.st
+y"
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip77
+
+For additional information on amsmath, use the `?' option.
+
+("C:\Users\vinic\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.st
+y"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Users\vinic\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty
+"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen157
+))
+("C:\Users\vinic\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty
+"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen158
+)
+("C:\Users\vinic\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty
+"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count178
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count179
+\leftroot@=\count180
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count181
+\DOTSCASE@=\count182
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box70
+\strutbox@=\box71
+\big@size=\dimen159
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count183
+\c@MaxMatrixCols=\count184
+\dotsspace@=\muskip16
+\c@parentequation=\count185
+\dspbrk@lvl=\count186
+\tag@help=\toks17
+\row@=\count187
+\column@=\count188
+\maxfields@=\count189
+\andhelp@=\toks18
+\eqnshift@=\dimen160
+\alignsep@=\dimen161
+\tagshift@=\dimen162
+\tagwidth@=\dimen163
+\totwidth@=\dimen164
+\lineht@=\dimen165
+\@envbody=\toks19
+\multlinegap=\skip78
+\multlinetaggap=\skip79
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+("C:\Users\vinic\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.
+sty"
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\vinic\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.st
+y"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+)
+("C:\Users\vinic\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.
+sty"
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\vinic\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\vinic\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graph
+ics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+("C:\Users\vinic\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdfte
+x.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen166
+\Gin@req@width=\dimen167
+)
+("C:\Users\vinic\AppData\Local\Programs\MiKTeX 2.9\tex/latex/subfigure\subfigur
+e.sty"
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip80
+\subfigcapskip=\skip81
+\subfigcaptopadj=\dimen168
+\subfigbottomskip=\skip82
+\subfigcapmargin=\dimen169
+\subfiglabelskip=\skip83
+\c@subfigure=\count190
+\c@lofdepth=\count191
+\c@subtable=\count192
+\c@lotdepth=\count193
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+
+("C:\Users\vinic\AppData\Local\Programs\MiKTeX 2.9\tex/latex/subfigure\subfigur
+e.cfg")
+\subfig@top=\skip84
+\subfig@bottom=\skip85
+)
+("C:\Users\vinic\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\makeidx.sty"
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+) ("C:\Users\vinic\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\multicol.s
+ty"
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count194
+\mult@box=\box72
+\multicol@leftmargin=\dimen170
+\c@unbalance=\count195
+\c@collectmore=\count196
+\doublecol@number=\count197
+\multicoltolerance=\count198
+\multicolpretolerance=\count199
+\full@width=\dimen171
+\page@free=\dimen172
+\premulticols=\dimen173
+\postmulticols=\dimen174
+\multicolsep=\skip86
+\multicolbaselineskip=\skip87
+\partial@page=\box73
+\last@line=\box74
+\maxbalancingoverflow=\dimen175
+\mult@rightbox=\box75
+\mult@grightbox=\box76
+\mult@gfirstbox=\box77
+\mult@firstbox=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\@tempa=\box114
+\@tempa=\box115
+\c@minrows=\count266
+\c@columnbadness=\count267
+\c@finalcolumnbadness=\count268
+\last@try=\dimen176
+\multicolovershoot=\dimen177
+\multicolundershoot=\dimen178
+\mult@nat@firstbox=\box116
+\colbreak@box=\box117
+\mc@col@check@num=\count269
+)
+\@indexfile=\write4
+\openout4 = `Run_This_Example.idx'.
+
+
+Writing index file Run_This_Example.idx
+\@input{frontmatter/preamble.aux}
+\openout2 = `frontmatter/preamble.aux'.
+
+(frontmatter/preamble.tex
+\c@theorem=\count270
+\c@exercise=\count271
+\c@example=\count272
+\c@definition=\count273
+)
+\c@proof=\count274
+
+("C:\Users\vinic\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backen
+d-pdfmode.def"
+File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count275
+\l__pdf_internal_box=\box118
+) (Run_This_Example.aux (chapters/chapter1/ch1.aux
+
+LaTeX Warning: Label `intro' multiply defined.
+
+))
+\openout1 = `Run_This_Example.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+
+("C:\Users\vinic\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-p
+df.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count276
+\scratchdimen=\dimen179
+\scratchbox=\box119
+\nofMPsegments=\count277
+\nofMParguments=\count278
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count279
+\MPscratchDim=\dimen180
+\MPnumerator=\count280
+\makeMPintoPDFobject=\count281
+\everyMPtoPDFconversion=\toks23
+)
+("C:\Users\vinic\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epsto
+pdf-base.sty"
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[1
+
+
+
+
+
+{C:/Users/vinic/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Underfull \vbox (badness 10000) detected at line 37
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 37
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 37
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 37
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 37
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 37
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 37
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 37
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 37
+[]
+ []
+
+(Run_This_Example.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 7.
+
+("C:\Users\vinic\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 7.
+("C:\Users\vinic\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
+\tf@toc=\write5
+\openout5 = `Run_This_Example.toc'.
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[7
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[8
+
+]
+Underfull \vbox (badness 10000) detected at line 40
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 40
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 40
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 40
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 40
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 40
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 40
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 40
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 40
+[]
+ []
+
+(Run_This_Example.lof)
+\tf@lof=\write6
+\openout6 = `Run_This_Example.lof'.
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[9
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[10
+
+]
+Underfull \vbox (badness 10000) detected at line 41
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 41
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 41
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 41
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 41
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 41
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 41
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 41
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 41
+[]
+ []
+
+(Run_This_Example.lot)
+\tf@lot=\write7
+\openout7 = `Run_This_Example.lot'.
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[11
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[12
+
+]
+Underfull \vbox (badness 10000) detected at line 47
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 47
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 47
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 47
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 47
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 47
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 47
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 47
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[1
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[2]
+\openout2 = `chapters/chapter1/ch1.aux'.
+
+ (chapters/chapter1/ch1.tex
+Underfull \vbox (badness 10000) detected at line 2
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 2
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 2
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 2
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 2
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 2
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 2
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 2
+[]
+ []
+
+Chapter 1.
+(1.toc)
+\openout3 = `1.toc'.
+
+<chapters/chapter1/figures/imagem1.png, id=38, 451.6875pt x 210.7875pt>
+File: chapters/chapter1/figures/imagem1.png Graphic file (type png)
+<use chapters/chapter1/figures/imagem1.png>
+Package pdftex.def Info: chapters/chapter1/figures/imagem1.png  used on input l
+ine 11.
+(pdftex.def)             Requested size: 250.00719pt x 99.99966pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[3
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+
+ []
+
+[4 <./chapters/chapter1/figures/imagem1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+
+ []
+
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 6
+2.
+("C:\Users\vinic\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omlcmr.fd"
+File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 62.
+
+Overfull \hbox (62.30624pt too wide) in paragraph at lines 56--69
+[] [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+
+ []
+
+
+Overfull \hbox (63.43741pt too wide) in paragraph at lines 92--105
+[] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
+
+ []
+
+<chapters/chapter1/figures/imagem6.png, id=52, 242.55618pt x 415.5525pt>
+File: chapters/chapter1/figures/imagem6.png Graphic file (type png)
+<use chapters/chapter1/figures/imagem6.png>
+Package pdftex.def Info: chapters/chapter1/figures/imagem6.png  used on input l
+ine 118.
+(pdftex.def)             Requested size: 337.03366pt x 320.01445pt.
+
+Overfull \hbox (0.53366pt too wide) in paragraph at lines 118--120
+[][] 
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+
+ []
+
+[7 <./chapters/chapter1/figures/imagem6.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--157
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--157
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--157
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--157
+
+ []
+
+[8])
+Underfull \hbox (badness 10000) in paragraph at lines 162--48
+
+ []
+
+[9]
+Underfull \vbox (badness 10000) detected at line 51
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 51
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 51
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 51
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 51
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 51
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 51
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 51
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[10
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[11]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[12]
+Underfull \vbox (badness 10000) detected at line 53
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 53
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 53
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 53
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 53
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 53
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 53
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 53
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[13
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[14]
+No file Run_This_Example.bbl.
+No file Run_This_Example.ind.
+(Run_This_Example.aux (chapters/chapter1/ch1.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 3252 strings out of 480892
+ 48074 string characters out of 2897992
+ 284748 words of memory out of 3000000
+ 19089 multiletter control sequences out of 15000+200000
+ 539522 words of font info for 49 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 30i,10n,31p,560b,283s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/vinic/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm
+-super-ts1.enc}<C:/Users/vinic/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmbx10.pfb><C:/Users/vinic/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/vinic/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb><C:/Users/vinic/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/
+vinic/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.p
+fb><C:/Users/vinic/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmmi7.pfb><C:/Users/vinic/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb><C:/Users/vinic/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/vinic/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/vinic/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/vini
+c/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><
+C:/Users/vinic/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sf
+rm1000.pfb>
+Output written on Run_This_Example.pdf (21 pages, 178522 bytes).
+PDF statistics:
+ 123 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+

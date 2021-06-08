@@ -1,0 +1,264 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+    <meta content="text/html;charset=ISO-8859-1" http-equiv="Content-Type">
+    <title>AArch32 ISA XML for Armv8.7 (2020-12)</title>
+</head>
+
+<body>
+
+    <div style="text-align: center;">
+        <h1 style="text-decoration: underline;">AArch32 ISA XML for Armv8.7</h1>
+        <h1 style="text-decoration: underline;">(2020-12)</h1>
+        <h1 style="text-decoration: underline;">18 December 2020</h1>
+    </div>
+
+    <h2>1. Introduction</h2>
+
+    <p>
+        This is the <span style="font-style: italic;">2020-12</span>
+        release of the AArch32 ISA XML for Armv8.7.
+    </p>
+
+    <p>
+        The <a href="ISA_AArch32_xml_v87A-2020-12/xhtml/notice.html">Proprietary Notice</a>
+        gives details of the terms and conditions under which this package
+        is provided.
+    </p>
+
+    <p>
+        If you have comments on the content of this package, please send
+        them by e-mail to
+        <a href="mailto:support-aarchv8@arm.com">support-aarchv8@arm.com</a>.
+        Give:
+    <ul>
+        <li>The title, "AArch32 ISA XML for Armv8.7".</li>
+        <li>The version, "2020-12".</li>
+        <li>A concise explanation of your comments.</li>
+    </ul>
+    </p>
+    <h3>Progressive Terminology Commitment</h3>
+    <p>Arm values inclusive communities. Arm recognizes that we and our industry have used terms that can be offensive.
+        Arm strives
+        to lead the industry and create change.</p>
+    <p>Previous issues of this document included terms that can be offensive. We have replaced these terms. If you find
+        offensive terms
+        in this document, please contact <a href="mailto:terms@arm.com">terms@arm.com</a>.</p>
+    <!--
+<p>
+  Additional documentation on the XML structure and ARMv8's extensions
+  to the pseudocode language are provided separately
+  in <a href="ISA_xml_v2_readme.html">this readme file</a>.
+</p>
+-->
+
+    <br />
+
+
+    <h2>2. Contents</h2>
+
+    <table style="width: 80%; background-color: rgb(223, 223, 224);" border="1" cellpadding="0" cellspacing="0">
+        <tbody>
+            <tr>
+                <td>This Version</td>
+                <td>2020-12</td>
+                <td>&nbsp;<a href="ISA_AArch32_xml_v87A-2020-12/xhtml/index.html">[HTML]</a> </td>
+                <td>&nbsp;<a href="ISA_AArch32_xml_v87A-2020-12.pdf">[PDF]</a> </td>
+                <td>&nbsp;<a href="ISA_AArch32_xml_v87A-2020-12/index.xml">[XML]</a> </td>
+            </tr>
+            <tr>
+                <td>Change Markups</td>
+                <td>2020-12 from 2020-09</td>
+                <td>&nbsp;<a href="ISA_AArch32_xml_v87A-2020-12/from-ISA_AArch32_xml_v87A-2020-09/index.html">[HTML]</a>
+                </td>
+                <td>&nbsp;<a href="ISA_AArch32_xml_diff-v87A-2020-09-to-v87A-2020-12.pdf">[PDF]</a> </td>
+            </tr>
+            <tr>
+                <td>Previous Version</td>
+                <td>2020-09</td>
+                <td>&nbsp;<a href="ISA_AArch32_xml_v87A-2020-09/xhtml/index.html">[HTML]</a> </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br />
+
+
+    <h2>3. Release Notes</h2>
+
+    <h3>Change history</h3>
+
+    <p>
+        The following general changes are made:
+    </p>
+    <ul>
+        <li>
+            <!-- 16776 -->
+            The UNDEFINED checks in the decode pseudocode for the VRECPE and
+            VRSQRTE instructions is updated.
+        </li>
+        <li>
+            <!-- 17120 -->
+            The encoding for T5 SUB, SUBS (immediate) is corrected.
+        </li>
+        <li>
+            <!-- 17256 -->
+            The mask from pseudocode for MRS operation is updated to allow bits
+            23,22,21 of APSR to be read.
+        </li>
+    </ul>
+
+    <p>
+        The following changes are made to the instruction definitions:
+    </p>
+    <ul>
+        <li>
+            None.
+        </li>
+    </ul>
+
+
+    <p>
+        The following changes are made to the Shared Pseudocode:
+    </p>
+
+    <ul>
+        <li>
+            <!--14613-->
+            Removed unused function ReservedValue().
+        </li>
+        <li>
+            <!--14760-->
+            The decoding of Load/Store Multiple instructions inside FirstStageTranslation is replaced by a new memory
+            accessor type AccType_ATOMICSTREAM.
+        </li>
+        <li>
+            <!--16276-->
+            Removed unused function UnallocatedEncoding().
+        </li>
+        <li>
+            <!--16409-->
+            Permission checks for Data/Instruction cache maintenance instructions corrected.
+        </li>
+        <li>
+            <!-- 16889 -->
+            The pseudocode function AArch64.SecondStageTranslate() and
+            AArch64.SecondStageTranslate() is updated to not generate an
+            alignment fault to a memory location marked as Device for stage
+            2 for stage 1 walks.
+        </li>
+        <li>
+            <!-- 17020 -->
+            The pseudocode function AArch32.GenerateDebugExceptionsFrom() is
+            updated to check MDCR_EL3.SDD bit for debug exceptions enable
+            when SecureEL2 is implemented.
+        </li>
+        <li>
+            <!--17045-->
+            The pseudocode function CollectTimeStamp() is adjusted to include the missing reserved value checks.
+        </li>
+        <li>
+            <!-- 17050 -->
+            The pseudocode functions AArch32.GenerateDebugExceptionsFrom() is
+            updated to call AArch64.GenerateDebugExceptionsFrom() function if
+            the debug target exception level is in AArch64 execution state.
+        </li>
+        <li>
+            <!-- 17072 -->
+            The pseudocode function AArch64.BranchTargetException() is
+            removed from A32 ISA XML.
+        </li>
+        <li>
+            <!-- 17169 -->
+            The pseudocode functions AArch64.CheckPermission() and
+            AArch32.CheckPermission() are updated to initialize priv_xn
+            and user_xn prior to PAN checks that re determines the value of
+            priv_w.
+        </li>
+        <li>
+            <!-- 17200 -->
+            The pseudocode function TraceTimeStamp() is updated to not treat
+            the value '10' for TRFCR_EL1.TS and TRFCR_EL2.TS as UNPREDICTABLE
+            in all cases.
+        </li>
+        <li>
+            <!-- 17247 -->
+            The pseudocode function IsSErrorEdgeTriggered() takes a new
+            parameter indicating the target Exception level. This function
+            now checks the Execution state of the target Exception level to
+            determine the correct syndrome checks.
+        </li>
+        <li>
+            <!-- 17347 -->
+            The access type AccType_DC_UNPRIV is now qualified with PSTATE.EL
+            and AccType_DC. DC_UNPRIV usage is removed from the pseudocode.
+        </li>
+        <li>
+            <!--17388-->
+            Enumeration literal Unpredictable_PMUEventCount is added for Constrained Unpredictable access to Performance
+            Monitor Event Count register access.
+        </li>
+        <li>
+            <!--17389-->
+            Enumeration literal Unpredictable_IGNORETRAPINDEBUG is added for register access trap ignore in Debug state.
+        </li>
+        <li>
+            The pseudocode for FEAT_XS is partially included in this release.
+        </li>
+    </ul>
+
+    <h3>Known issues</h3>
+
+    <ul>
+        <li>
+            <!-- 17015 -->
+            The execution pseudocode for the AArch32 LDC and STC instructions do not show possible traps to Hyp mode.
+        </li>
+        <li>
+            <!-- 17238 -->
+            The entries for 'VCVTB - Half-precision to double-precision variant' and 'VCVTT - Half-precision to
+            double-precision variant' in the 'Floating-point data-processing (two registers)' encoding tables are
+            missing the value for the 'size' field. This will be fixed in a future release.
+        </li>
+        <li>
+            The pseudocode for FEAT_XS is not available in full. Effect of FEAT_XS on memory attributes and on A32 TLBI
+            instructions is not present.
+        </li>
+        <li>
+            In the browsable XML, hyperlinking with some pseudocode functions do not link correctly.
+        </li>
+        <li>
+            Some architectural features have limited or no descriptions in pseudocode and are not fully covered by
+            the functional testing. Affected features are listed below:
+            <ul>
+                <li>Address translation system instructions.</li>
+                <li>Ordering of memory accesses.</li>
+                <li>Self-hosted debug and behavior of PE when in Debug state.</li>
+                <li>Trace architecture, including self-hosted trace and external trace.</li>
+                <li>RAS architecture.</li>
+                <li>Statistical Profiling Extension.</li>
+                <li>Performance Monitors Extension.</li>
+                <li>Activity Monitors Extension.</li>
+                <li>Generic Timers.</li>
+                <li>Generic Interrupt Controller.</li>
+                <li>Multi-processing.</li>
+            </ul>
+        </li>
+    </ul>
+
+
+
+    </ul>
+
+    <h3>Potential upcoming changes</h3>
+
+    <ul>
+        <li>The Shared pseudocode for VMSA will be refactored.</li>
+        <li>The pseudocode for FEAT_XS and FEAT_LPA2 will be added.</li>
+        <li>The pseudocode for system instructions will be added.</li>
+    </ul>
+
+</body>
+
+</html>
