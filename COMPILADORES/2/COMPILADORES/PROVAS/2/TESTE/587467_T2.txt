@@ -1,0 +1,50 @@
+Curso de Ciencia da Computação
+Compiladores
+Número de matrícula: 587467 
+
+Teste 2
+
+Instruções: Verifique que a prova e o gabarito correspondem ao seu número de matrícula. Cada posição indicada na gramática, da forma {n}, corresponde a 1 ou mais ações semânticas a serem inseridas no gabarito numeradas de forma sequencial como {n.1}, {n.2} etc. Em cada uma dessas entradas do gabarito, coloque a letra/caractere da ação semântica correspondente, entre os colchetes. Ex: {1.1}=[A]. Apenas as ações semânticas listadas abaixo podem ser usadas. Fora a inserção do seu nome (sem quebra de linha) e das respostas entre os colchetes, nada mais pode ser alterado no gabarito, pois a correção é automática. Após inserir as respostas, salve o arquivo do gabarito com o mesmo nome e poste no SGA.
+
+Questão Única
+
+Considere o subconjunto da linguagem C descrito na gramática abaixo, onde o comando for(P1;P2;P3)P4 executa o comando P4 enquanto P2 for verdadeiro, sendo que P1 é executado antes do primeiro teste e P3 é executado entre as iterações. O termo *id corresponde ao conteúdo apontado por id e &id o endereço de id. O termo id++ incrementa o conteúdo de id, após usá-lo.
+
+S -> { C ; }
+C -> id = E {12}
+C -> for "(" {11} C { , C } ; {9} E {8} < E1 {2}; C { , C } ")" {13} C {5}
+E -> T {7} { + {14} T1 {6} }
+T -> num {1} | id {15} [ ++ {3} ] | *id {10} | &id {4}
+
+
+Ações Semânticas:
+
+A = E.end:=NovoTemp
+B = mov AX,T.val
+C = add BX,AX
+D = mov DS:[id.end],AX
+E = E.end:=T.end
+F = jl Rot3
+G = mov BX,DS:[E1.end]
+H = mov DS:[E.end],BX
+I = mov AX,DS:[E.end]
+J = jg Rot3
+K = add AX,1
+L = Rot4:=NovoRot
+M = mov DS:[Tend],AX
+N = mov AX,DS:[AX]
+O = mov AX,id.end
+P = cmp AX,BX
+Q = jmp Rot2
+R = jmp Rot1
+S = Rot4:
+T = mov BX,DS:[T1.end]
+U = add AX,BX
+V = mov AX,DS:[T.end]
+X = Rot2:
+W = Rot3:
+Y = mov AX,num.lex
+Z = mov BX,T1.val
+@ = mov AX,DS:[id.end]
+# = jmp Rot4
+% = mov AX,E.val
