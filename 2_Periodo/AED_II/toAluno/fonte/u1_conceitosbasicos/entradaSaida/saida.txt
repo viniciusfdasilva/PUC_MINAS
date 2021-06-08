@@ -1,4 +1,0 @@
-Entre com uma palavra: Entre com um inteiro: Entre com um real: Entre com um caractere: Sua string: aeds2
-Seu inteiro: 2345
-Seu real: 334.123
-Seu caractere: p
